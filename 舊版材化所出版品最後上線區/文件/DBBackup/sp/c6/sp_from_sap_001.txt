@@ -1,0 +1,52 @@
+CREATE proc dbo.sp_from_sap_001 (@yyyymm char(06), @batch_seq char(6) output )  
+As
+
+DECLARE   @edate varchar(8), @ls_vouseq varchar(3)
+DECLARE   @saleamt real, @tax real, @invoamt real, @iuniprice real
+DECLARE   @s_saleamt char(13), @s_tax char(13), @s_invoamt char(13) 
+DECLARE   @s_iuniprice char(13)
+
+select @edate = convert(char(8),getdate(),112) 
+
+DECLARE  ia_cursor  CURSOR FOR  
+  SELECT ia.ia_syscd,   
+         ia.ia_iano  
+    FROM  isccom1.mrlpub.dbo.ia  
+   WHERE ( ia.ia_fgitri = '' ) AND  
+         ( ia. ia_invno = '' )   
+        
+open ia_cursor
+DECLARE    @syscd char(2), @iano char(8), @contno char(10), @invno char(10), @invdate char(8)
+/* get the first row from the cursor */
+
+FETCH  NEXT FROM  ia_cursor INTO
+         @syscd, @iano
+
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+    Select @contno = @syscd + @iano
+    
+SELECT  @invno = inv20_invno,   
+                @invdate = inv20_date
+    FROM itridp9.sapfrom.dbo.inv20
+   WHERE ( inv20_contno = @contno )
+    if @@error != 0
+           begin
+               goto next_record
+           end
+
+    Update isccom1.mrlpub.dbo.ia
+    Set ia_invno = @invno,
+       Ia_ivat = @invdate
+    Where (ia.ia_syscd = @syscd) and   
+          (ia.ia_iano = @iano)
+ 
+next_record:
+
+FETCH  NEXT FROM  ia_cursor INTO
+         @syscd, @iano
+
+END 
+CLOSE  ia_cursor                                                                                                                                     
+DEALLOCATE  ia_cursor
+GO

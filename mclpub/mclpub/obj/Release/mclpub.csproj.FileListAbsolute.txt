@@ -1,0 +1,16 @@
+D:\材化所出版品\mclpub\mclpub\bin\mclpub.dll
+D:\材化所出版品\mclpub\mclpub\bin\mclpub.pdb
+D:\材化所出版品\mclpub\mclpub\bin\FlexCel.AspNet.dll
+D:\材化所出版品\mclpub\mclpub\bin\FlexCel.dll
+D:\材化所出版品\mclpub\mclpub\bin\FlexCel.xml
+D:\材化所出版品\mclpub\mclpub\bin\FlexCel.AspNet.xml
+D:\材化所出版品\mclpub\mclpub\bin\es\FlexCel.resources.dll
+D:\材化所出版品\mclpub\mclpub\obj\Release\ResolveAssemblyReference.cache
+D:\材化所出版品\mclpub\mclpub\obj\Release\mclpub.dll
+D:\材化所出版品\mclpub\mclpub\obj\Release\mclpub.pdb
+D:\Project\MclpubProject\mclpub\mclpub\bin\mclpub.dll
+D:\Project\MclpubProject\mclpub\mclpub\bin\mclpub.pdb
+D:\Project\MclpubProject\mclpub\mclpub\bin\Newtonsoft.Json.dll
+D:\Project\MclpubProject\mclpub\mclpub\obj\Release\ResolveAssemblyReference.cache
+D:\Project\MclpubProject\mclpub\mclpub\obj\Release\mclpub.dll
+D:\Project\MclpubProject\mclpub\mclpub\obj\Release\mclpub.pdb

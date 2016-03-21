@@ -1,0 +1,57 @@
+CREATE proc dbo.sp_sap_recovery_001(@yyyymm  char(6), @batch_seq char(6), @rtn char(1) output )
+As
+declare @seq int
+select @seq = convert(int,@batch_seq)
+begin 
+set nocount on
+select @rtn = 'Y'
+begin distributed transaction recovery_trans
+delete  isccom1.mrlpub.dbo.sapivd
+where sapivd.ivd_infno  in (  
+SELECT sapiv.iv_infno  
+    FROM  isccom1.mrlpub.dbo.sapiv  
+   WHERE ( sapiv.iv_orgcd = '05' ) AND  
+         ( sapiv.iv_type = 'AR' ) AND  
+         ( sapiv.iv_yyyymm = @yyyymm ) AND  
+         ( sapiv.iv_seq = @batch_seq ) )
+
+delete  isccom1.mrlpub.dbo.sapvou
+where sapvou.vou_infno  in (  
+SELECT  sapiv.iv_infno  
+    FROM isccom1.mrlpub.dbo.sapiv  
+   WHERE ( sapiv.iv_orgcd = '05' ) AND  
+         ( sapiv.iv_type = 'AR' ) AND  
+         ( sapiv.iv_yyyymm = @yyyymm ) AND  
+         ( sapiv.iv_seq = @batch_seq ) )  
+
+delete  isccom1.mrlpub.dbo.sapiv 
+   WHERE ( sapiv.iv_orgcd = '05' ) AND  
+         ( sapiv.iv_type = 'AR' ) AND  
+         ( sapiv.iv_yyyymm = @yyyymm ) AND  
+         ( sapiv.iv_seq = @batch_seq ) 
+
+
+delete    isccom1.mrlpub.dbo.inftmp20
+        WHERE (inftmp20.inf20_orgcd = '05' )and   
+         (inftmp20.inf20_type = 'AR') and   
+         (inftmp20.inf20_yyyymm = @yyyymm) and   
+        ( inftmp20.inf20_seq  = @batch_seq )
+
+delete isccom1.mrlpub.dbo.saplog
+        WHERE (sap_orgcd  = '05') and 
+(sap_type = 'AR') and 
+( sap_yyyymm  = @yyyymm) and  
+              (sap_seq   =    @seq)
+SELECT @SEQ
+
+update isccom1.mrlpub.dbo.ias
+ set ias_trans_sap = '0'
+ where ias_iasdate = @yyyymm and
+          ias_iasseq = @batch_seq
+
+   
+commit transaction recovery_trans
+
+set nocount off
+end
+GO

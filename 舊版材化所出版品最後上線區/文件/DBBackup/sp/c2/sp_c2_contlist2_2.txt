@@ -1,0 +1,78 @@
+CREATE proc dbo.sp_c2_contlist2_2 ( @contno char(6) )
+as
+
+begin
+set nocount on
+
+/*
+declare @contno char(6)
+select  @contno = '000028'
+*/
+
+
+/* 讀出 c2_cont, c2_or 資料: 抓 or_nm, FullName */
+DECLARE  contor_cursor_2  CURSOR FOR
+	SELECT DISTINCT
+                          c2_or.or_inm, CASE WHEN RTRIM(or_nm) <> '' THEN RTRIM(or_nm) ELSE  '(無指定)' END AS or_nm,
+                          RTRIM(SUBSTRING(c2_or.or_inm, 1, 4)) + '-' + CASE WHEN RTRIM(or_nm) <> '' THEN RTRIM(or_nm) ELSE  '(無指定)' END AS FullName
+	FROM             c2_or INNER JOIN
+                          c2_cont ON c2_or.or_syscd = c2_cont.cont_syscd AND
+                          c2_or.or_contno = c2_cont.cont_contno
+	WHERE         (c2_or.or_syscd = 'C2') AND (c2_or.or_contno = @contno)
+
+
+/* open the cursor */
+open contor_cursor_2
+
+/* Declare some variables to hold results.*/
+declare @mfr_inm varchar(30), @orname varchar(30), @orfullname varchar(35), @ornamestr varchar(300), @orfullnamestr varchar(350)
+select @ornamestr = ''
+select @orfullnamestr = ''
+
+
+FETCH  NEXT FROM  contor_cursor_2
+  INTO @mfr_inm, @orname, @orfullname
+
+
+/* 若有 contor_cursor_2 資料, 則做以下之處理 */
+-- Check @@FETCH_STATUS to see if there are any more rows to fetch.
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+	select @ornamestr = @ornamestr + @orname + ', '
+	select @orfullnamestr = @orfullnamestr + @orfullname + ', '
+
+	FETCH  NEXT FROM  contor_cursor_2
+	  INTO @mfr_inm, @orname, @orfullname
+END
+
+
+/* 檢查資料 */
+--select @mfr_inm
+--select @orname
+--select @orfullname
+--select @ornamestr
+--select @orfullnamestr
+
+
+/* 去除 @ornamestr, @orfullnamestr 最末個 ',' 符號 */
+declare @orfulname_len int, @orname_len int
+ select @orname_len =  LEN(@ornamestr) - 1
+ select @orfulname_len =  LEN(@orfullnamestr) - 1
+ select @ornamestr = substring(@ornamestr, 1, @orname_len)
+ select @orfullnamestr = substring(@orfullnamestr, 1, @orfulname_len)
+select @ornamestr
+select @orfullnamestr
+
+
+/* 將值插入 table */
+insert c2_contlist2(syscd, contno, ornamestr, orfullnamestr)
+values ('C2', @contno, @ornamestr, @orfullnamestr)
+
+
+CLOSE  contor_cursor_2
+DEALLOCATE  contor_cursor_2
+
+
+set nocount off
+end
+GO

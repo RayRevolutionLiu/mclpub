@@ -1,0 +1,16 @@
+SELECT         c4_or.*, c4_ramt.*, book.bk_nm, c4_cont.cont_conttp, mtp.mtp_nm
+FROM             c4_freebk INNER JOIN
+                          c4_or ON c4_freebk.fbk_syscd = c4_or.or_syscd AND 
+                          c4_freebk.fbk_contno = c4_or.or_contno INNER JOIN
+                          book ON c4_freebk.fbk_bkcd = book.bk_bkcd INNER JOIN
+                          c4_ramt ON c4_or.or_syscd = c4_ramt.ma_syscd AND 
+                          c4_or.or_contno = c4_ramt.ma_contno AND 
+                          c4_or.or_oritem = c4_ramt.ma_oritem AND 
+                          c4_freebk.fbk_fbkitem = c4_ramt.ma_fbkitem INNER JOIN
+                          c4_cont ON c4_freebk.fbk_syscd = c4_cont.cont_syscd AND 
+                          c4_freebk.fbk_contno = c4_cont.cont_contno INNER JOIN
+                          mtp ON c4_ramt.ma_mtpcd = mtp.mtp_mtpcd
+WHERE         (c4_freebk.fbk_bkcd = '01') AND (c4_ramt.ma_sdate <= '200310') AND 
+                          (c4_cont.cont_conttp = '01') AND (c4_or.or_fgmosea = '0') AND 
+                          (c4_ramt.ma_mtpcd = '11')
+ORDER BY  c4_ramt.ma_pubmnt, c4_ramt.ma_contno

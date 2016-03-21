@@ -1,0 +1,28 @@
+/****** Object:  Stored Procedure dbo.sp_c1_xml_to_detail    Script Date: 2002/5/2 AM 08:48:24 ******/
+CREATE procedure sp_c1_xml_to_detail
+as
+declare	@syscd char(2),@custno char(6),@otp1cd char(2),@otp1seq char(3)
+declare @ptrval varbinary(16),@xml varchar(8000), @xml_1 varchar(8000)
+
+DECLARE OrderXML_Cursor CURSOR FOR
+ select o_syscd,o_custno,o_otp1cd,o_otp1seq, CONVERT(varchar(8000),o_xmldata)
+ from c1_order
+ where o_syscd='C1' and o_custno='000003' and @otp1cd='01' and @otp1seq='002'
+
+OPEN OrderXML_Cursor
+
+FETCH NEXT FROM OrderXML_Cursor
+    into @syscd,@custno,@otp1cd,@otp1seq, @xml_1
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	set @xml = '<?xml version="1.0" encoding="big5" ?>'+@xml_1
+	exec sp_order_to_detail @xml ,@syscd,@custno,@otp1cd,@otp1seq
+
+FETCH NEXT FROM OrderXML_Cursor
+    into @syscd,@custno,@otp1cd,@otp1seq, @xml_1
+END
+
+CLOSE OrderXML_Cursor
+DEALLOCATE OrderXML_Cursor
+GO

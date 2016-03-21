@@ -1,0 +1,3293 @@
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CACHE_CONTROL:no-cache
+HTTP_CONNECTION:keep-alive
+HTTP_PRAGMA:no-cache
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_COOKIE:ASP.NET_SessionId=bleawg45ykepdr55hgdohhb2
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_COOKIE:ASP.NET_SessionId=0ew01kinnatkn1uxe2iewm55
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_COOKIE:ASP.NET_SessionId=0ew01kinnatkn1uxe2iewm55
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; MALC)
+HTTP_UA_CPU:AMD64
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_COOKIE:ASP.NET_SessionId=o4o4wyjszdfhqw45lk2uhs45
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; MALC)
+HTTP_UA_CPU:AMD64
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:text/html, application/xhtml+xml, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_COOKIE:ASP.NET_SessionId=d32e5u55lmbj0145d4ct0vnx
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_COOKIE:ASP.NET_SessionId=gudcpi3mdsuvh23gkpjn3t32
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-tw,zh;q=0.8,en-us;q=0.5,en;q=0.3
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/20100101 Firefox/18.0
+HTTP_CONNECTION:keep-alive
+HTTP_ACCEPT:text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+HTTP_ACCEPT_CHARSET:Big5,utf-8;q=0.7,*;q=0.3
+HTTP_ACCEPT_ENCODING:gzip,deflate,sdch
+HTTP_ACCEPT_LANGUAGE:zh-TW,zh;q=0.8,en-US;q=0.6,en;q=0.4
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.52 Safari/537.17
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CACHE_CONTROL:max-age=0
+HTTP_PRAGMA:no-cache
+HTTP_HOST:localhost:9524
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_COOKIE:ASP.NET_SessionId=44i4fr55muekc355luitcgam
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, */*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_COOKIE:ASP.NET_SessionId=44i4fr55muekc355luitcgam
+HTTP_HOST:localhost:9524
+HTTP_REFERER:http://localhost:9524/Default.aspx
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)
+HTTP_CONNECTION:Keep-Alive
+HTTP_ACCEPT:*/*
+HTTP_ACCEPT_ENCODING:gzip, deflate
+HTTP_ACCEPT_LANGUAGE:zh-TW
+HTTP_HOST:localhost:9524
+HTTP_USER_AGENT:Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.1; WOW64; Trident/5.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; BRI/1; InfoPath.3; .NET4.0C; .NET4.0E; BRI/2; MALC)

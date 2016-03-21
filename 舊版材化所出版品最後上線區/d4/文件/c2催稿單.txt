@@ -1,0 +1,360 @@
+/* 2002/8/9 修正 wk_c2_rp1_2 & wk_c2_rp1 由 'cont_adamt' (已落版總廣告金額) 改為 'pub_totamt' (當月落版金額) */
+CREATE proc dbo.sp_c2_rp1(@yyyymm  char(6), @bkcd char(2) )
+As
+
+begin 
+set nocount on
+
+begin distributed transaction create_trans
+
+   
+/* declare  @yyyymm char(06), @bkcd char(02)
+select @yyyymm = '200207'
+select @bkcd = '01'  */
+
+
+delete from wk_c2_rp1_1
+
+insert into wk_c2_rp1_1( mark,   
+          cont_syscd,   
+          cont_contno,   
+          mfr_inm,   
+          cont_aunm,   
+          cont_autel,   
+          cont_aufax,   
+          cont_aucell,   
+          cont_sdate,   
+          cont_edate,   
+          cont_restjtm,   
+          cont_resttm,   
+          cont_adamt,   
+          cont_pubclrtm,   
+          cont_pubmenotm,   
+          cont_pubgetclrtm,   
+          pubmmstr, 
+          cont_empno  )
+
+SELECT mark1  = 
+          case
+              when a.cont_edate =  @yyyymm then '*'
+              else ''
+          end         ,   
+          a.cont_syscd,   
+          a.cont_contno,   
+          b.mfr_inm,   
+          a.cont_aunm,   
+          a.cont_autel,   
+          a.cont_aufax,   
+          a.cont_aucell,   
+          a.cont_sdate,   
+          a.cont_edate,   
+          a.cont_restjtm,   
+          a.cont_resttm,   
+          a.cont_adamt,   
+          a.cont_clrtm - a.cont_restclrtm as clrtm,   
+          a.cont_menotm - a.cont_restmenotm as menotm,   
+          a.cont_getclrtm - a.cont_restgetclrtm as getclrtm,   
+          c.pubmmstr,
+          a.cont_empno  
+    FROM c2_cont  a,   
+         c2_getad   c,   
+         mfr   b  
+   WHERE (  a.cont_syscd *= c.syscd) and  
+         (  a.cont_contno *= c.contno) and  
+         (  a.cont_mfrno *=   b.mfr_mfrno) and  
+         ( (  a.cont_fgclosed = '0' ) AND  
+         (  a.cont_bkcd = @bkcd ) )    
+
+delete  from wk_c2_rp1_2
+insert into wk_c2_rp1_2( pub_syscd,   
+          pub_contno,   
+          pub_yyyymm,   
+          pub_pubseq,   
+          ltp_nm,   
+          pgs_nm,   
+          clr_nm,   
+          pub_fggot,   
+          pub_origjno,   
+          pub_chgjno,   
+          pub_drafttp,   
+          lp_priorseq,
+          pub_totamt  )
+
+SELECT a.pub_syscd,   
+         a.pub_contno,   
+         a.pub_yyyymm,   
+         a.pub_pubseq,   
+         b.ltp_nm,   
+         d.pgs_nm,   
+         c.clr_nm,   
+         a.pub_fggot,   
+         a.pub_origjno,   
+         a.pub_chgjno,  
+         pub_drafttp = 
+          case 
+             when a.pub_drafttp = '2'  then 'v'
+             else ''
+          end ,   
+         f.lp_priorseq,
+         a.pub_adamt+a.pub_chgamt AS pub_totamt
+    FROM c2_pub  a,   
+         c2_ltp  b,   
+         c2_clr c,   
+         c2_pgsize d,   
+         c2_cont  e,   
+         c2_lprior  f  
+   WHERE ( a.pub_ltpcd = b.ltp_ltpcd ) and  
+         ( a.pub_clrcd = c.clr_clrcd ) and  
+         ( a.pub_pgscd = d.pgs_pgscd ) and  
+         ( e.cont_syscd = a.pub_syscd ) and  
+         ( e.cont_contno = a.pub_contno ) and  
+         ( e.cont_bkcd = f.lp_bkcd ) and  
+         ( c.clr_clrcd = f.lp_clrcd ) and  
+         ( b.ltp_ltpcd = f.lp_ltpcd ) and  
+         ( d.pgs_pgscd = f.lp_pgscd ) and  
+         ( ( e.cont_fgclosed = '0' ) AND  
+         ( e.cont_bkcd = @bkcd) and
+       ( a.pub_yyyymm = @yyyymm) )
+    
+  delete from wk_c2_rp1_3
+  insert into wk_c2_rp1_3(cont_syscd,   
+         cont_contno,   
+         pub_yyyymm,   
+         pubcnt)  
+    SELECT a.cont_syscd,   
+         a.cont_contno,   
+         b.pub_yyyymm,   
+         count(b.pub_pubseq)  
+    FROM c2_cont  a,   
+         c2_pub  b  
+   WHERE ( a.cont_syscd = b.pub_syscd ) and  
+         ( a.cont_contno = b.pub_contno ) and  
+         ( ( a.cont_fgclosed = '0' ) AND  
+         ( b.pub_yyyymm = @yyyymm) )   
+GROUP BY a.cont_syscd,   
+         a.cont_contno,   
+         b.pub_yyyymm  
+ORDER BY a.cont_syscd ASC,   
+         a.cont_contno ASC,   
+         b.pub_yyyymm ASC  
+
+delete  from wk_c2_rp1_4 
+insert into wk_c2_rp1_4(cont_contno, prior_per_cont) 
+ SELECT b.cont_contno,   
+         min(c.lp_priorseq ) as prior_per_cont  
+    FROM c2_pub  a,   
+         c2_cont       b,   
+         c2_lprior      c  
+   WHERE ( a.pub_syscd = b.cont_syscd ) and  
+         ( a.pub_ltpcd = c.lp_ltpcd ) and  
+         ( a.pub_clrcd = c.lp_clrcd ) and  
+         ( a.pub_pgscd = c.lp_pgscd ) and  
+         ( a.pub_contno = b.cont_contno ) and  
+         ( ( a.pub_yyyymm = @yyyymm) AND  
+         ( b.cont_bkcd = @bkcd ) )   
+GROUP BY b.cont_contno  
+ORDER BY b.cont_contno ASC 
+
+delete from wk_c2_rp1_5
+insert into wk_c2_rp1_5( mark,   
+          cont_syscd,   
+          cont_contno,   
+          mfr_inm,   
+          cont_aunm,   
+          cont_autel,   
+          cont_aufax,   
+          cont_aucell,   
+          cont_sdate,   
+          cont_edate,   
+          cont_restjtm,   
+          cont_resttm,   
+          cont_adamt,   
+          cont_pubclrtm,   
+          cont_pubmenotm,   
+          cont_pubgetclrtm,   
+          pubmmstr,   
+          pubcnt,   
+          prior_per_cont, 
+          cont_empno    
+)
+ SELECT a.mark,   
+         a.cont_syscd,   
+         a.cont_contno,   
+         a.mfr_inm,   
+         a.cont_aunm,   
+         a.cont_autel,   
+         a.cont_aufax,   
+         a.cont_aucell,   
+         a.cont_sdate,   
+         a.cont_edate,   
+         a.cont_restjtm,   
+         a.cont_resttm,   
+         a.cont_adamt,   
+         a.cont_pubclrtm,   
+         a.cont_pubmenotm,   
+         a.cont_pubgetclrtm,   
+         a.pubmmstr,   
+         b.pubcnt,   
+         c.prior_per_cont,
+         a.cont_empno    
+    FROM wk_c2_rp1_1 a,   
+         wk_c2_rp1_3 b,   
+         wk_c2_rp1_4 c  
+   WHERE ( a.cont_syscd *= b.cont_syscd) and  
+         ( a.cont_contno *= b.cont_contno) and  
+         ( a.cont_contno *= c.cont_contno) and  
+         ( ( a.cont_sdate <= @yyyymm) AND  
+         ( a.cont_edate >= @yyyymm) )   
+ORDER BY c.prior_per_cont ASC,   
+         a.cont_contno ASC      
+
+delete from wk_c2_rp1
+insert into wk_c2_rp1(  mark,   
+           cont_syscd,   
+           cont_contno,   
+           mfr_inm,   
+           cont_aunm,   
+           cont_autel,   
+           cont_aufax,   
+           cont_aucell,   
+           cont_sdate,   
+           cont_edate,   
+           cont_restjtm,   
+           cont_resttm,   
+           cont_adamt,   
+           cont_pubclrtm,   
+           cont_pubmenotm,   
+           cont_pubgetclrtm,   
+           pubmmstr,   
+           pubcnt,   
+           prior_per_cont,   
+           pub_yyyymm,   
+           pub_pubseq,   
+           ltp_nm,   
+           pgs_nm,   
+           clr_nm,   
+           pub_fggot,   
+           pub_origjno,   
+           pub_chgjno,   
+           pub_drafttp,   
+           lp_priorseq, 
+           cont_empno,
+           pub_totamt  )
+
+ SELECT a.mark,   
+         a.cont_syscd,   
+         a.cont_contno,   
+         a.mfr_inm,   
+         a.cont_aunm,   
+         a.cont_autel,   
+         a.cont_aufax,   
+         a.cont_aucell,   
+         a.cont_sdate,   
+         a.cont_edate,   
+         a.cont_restjtm,   
+         a.cont_resttm,   
+         a.cont_adamt,   
+         a.cont_pubclrtm,   
+         a.cont_pubmenotm,   
+         a.cont_pubgetclrtm,   
+         a.pubmmstr,   
+         c.pubcnt,   
+         '' as a,   
+         b.pub_yyyymm,   
+         b.pub_pubseq,   
+         b.ltp_nm,   
+         b.pgs_nm,   
+         b.clr_nm,   
+         b.pub_fggot,   
+         b.pub_origjno,   
+         b.pub_chgjno,   
+         b.pub_drafttp,   
+         b.lp_priorseq,
+         a.cont_empno,
+         b.pub_totamt  
+    FROM wk_c2_rp1_1 a,   
+         wk_c2_rp1_2 b,   
+         wk_c2_rp1_3 c 
+   WHERE ( a.cont_syscd *= b.pub_syscd) and  
+         ( a.cont_contno *= b.pub_contno) and  
+         ( a.cont_syscd *= c.cont_syscd) and  
+         ( a.cont_contno *= c.cont_contno) and  
+         ( ( a.cont_sdate > @yyyymm) OR  
+         ( a.cont_edate < @yyyymm) ) 
+ORDER BY a.cont_contno ASC    
+
+insert into wk_c2_rp1(  mark,   
+           cont_syscd,   
+           cont_contno,   
+           mfr_inm,   
+           cont_aunm,   
+           cont_autel,   
+           cont_aufax,   
+           cont_aucell,   
+           cont_sdate,   
+           cont_edate,   
+           cont_restjtm,   
+           cont_resttm,   
+           cont_adamt,   
+           cont_pubclrtm,   
+           cont_pubmenotm,   
+           cont_pubgetclrtm,   
+           pubmmstr,   
+           pubcnt,   
+           prior_per_cont,   
+           pub_yyyymm,   
+           pub_pubseq,   
+           ltp_nm,   
+           pgs_nm,   
+           clr_nm,   
+           pub_fggot,   
+           pub_origjno,   
+           pub_chgjno,   
+           pub_drafttp,   
+           lp_priorseq,
+           cont_empno,
+           pub_totamt    )
+ 
+ SELECT a.mark,   
+         a.cont_syscd,   
+         a.cont_contno,   
+         a.mfr_inm,   
+         a.cont_aunm,   
+         a.cont_autel,   
+         a.cont_aufax,   
+         a.cont_aucell,   
+         a.cont_sdate,   
+         a.cont_edate,   
+         a.cont_restjtm,   
+         a.cont_resttm,   
+         a.cont_adamt,   
+         a.cont_pubclrtm,   
+         a.cont_pubmenotm,   
+         a.cont_pubgetclrtm,   
+         a.pubmmstr,   
+         a.pubcnt,   
+         a.prior_per_cont,   
+         b.pub_yyyymm,   
+         b.pub_pubseq,   
+         b.ltp_nm,   
+         b.pgs_nm,   
+         b.clr_nm,   
+         b.pub_fggot,   
+         b.pub_origjno,   
+         b.pub_chgjno,   
+         b.pub_drafttp,   
+         b.lp_priorseq,
+         a.cont_empno,
+         b.pub_totamt
+    FROM wk_c2_rp1_5 a,   
+         wk_c2_rp1_2 b  
+   WHERE ( a.cont_syscd *=  b.pub_syscd) and  
+         ( a.cont_contno *=  b.pub_contno)   
+ORDER BY a.prior_per_cont ASC,   
+         a.cont_contno ASC
+
+commit transaction create_trans
+
+set nocount off
+end
+GO

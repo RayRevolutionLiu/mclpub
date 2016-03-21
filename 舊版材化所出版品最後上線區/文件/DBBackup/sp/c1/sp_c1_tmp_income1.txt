@@ -1,0 +1,127 @@
+CREATE PROCEDURE dbo.sp_c1_tmp_income1
+	@date1 varchar(8), @date2 varchar(8), @projno varchar(10), @otp1cd varchar(2)
+	
+AS
+declare	@otp2cd char(2), @mnt	int, @amt int, @btpcd char(2)
+set nocount on
+
+DECLARE @idoc	int
+------收入統計表暫存檔
+delete tmp_statistics
+if @projno<>''
+begin
+
+  DECLARE otp_Cursor CURSOR FOR
+  SELECT         c1_otp.otp_otp2cd, c1_obtp.obtp_obtpcd
+  FROM             c1_otp INNER JOIN
+                          c1_obtp ON c1_otp.otp_otp1cd = c1_obtp.obtp_otp1cd
+  WHERE         (c1_otp.otp_otp1cd = @otp1cd)
+  ORDER BY  c1_otp.otp_otp2cd, c1_obtp.obtp_obtpcd
+
+  OPEN otp_Cursor
+
+  FETCH NEXT FROM otp_Cursor
+    into @otp2cd, @btpcd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @amt=0
+    set @mnt=0
+    SELECT         @amt=SUM(c1_od.od_amt)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq
+    WHERE         (c1_order.o_otp1cd =@otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (c1_order.o_date>=@date1) and (c1_order.o_date<=@date2)  AND
+		(c1_od.od_btpcd=@btpcd) AND (c1_od.od_projno=@projno)
+
+    SELECT         @mnt=SUM(c1_ramt.ra_mnt)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq INNER JOIN
+                          c1_ramt ON c1_od.od_syscd = c1_ramt.ra_syscd AND 
+                          c1_od.od_custno = c1_ramt.ra_custno AND 
+                          c1_od.od_otp1cd = c1_ramt.ra_otp1cd AND 
+                          c1_od.od_otp1seq = c1_ramt.ra_otp1seq AND 
+                          c1_od.od_oditem = c1_ramt.ra_oditem
+    WHERE         (c1_order.o_otp1cd = @otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (c1_order.o_date>=@date1) and (c1_order.o_date<=@date2) AND
+		(c1_od.od_btpcd=@btpcd) AND (c1_od.od_projno=@projno)
+    if @mnt=NULL
+     set @mnt=0
+    if @amt=NULL
+     set @amt=0
+    INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    VALUES         (@otp1cd, @otp2cd, @btpcd, @amt,  @mnt)
+
+    FETCH NEXT FROM otp_Cursor
+        into @otp2cd, @btpcd
+  END
+
+  CLOSE otp_Cursor
+  DEALLOCATE otp_Cursor
+
+end
+
+if @projno=''
+begin
+
+  DECLARE otp_Cursor CURSOR FOR
+  SELECT         c1_otp.otp_otp2cd, c1_obtp.obtp_obtpcd
+  FROM             c1_otp INNER JOIN
+                          c1_obtp ON c1_otp.otp_otp1cd = c1_obtp.obtp_otp1cd
+  WHERE         (c1_otp.otp_otp1cd = @otp1cd)
+  ORDER BY  c1_otp.otp_otp2cd, c1_obtp.obtp_obtpcd
+
+  OPEN otp_Cursor
+
+  FETCH NEXT FROM otp_Cursor
+    into @otp2cd, @btpcd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @amt=0
+    set @mnt=0
+    SELECT         @amt=SUM(c1_od.od_amt)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq
+    WHERE         (c1_order.o_otp1cd =@otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (c1_order.o_date>=@date1) and (c1_order.o_date<=@date2) AND (c1_od.od_btpcd=@btpcd)
+
+    SELECT         @mnt=SUM(c1_ramt.ra_mnt)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq INNER JOIN
+                          c1_ramt ON c1_od.od_syscd = c1_ramt.ra_syscd AND 
+                          c1_od.od_custno = c1_ramt.ra_custno AND 
+                          c1_od.od_otp1cd = c1_ramt.ra_otp1cd AND 
+                          c1_od.od_otp1seq = c1_ramt.ra_otp1seq AND 
+                          c1_od.od_oditem = c1_ramt.ra_oditem
+    WHERE         (c1_order.o_otp1cd = @otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (c1_order.o_date>=@date1) and (c1_order.o_date<=@date2) AND (c1_od.od_btpcd=@btpcd)
+    if @mnt=NULL
+     set @mnt=0
+    if @amt=NULL
+     set @amt=0
+    INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    VALUES         (@otp1cd, @otp2cd, @btpcd, @amt,  @mnt)
+
+    FETCH NEXT FROM otp_Cursor
+        into @otp2cd, @btpcd
+  END
+
+  CLOSE otp_Cursor
+  DEALLOCATE otp_Cursor
+end
+GO

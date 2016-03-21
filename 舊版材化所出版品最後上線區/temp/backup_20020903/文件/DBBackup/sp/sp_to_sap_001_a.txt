@@ -1,0 +1,87 @@
+/*被sp_find_for_inftmp20呼叫
+   產生出@syscd+@iano 這一張發票開立單的數筆傳票明細(以計畫代號彙總到一筆傳票明細)並存到table:sap_vou*/
+ 
+CREATE proc dbo.sp_to_sap_001_a (@syscd  char(2), @iano char(8), @taxtp char(1), @saleamt real, @rtn_codev char(1)
+ output )  
+as 
+declare @vouseq int, @vou_totamt real, @first_vou_totamt real
+declare @difamt real, @s_vouseq char(3), @s_first_vou_totamt char(13)
+declare @tot_invamt real, @pj char(10)
+declare @accdcr char(7) ,@costctr char(7) , @descr varchar(50), @notifyno char(10), @vou_amt real
+select @rtn_codev = '0'
+DECLARE vou_cursor  CURSOR FOR
+SELECT  iad.iad_projno,   sum(iad.iad_amt )  
+    FROM mrlpub..ia     ,   
+                mrlpub.. iad  
+   WHERE ( ia.ia_syscd = iad.iad_syscd ) and  
+         ( ia.ia_iano = iad.iad_iano ) and  
+         ( ( ia.ia_syscd = @syscd ) and   
+         ( ia.ia_iano = @iano ) )   
+    GROUP BY ia.ia_syscd,   
+         ia.ia_iano,   
+         iad.iad_projno
+   
+OPEN vou_cursor
+/* get the first row from the cursor */
+FETCH NEXT FROM  vou_cursor INTO 
+                 @pj,  @tot_invamt 
+ 
+select @vouseq = 0
+select @vou_totamt = 0
+
+
+WHILE (@@FETCH_STATUS  =  0)
+ BEGIN
+  select @vouseq = @vouseq + 1
+  if @taxtp = '1'
+    begin 
+       select @vou_amt = round(@tot_invamt/1.05,0)
+    end 
+  else
+    begin
+      select @vou_amt  =  @tot_invamt
+    end 
+  if @vouseq = 1 
+    begin
+      select @first_vou_totamt = @vou_amt
+    end 
+  select @vou_totamt  =  @vou_totamt  + @vou_amt
+  select @s_vouseq =  convert(char(3), @vouseq)
+ 
+ SELECT @accdcr = rd_accdcr, @costctr =  refd.rd_costctr, @descr =rd_descr
+             FROM mrlpub.. refd  
+             WHERE     ( rd_syscd =  @syscd ) AND  
+                               ( rd_projno =  @pj )
+ 
+ select @notifyno = @syscd + @iano
+
+ INSERT sapvou
+ VALUES (@notifyno, @s_vouseq, @accdcr, @pj, @costctr, @notifyno, '', @vou_amt, @descr, '')     
+
+ FETCH vou_cursor into  @pj,  @tot_invamt   
+     
+ END
+CLOSE  vou_cursor
+
+
+if @vou_totamt <>  @saleamt
+  
+begin
+
+select @difamt  = @saleamt  - @vou_totamt
+select  @first_vou_totamt, @difamt
+select @first_vou_totamt  =  @first_vou_totamt  +  @difamt 
+select  @first_vou_totamt
+select @s_first_vou_totamt  =  convert(char(13),  @first_vou_totamt)
+/*要轉換值*/
+/*select @notifyno,'1'      */
+UPDATE mrlpub..sapvou 
+SET vou_amt  =  @s_first_vou_totamt
+	WHERE vou_infno  =  @notifyno  and 
+                               vou_vseq = '1'
+
+end 
+
+
+DEALLOCATE  vou_cursor
+GO

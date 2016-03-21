@@ -1,0 +1,270 @@
+CREATE FUNCTION dbo.fn_c2_pub
+(
+	@syscd char(2),
+	@contno char(6),
+	@yyyymm char(6),
+	@pubseq char(2)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+declare @pubItem char(2),@conttp char(2)
+declare @custno char(6),@projno char(10),@costctr char(7)
+declare @bkcd char(2),@bkcdprojnocostctr char(19)
+declare @pno varchar(4)
+declare @pgno varchar(4),@fgfixpg char(1)
+declare @ltpcd char(2),@clrcd char(2),@pgscd char(2)
+declare @fggot char(1),@modempno char(8),@moddate char(8)
+declare @fgupdated char(1)
+declare @adamt varchar(10),@chgamt varchar(10),@fginved char(1)
+declare @fginvself char(1),@remark varchar(50)
+declare @drafttp char(1),@origbkcd char(2)
+declare @origjno varchar(4),@origjbkno varchar(4)
+declare @chgbkcd char(2),@chgjno varchar(4)
+declare @chgjbkno varchar(4),@fgrechg char(1)
+declare @njtpcd char(2),@imseq char(2)
+declare @xmldata varchar(8000)
+
+select @pubItem='01',@conttp='01',
+ @custno='999999',@projno=rtrim(pub_projno),@costctr=rtrim(pub_costctr),
+ @bkcd='01',@bkcdprojnocostctr=@bkcd+@projno+@costctr,
+ @pubseq=rtrim(pub_pubseq),@yyyymm=rtrim(pub_yyyymm),
+ @pno=convert(char(4),rtrim(pub_pno)),
+ @pgno=convert(char(4),pub_pgno),@fgfixpg=rtrim(pub_fgfixpg),
+ @ltpcd=rtrim(pub_ltpcd),@clrcd=rtrim(pub_clrcd),@pgscd=rtrim(pub_pgscd),
+ @fggot=rtrim(pub_fggot),@modempno=rtrim(pub_modempno),@moddate=rtrim(pub_moddate),
+ @fgupdated=rtrim(pub_fgupdated),
+ @adamt=convert(varchar(10),pub_adamt),@chgamt=convert(varchar(10),pub_chgamt),@fginved=rtrim(pub_fginved),
+ @fginvself=rtrim(pub_fginvself),@remark=rtrim(pub_remark),
+ @drafttp=rtrim(pub_drafttp),@origbkcd=pub_origbkcd,
+ @origjno=convert(varchar(10),rtrim(pub_origjno)),@origjbkno=convert(varchar(10),pub_origjbkno),
+ @chgbkcd=pub_chgbkcd,@chgjno=convert(varchar(10),rtrim(pub_chgjno)),
+ @chgjbkno=convert(varchar(10),pub_chgjbkno),@fgrechg=rtrim(pub_fgrechg),
+ @njtpcd=pub_njtpcd,@imseq='01'
+ from c2_pub
+ where pub_syscd=@syscd and pub_contno=@contno and pub_yyyymm=@yyyymm and pub_pubseq=@pubseq
+
+ set @xmldata = '<合約書落版刊登資料>'
+ set @xmldata=@xmldata + '<落版明細表>'
+
+  if @pubItem = ''	
+  	set @xmldata=@xmldata + '<序號 />' 
+  else
+  	set @xmldata=@xmldata + '<序號>' + @pubItem + '</序號>' 
+
+  set @xmldata=@xmldata + '<系統代碼>C2</系統代碼>' 
+
+  if @contno = ''	
+  	set @xmldata=@xmldata + '<合約書編號 />' 
+  else
+  	set @xmldata=@xmldata + '<合約書編號>' + @contno + '</合約書編號>' 
+
+  if @conttp = ''	
+  	set @xmldata=@xmldata + '<合約類別代碼 />' 
+  else
+  	set @xmldata=@xmldata + '<合約類別代碼>' + @conttp + '</合約類別代碼>' 
+
+  if @custno = ''	
+  	set @xmldata=@xmldata + '<客戶編號 />' 
+  else
+  	set @xmldata=@xmldata + '<客戶編號>' + @custno + '</客戶編號>' 
+
+  if @projno = ''	
+  	set @xmldata=@xmldata + '<計劃代號 />' 
+  else
+  	set @xmldata=@xmldata + '<計劃代號>' + @projno + '</計劃代號>' 
+
+  if @costctr = ''
+  	set @xmldata=@xmldata + '<成本中心 />' 
+  else
+  	set @xmldata=@xmldata + '<成本中心>' + @costctr + '</成本中心>' 
+
+  if @bkcd = ''
+  	set @xmldata=@xmldata + '<書籍類別代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<書籍類別代碼>' + @bkcd + '</書籍類別代碼>'  
+
+  if @bkcdprojnocostctr = ''
+  	set @xmldata=@xmldata + '<書籍全碼 />'  
+  else
+  	set @xmldata=@xmldata + '<書籍全碼>' + @bkcdprojnocostctr + '</書籍全碼>'  
+
+  if @yyyymm  = ''
+  	set @xmldata=@xmldata + '<刊登年月 />'  
+  else
+  	set @xmldata=@xmldata + '<刊登年月>' + @yyyymm  + '</刊登年月>'  
+
+  if @pubseq = ''
+  	set @xmldata=@xmldata + '<落版序號 />'  
+  else
+  	set @xmldata=@xmldata + '<落版序號>' + @pubseq + '</落版序號>'  
+
+  if @pno = ''
+  	set @xmldata=@xmldata + '<書籍期別 />'  
+  else
+  	set @xmldata=@xmldata + '<書籍期別>' + @pno + '<書籍期別>'  
+
+  if @pgno = ''
+  	set @xmldata=@xmldata + '<刊登頁碼 />'  
+  else
+  	set @xmldata=@xmldata + '<刊登頁碼>' + @pgno + '</刊登頁碼>'  
+
+  if @fgfixpg = ''
+  	set @xmldata=@xmldata + '<固定頁次註記 />'  
+  else
+  	set @xmldata=@xmldata + '<固定頁次註記>' + @fgfixpg + '<固定頁次註記>'  
+
+  if @clrcd = ''
+  	set @xmldata=@xmldata + '<廣告色彩代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<廣告色彩代碼>' + @clrcd + '</廣告色彩代碼>'  
+
+  if @pgscd = ''
+  	set @xmldata=@xmldata + '<廣告篇幅代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<廣告篇幅代碼>' + @pgscd + '</廣告篇幅代碼>'  
+
+  if @ltpcd = ''
+  	set @xmldata=@xmldata + '<廣告版面代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<廣告版面代碼>' + @ltpcd + '</廣告版面代碼>'  
+
+  if @fggot = ''
+  	set @xmldata=@xmldata + '<到稿註記 />'  
+  else
+  	set @xmldata=@xmldata + '<到稿註記>' + @fggot + '<到稿註記>'  
+
+  if @adamt = ''
+  	set @xmldata=@xmldata + '<落版後金額 />'  
+  else
+  	set @xmldata=@xmldata + '<落版後金額>' + @adamt + '</落版後金額>'  
+
+  if @adamt = ''
+  	set @xmldata=@xmldata + '<換稿費用 />'  
+  else
+  	set @xmldata=@xmldata + '<換稿費用>' + @adamt + '</換稿費用>'  
+
+  if @moddate = ''
+  	set @xmldata=@xmldata + '<落版最後修改日期 />'  
+  else
+  	set @xmldata=@xmldata + '<落版最後修改日期>' + @moddate + '<落版最後修改日期>'  
+
+  if @modempno = ''
+  	set @xmldata=@xmldata + '<落版修改業務員工號 />'  
+  else
+  	set @xmldata=@xmldata + '<落版修改業務員工號>' + @modempno + '<落版修改業務員工號>'  
+
+  if @fgupdated = ''
+  	set @xmldata=@xmldata + '<樣後修改註記 />'  
+  else
+  	set @xmldata=@xmldata + '<樣後修改註記>' + @fgupdated + '<樣後修改註記>'  
+
+
+  set @xmldata =@xmldata + '<發票廠商收件人細節>' + 
+  '<發票廠商收件人明細>'
+
+	DECLARE ContIM_Cursor CURSOR FOR
+	 select im_syscd, im_contno, im_imseq
+	 from invmfr
+	 where im_syscd=@syscd and im_contno=@contno and im_imseq=@imseq
+	OPEN ContIM_Cursor
+	
+	FETCH NEXT FROM ContIM_Cursor
+	 into @syscd, @contno, @imseq
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		set @xmldata=@xmldata + dbo.fn_c2_im(@syscd ,@contno,@imseq)
+		FETCH NEXT FROM ContIM_Cursor
+		 into @syscd, @contno, @imseq
+	END
+	
+	CLOSE ContIM_Cursor
+	DEALLOCATE ContIM_Cursor
+
+  set @xmldata=@xmldata + '</發票廠商收件人明細>' +
+  '</發票廠商收件人細節>'
+
+  
+  set @xmldata=@xmldata + '<落版細節>'
+
+  if @adamt = ''
+  	set @xmldata=@xmldata + '<落版廣告金額 />'  
+  else
+  	set @xmldata=@xmldata + '<落版廣告金額>' + @adamt + '</落版廣告金額>'  
+
+  if @chgamt = ''
+  	set @xmldata=@xmldata + '<換稿金額 />'  
+  else
+  	set @xmldata=@xmldata + '<換稿金額>' + @chgamt + '<換稿金額>'  
+
+  if @fginved = ''
+  	set @xmldata=@xmldata + '<已開立發票單註記 />'  
+  else
+  	set @xmldata=@xmldata + '<已開立發票單註記>' + @fginved + '<已開立發票單註記>'  
+
+  if @fginvself = ''
+  	set @xmldata=@xmldata + '<發票開立單人工處理註記 />'  
+  else
+  	set @xmldata=@xmldata + '<發票開立單人工處理註記>' + @fginvself + '<發票開立單人工處理註記>'
+
+  if @remark = ''
+  	set @xmldata=@xmldata + '<備註 />'  
+  else
+  	set @xmldata=@xmldata + '<備註>' + @remark + '<備註>'  
+
+  if @drafttp = ''
+  	set @xmldata=@xmldata + '<稿件類別代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<稿件類別代碼>' + @drafttp + '</稿件類別代碼>'  
+
+  if @origbkcd = ''
+  	set @xmldata=@xmldata + '<舊稿書籍代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<舊稿書籍代碼>' + @origbkcd + '</舊稿書籍代碼>'  
+
+  if @origjno = ''
+  	set @xmldata=@xmldata + '<舊稿期別 />'  
+  else
+  	set @xmldata=@xmldata + '<舊稿期別>' + @origjno + '</舊稿期別>'  
+
+  if @origjbkno = ''
+  	set @xmldata=@xmldata + '<舊稿頁碼 />'  
+  else
+  	set @xmldata=@xmldata + '<舊稿頁碼>' + @origjbkno + '</舊稿頁碼>'   
+
+  if @chgbkcd = ''
+  	set @xmldata=@xmldata + '<改稿書籍代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<改稿書籍代碼>' + @chgbkcd + '</改稿書籍代碼>'  
+
+  if @chgjno = ''
+  	set @xmldata=@xmldata + '<改稿期別 />'  
+  else
+  	set @xmldata=@xmldata + '<改稿期別>' + @chgjno + '</改稿期別>'  
+
+  if @chgjbkno = ''
+  	set @xmldata=@xmldata + '<改稿頁碼 />'  
+  else
+  	set @xmldata=@xmldata + '<改稿頁碼>' + @chgjbkno + '<改稿頁碼>'  
+
+  if @fgrechg = ''
+  	set @xmldata=@xmldata + '<改稿重出片註記 />'  
+  else
+  	set @xmldata=@xmldata + '<改稿重出片註記>' + @fgrechg + '<改稿重出片註記>'  
+
+  if @njtpcd = ''
+  	set @xmldata=@xmldata + '<新稿製法代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<新稿製法代碼>' + @njtpcd + '<新稿製法代碼>'  
+
+  set @xmldata=@xmldata + '</落版細節>' 
+
+
+  set @xmldata=@xmldata + '</落版明細表>'
+  set @xmldata=@xmldata + '</合約書落版刊登資料>' 
+
+
+ 	RETURN @xmldata
+	END
+
+

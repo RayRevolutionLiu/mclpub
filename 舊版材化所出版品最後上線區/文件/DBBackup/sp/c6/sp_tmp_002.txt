@@ -1,0 +1,35 @@
+CREATE PROCEDURE dbo.sp_tmp_002
+	@syscd varchar(2), @custno varchar(6)
+	
+AS
+set nocount on
+
+DECLARE @idoc	int
+------­q¤á¾ú¥v­q³æ¼È¦sÀÉ
+--truncate table tmp_label1
+delete tmp_cust1
+insert tmp_cust1
+SELECT            dbo.c1_od.od_syscd, dbo.c1_od.od_custno, dbo.c1_od.od_otp1cd, dbo.c1_od.od_otp1seq, 
+                          dbo.c1_od.od_sdate + '~' + dbo.c1_od.od_edate AS begin_end, 
+                          dbo.c1_otp.otp_otp1nm, dbo.c1_otp.otp_otp2nm, 
+                          dbo.c1_obtp.obtp_obtpnm, dbo.c1_ramt.ra_oditem, dbo.c1_ramt.ra_oritem,dbo.c1_order.o_status
+
+FROM             dbo.c1_order INNER JOIN
+                          dbo.c1_obtp INNER JOIN
+                          dbo.c1_od ON dbo.c1_obtp.obtp_otp1cd = dbo.c1_od.od_otp1cd AND 
+                          dbo.c1_obtp.obtp_obtpcd = dbo.c1_od.od_btpcd INNER JOIN
+                          dbo.c1_ramt ON dbo.c1_od.od_syscd = dbo.c1_ramt.ra_syscd AND 
+                          dbo.c1_od.od_custno = dbo.c1_ramt.ra_custno AND 
+                          dbo.c1_od.od_otp1cd = dbo.c1_ramt.ra_otp1cd AND 
+                          dbo.c1_od.od_otp1seq = dbo.c1_ramt.ra_otp1seq AND 
+                          dbo.c1_od.od_oditem = dbo.c1_ramt.ra_oditem ON 
+                          dbo.c1_order.o_syscd = dbo.c1_od.od_syscd AND 
+                          dbo.c1_order.o_custno = dbo.c1_od.od_custno AND 
+                          dbo.c1_order.o_otp1cd = dbo.c1_od.od_otp1cd AND 
+                          dbo.c1_order.o_otp1seq = dbo.c1_od.od_otp1seq INNER JOIN
+                          dbo.c1_otp ON dbo.c1_order.o_otp1cd = dbo.c1_otp.otp_otp1cd AND 
+                          dbo.c1_order.o_otp2cd = dbo.c1_otp.otp_otp2cd
+where (dbo.c1_od.od_syscd=@syscd) and (dbo.c1_od.od_custno=@custno)
+
+ORDER BY  dbo.c1_od.od_otp1seq DESC
+GO

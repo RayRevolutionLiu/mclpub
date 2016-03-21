@@ -1,0 +1,39 @@
+/*催稿單*/
+CREATE PROC dbo.sp_c4_rp_getad(@yyyymm CHAR(6), @adcate CHAR(1))
+AS
+
+BEGIN
+SET NOCOUNT ON
+
+/*未結案、非暫存、非註銷
+無落版
+合約起迄跟九月有交集*/
+(select * 
+from c4_cont left outer join c4_adr
+on cont_contno=adr_contno
+where cont_fgclosed<>'1' and cont_fgtemp<>'1' and cont_fgcancel<>'1'
+AND adr_seq IS NULL
+AND substring(cont_sdate,1,6)<='200209' AND substring(cont_edate,1,6)>='200209'
+
+union /*將兩個資料串接*/
+
+/*未結案、非暫存、非註銷
+有落版
+落版與九月有交集
+首頁的廣告
+未到槁
+*/
+select *
+from c4_cont inner join c4_adr
+on cont_contno=adr_contno
+where cont_fgclosed<>'1' and cont_fgtemp<>'1' and cont_fgcancel<>'1'
+AND (substring(adr_sdate,1,6)<='200209'  AND substring(adr_edate,1,6)>='200209')
+AND adr_adcate='M'
+AND adr_fggot<>'1')
+ORDER BY adr_seq,cont_contno
+
+
+
+SET NOCOUNT OFF
+END
+GO

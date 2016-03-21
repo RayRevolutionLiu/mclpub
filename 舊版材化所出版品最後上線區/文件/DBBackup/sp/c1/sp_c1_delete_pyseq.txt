@@ -1,0 +1,12 @@
+CREATE PROCEDURE dbo.sp_c1_delete_pyseq	@pysdate varchar(6), @pysseq varchar(4)
+
+AS
+
+set nocount on
+
+------±Npy ¤¤ py_pysdate='' ,  py_pysseq='' , py_pysitem=''
+update py set py_pysdate='' ,  py_pysseq='' , py_pysitem=''
+	where py_pysdate=@pysdate and py_pysseq=@pysseq
+------§R°£pyseq
+delete pyseq where  pys_pysdate=@pysdate and pys_pysseq=@pysseq
+GO

@@ -1,0 +1,68 @@
+CREATE FUNCTION dbo.fn_c2_mfr
+(
+	@mfrno varchar(10)
+)
+RETURNS varchar(1000)
+AS
+	BEGIN
+declare @inm varchar(30),@respnm varchar(30),@respjbti varchar(12)
+declare @tel varchar(30),@fax varchar(30)
+declare @zip varchar(5),@addr varchar(120)
+declare @xmldata varchar(1000)
+
+select @inm=rtrim(mfr_inm),@respnm=rtrim(mfr_respnm),@respjbti=rtrim(mfr_respjbti),
+ @tel=rtrim(mfr_tel),@fax=rtrim(mfr_fax),
+ @zip=rtrim(mfr_izip),@addr=rtrim(mfr_iaddr)
+ from mfr
+ where mfr_mfrno=@mfrno
+
+
+ set @xmldata = '<廠商資料>'
+
+  if @inm = ''	
+  	set @xmldata=@xmldata + '<公司發票抬頭 />'
+  else
+  	set @xmldata=@xmldata + '<公司發票抬頭>' + @inm + '</公司發票抬頭>' 
+
+  if @mfrno = ''	
+  	set @xmldata=@xmldata + '<廠商統編 />'
+  else
+  	set @xmldata=@xmldata + '<廠商統編>' + @mfrno + '</廠商統編>' 
+
+  if @respnm = ''	
+  	set @xmldata=@xmldata + '<廠商負責人姓名 />'
+  else
+  	set @xmldata=@xmldata + '<廠商負責人姓名>' + @respnm + '</廠商負責人姓名>' 
+
+  if @respjbti = ''	
+  	set @xmldata=@xmldata + '<廠商負責人職稱 />'
+  else
+  	set @xmldata=@xmldata + '<廠商負責人職稱>' + @respjbti + '</廠商負責人職稱>' 
+  
+  if @tel = ''
+  	set @xmldata=@xmldata + '<廠商電話 />'  
+  else
+  	set @xmldata=@xmldata + '<廠商電話>' + @tel + '</廠商電話>'  
+
+  if @fax = ''
+  	set @xmldata=@xmldata + '<廠商傳真 />'  
+  else
+  	set @xmldata=@xmldata + '<廠商傳真>' + @fax + '</廠商傳真>'  
+
+  if @zip = ''
+  	set @xmldata=@xmldata + '<廠商郵遞區號 />'
+  else
+  	set @xmldata=@xmldata + '<廠商郵遞區號>' + @zip + '</廠商郵遞區號>' 
+
+  if @addr = ''
+  	set @xmldata=@xmldata + '<廠商地址 />'
+  else
+  	set @xmldata=@xmldata + '<廠商地址>' + @addr + '</廠商地址>' 
+
+
+  set @xmldata=@xmldata + '</廠商資料>'
+   
+
+ 	RETURN @xmldata
+	END
+

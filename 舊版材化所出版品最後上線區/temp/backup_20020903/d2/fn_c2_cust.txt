@@ -1,0 +1,34 @@
+CREATE FUNCTION dbo.fn_c2_cust
+(
+	@custno varchar(6)
+)
+RETURNS varchar(200)
+AS
+	BEGIN
+declare @nm varchar(30)
+declare @xmldata varchar(200)
+
+select @nm=rtrim(cust_nm)
+ from cust
+ where cust_custno=@custno
+
+
+ set @xmldata = '<客戶資料>'
+
+  if @nm = ''	
+  	set @xmldata=@xmldata + '<客戶姓名 />'
+  else
+  	set @xmldata=@xmldata + '<客戶姓名>' + @nm + '</客戶姓名>' 
+
+  if @custno = ''	
+  	set @xmldata=@xmldata + '<客戶編號 />'
+  else
+  	set @xmldata=@xmldata + '<客戶編號>' + @custno + '</客戶編號>' 
+
+
+  set @xmldata=@xmldata + '</客戶資料>'
+   
+
+ 	RETURN @xmldata
+	END
+

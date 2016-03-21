@@ -1,0 +1,84 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+'You can add special event handlers in this file that will get run automatically when
+'special Active Server Pages events occur. To create these handlers, just create a
+'subroutine with a name from the list below that corresponds to the event you want to
+'use. For example, to create an event handler for Session_OnStart, you would put the
+'following code into this file (without the comments):
+
+'Sub Session_OnStart
+'**Put your code here **
+'End Sub
+
+'EventName              Description
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+</SCRIPT>
+
+
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+Sub Application_OnStart
+    'Web 應用程式中 Application 開始時所進行的處理內容
+	Application("CONNECTION_TIMEOUT") = 720
+	Application("COMMAND_TIMEOUT") = 720
+	Application("CURSOR_LOCATION") = 3
+	
+	Application("cacsql") = "Provider=SQLOLEDB.1;Server=isccom1;Database=uclcacdb;UID=webuser;PWD=db600"
+	Application("sqlnts1") = "PROVIDER=SQLOLEDB;Server=uclnts1;database=common;UID=uclmis;PWD=db600;AutoTranslate=no"
+	Application("sqlnts2") = "PROVIDER=SQLOLEDB;Server=uclnts2;database=common;UID=uclmis;PWD=db600;AutoTranslate=no"
+
+	Application("MailServer") = "uclns1.itri.org.tw"
+	Application("WebMaster") = "陳俐靜[Ext.32073]"
+	Application("WebMaster1") = "葉玉莉[Ext.32071]"
+	Application("Fyr") = "090"
+	Application("start") = Now
+	
+	Application("CopyRight") = "資訊中心 資訊技術服務組"
+	
+	Application("Table") = "CELLSPACING=2 BORDER=0 CELLPADDING=2"
+	Application("ClsTable") = "BGCOLOR=#ffdddd CELLSPACING=0 BORDER=1 CELLPADDING=1"
+	Application("WebName") = "FY90管理資訊查詢"
+	Application("FontName") = "<FONT FACE= " & CHR(34) & "新細明體, 細明體, Verdana, Arial, Helvetica" & CHR(34) & ">"
+
+	' Other Web Applications / Projects:
+	Application("mrlpub") = "Provider=SQLOLEDB.1;Data Source=isccom1;User ID=webuser;Password=db600;Initial Catalog=mrlpub"
+
+End Sub
+
+Sub Session_OnStart
+	'Web 應用程式中 Session 開始時所進行的處理內容
+	URLs = Split(Request.ServerVariables("SCRIPT_NAME"), "/")
+	page = LCase(URLs(UBound(URLs)))
+
+	'Session("orgcd") = "01"
+	'Session("Empno") = "890711"
+    	'session("moea_fy")="90"
+    	'session("moea_code")=""
+	'Session("moea_org") = "02"
+	
+	If page <> "default.asp" Then
+		'URLs(UBound(URLs)) = "default.asp"
+		'Response.Redirect join(URLs, "/") 
+		'Response.End
+	ElseIf Request.FORM("userid") = "" Then
+		Application.Lock
+		' objConn.Open Application("uclpmd")
+		' objRecord.Open SQLs, objConn, adOpenForwardOnly, , adCmdText
+		' If Not (objRecord.EOF Or objRecord.BOF) Then
+			Session("start") = Now
+			URLs(UBound(URLs)) = "default.asp"
+		'Set objPage = Server.CreateObject("IISSample.PageCounter")
+		'objPage.PageHit
+		'Session("count") = objPage.Hits
+		'End If
+        'objConn.Close
+        Application.Unlock
+        Response.Redirect join(URLs, "/")
+        Response.End
+	End If
+End Sub
+</SCRIPT>

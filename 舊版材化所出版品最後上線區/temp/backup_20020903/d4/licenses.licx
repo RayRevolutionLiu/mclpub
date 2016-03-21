@@ -1,0 +1,16 @@
+System.Web.UI.WebControls.Label, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Data.SqlClient.SqlCommand, System.Data, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Web.UI.WebControls.DataGrid, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.HtmlControls.HtmlInputHidden, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Data.SqlClient.SqlDataAdapter, System.Data, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Web.UI.Page, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.HtmlControls.HtmlInputFile, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.AdRotator, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.DropDownList, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.HyperLink, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.LinkButton, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.DataList, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Data.SqlClient.SqlConnection, System.Data, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+System.Web.UI.WebControls.TextBox, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.Calendar, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+System.Web.UI.WebControls.Button, System.Web, Version=1.0.2411.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a

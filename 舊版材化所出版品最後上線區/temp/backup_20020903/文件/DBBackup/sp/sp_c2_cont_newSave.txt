@@ -1,0 +1,104 @@
+CREATE PROCEDURE dbo.sp_c2_cont_newSave
+	@XML varchar(8000), @syscd varchar(2),
+	@contno varchar(6)
+AS
+set nocount on
+
+DECLARE @idoc	int
+--Create an internal representation of the XML document.
+exec sp_xml_preparedocument @idoc OUTPUT, @XML
+
+------發票廠商收件人檔  invmfr
+delete invmfr where im_syscd=@syscd and im_contno=@contno
+insert invmfr 
+---- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/發票廠商資料/發票廠商收件人明細', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	發票廠商序號		varchar(2),
+	發票收件人廠商統編	char(10),
+	發票收件人姓名	varchar(30),
+	發票收件人職稱	varchar(12),
+	發票收件人郵遞區號	char(5),
+	發票收件人地址	varchar(120),
+	發票收件人電話	varchar(30),
+	發票收件人傳真	varchar(30),
+	發票收件人手機	varchar(30),
+	發票收件人Email	varchar(80),
+	發票類別代碼		char(1),
+	發票課稅別代碼	char(1),
+	院所內註記		char(2)
+	)
+	
+------雜誌收件人檔  c2_or
+delete c2_or where or_syscd=@syscd and or_contno=@contno
+insert c2_or 
+---- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/雜誌收件人資料/雜誌收件人明細', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	雜誌收件人序號		varchar(2),
+	雜誌收件人公司名稱	varchar(30),
+	雜誌收件人姓名		varchar(30),
+	雜誌收件人職稱		varchar(12),
+	雜誌收件人地址		varchar(80),
+	雜誌收件人郵遞區號	char(5),
+	雜誌收件人電話		varchar(30),
+	雜誌收件人傳真		varchar(30),
+	雜誌收件人手機		varchar(30),
+	雜誌收件人Email		varchar(80),
+	郵寄類別代碼		char(2),
+	有登本數		int,
+	未登本數		int,
+	海外郵寄註記		char(1)
+	)
+
+------合約書落版刊登資料  c2_pub
+delete c2_pub where pub_syscd=@syscd and pub_contno=@contno
+insert c2_pub 
+-- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/合約書落版刊登資料/落版明細表', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	刊登年月		char(6),
+	落版序號		char(2),
+	刊登頁碼		int,
+	廣告版面代碼		char(2),
+	廣告色彩代碼		char(2),
+	廣告篇幅代碼		char(2),
+	落版廣告金額		real         '落版細節/落版廣告金額',
+	換稿金額		real         '落版細節/換稿金額',
+	稿件類別代碼		char(1)      '落版細節/稿件類別代碼',
+	舊稿書籍代碼		char(2)      '落版細節/舊稿書籍代碼',
+	舊稿期別		int          '落版細節/舊稿期別',
+	舊稿頁碼		int          '落版細節/改稿書籍代碼',
+	改稿書籍代碼		char(2)      '落版細節/改稿書籍代碼',
+	改稿期別		int          '落版細節/改稿期別',
+	改稿頁碼		int          '落版細節/改稿頁碼',
+	改稿重出片註記		char(1)      '落版細節/改稿重出片註記',
+	到稿註記		char(1),
+	新稿製法代碼		char(2)      '落版細節/新稿製法代碼',
+	計劃代號		char(10),
+	成本中心		char(7),
+	已開立發票單註記	char(1)      '落版細節/已開立發票單註記',
+	發票開立單人工處理註記	char(1)      '落版細節/發票開立單人工處理註記',
+	書籍期別		char(4),
+	備註			varchar(50)  '落版細節/備註',
+	固定頁次註記		char(1),
+	落版最後修改日期	char(8),
+	落版修改業務員工號	char(7),
+	書籍類別代碼		char(2),
+	發票廠商序號		char(2)      '發票廠商收件人細節/發票廠商收件人明細/發票廠商序號'
+	)
+
+-----發票開立單檔
+-----發票開立明細檔
+-----繳款單檔
+-----繳款單明細檔
+
+-- Remove the internal representation.
+exec sp_xml_removedocument @idoc
+GO

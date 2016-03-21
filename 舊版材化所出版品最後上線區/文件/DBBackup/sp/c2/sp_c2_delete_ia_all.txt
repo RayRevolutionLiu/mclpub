@@ -1,0 +1,133 @@
+/* 發票開立單回復 大批月結: 找出某一批發票開立單 */
+CREATE PROCEDURE dbo.sp_c2_delete_ia_all
+	@iabdate char(6), @iabseq char(6)
+
+as
+begin
+set nocount on
+
+
+/*
+declare @iabdate char(6), @iabseq char(6)
+select @iabdate = '200208'
+select @iabseq = '000001'
+*/
+
+
+/* 讀出 c2_cont, invmfr 資料: 抓 @syscd, @iano, @pyat, @contno */
+DECLARE ia_cursor CURSOR FOR
+	SELECT         ia_syscd, RTRIM(ia_iano) AS ia_iano, ia_pyat,  RTRIM(ia_contno) AS ia_contno
+	FROM             ia
+	WHERE         (ia.ia_status = ' ') AND (ia.ia_syscd = 'C2') AND
+                          (ia.ia_iabdate = @iabdate) AND (ia.ia_iabseq = @iabseq)
+
+/* open the cursor */
+open ia_cursor
+
+
+------Transaction
+begin  distributed transaction  tran_1
+
+
+/* Declare some variables to hold results.*/
+declare	@syscd char(2), @iano char(8), @pyat real, @contno char(13)
+
+FETCH  NEXT FROM  ia_cursor
+ INTO @syscd, @iano, @pyat, @contno
+
+--select @contno = substring(@contno, 3, 6)
+
+
+/* 若有 ia_cursor 資料, 則做以下之處理 */
+-- Check @@FETCH_STATUS to see if there are any more rows to fetch.
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	/* 檢查 ia_cursor 資料 */
+	select @syscd
+	select @iano
+	select @pyat
+	select @contno
+
+	/* for loop 刪除&更新 detail */
+	DECLARE iad_cursor CURSOR FOR
+		SELECT          RTRIM(iad_fk1) AS iad_fk1,
+				  RTRIM(iad_fk2) AS iad_fk2,
+	                          RTRIM(iad_fk3) AS iad_fk3
+		FROM             iad
+		WHERE         (iad_syscd = 'C2') AND (iad_iano = @iano)
+
+	open iad_cursor
+
+	/* Declare some variables to hold results.*/
+	declare	@fk1 char(10), @fk2 char(10), @fk3 char(10)
+
+	FETCH  NEXT FROM  iad_cursor
+	 INTO @fk1, @fk2, @fk3
+
+
+	/* 若有 iad_cursor 資料, 則做以下之處理 */
+	WHILE (@@FETCH_STATUS = 0)
+	BEGIN
+		/* 檢查 iad_cursor 資料 */
+		--select @iano
+		select @fk1
+		select @fk2
+		select @fk3
+
+		------ 更新 c2_pub 之 pub_fginved= 值為 ' '
+		UPDATE        c2_pub
+		SET                  pub_fginved = ' '
+		WHERE         (pub_syscd = @syscd)
+			        AND (pub_contno = RTRIM(@fk1))
+			        AND (pub_yyyymm = RTRIM(@fk2))
+		                AND (pub_pubseq = RTRIM(@fk3))
+
+		FETCH  NEXT FROM  iad_cursor
+			 INTO @fk1, @fk2, @fk3
+
+	END
+	CLOSE  iad_cursor
+	DEALLOCATE  iad_cursor
+
+
+	------ 刪除iad
+	delete iad where iad_syscd=@syscd
+			 and iad_iano= RTRIM(@iano)
+
+
+	------ 更新 c2_cont 之 合約相關金額: cont_paidamt, cont_restamt 值
+	update c2_cont set cont_paidamt=cont_paidamt-@pyat, cont_restamt=cont_restamt+@pyat
+		where cont_syscd=@syscd and cont_contno=RTRIM(substring(@contno, 3, 6))
+	select cont_paidamt, cont_restamt from c2_cont
+		where cont_syscd=@syscd and cont_contno=RTRIM(substring(@contno, 3, 6))
+
+
+	------ 刪除ia
+	delete ia where ia_syscd=@syscd and ia_status= ' '
+			and ia_iano=RTRIM(@iano)
+
+
+	------ 讀下一筆 ia
+	------ This is executed as long as the previous fetch succeeds.
+	FETCH  NEXT FROM  ia_cursor
+		 INTO @syscd, @iano, @pyat, @contno
+
+END
+
+
+------ 刪除iab
+delete iab where iab_syscd=@syscd
+		and iab_iabdate=@iabdate
+		and iab_iabseq=@iabseq
+
+
+commit transaction  tran_1
+
+
+CLOSE  ia_cursor
+DEALLOCATE  ia_cursor
+
+
+set nocount off
+end
+GO

@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="zh-tw">
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+</HEAD>
+<object width="0" height="0" classid="clsid:f5078f39-c551-11d3-89b9-0000f81fe221" id="DSOX"></object>
+<!--
+<xml id="" src=""></xml>
+-->
+<BODY>
+<table id="tbl1" border="1" datasrc="#DSOX" datapagesize="5" align='center' style="font-size:12pt;">
+<thead>
+<tr align='center'>
+<td>公司名稱</td>
+<td>統一編號</td>
+<td>姓名</td>
+</tr>
+</thead>
+<tbody>
+<tr onclick="doSubmit(this)" onmouseover="this.style.color='red';this.style.cursor='hand';" onmouseout="this.style.color='';this.style.cursor='';">
+<td width="300px"><span datafld="公司名稱"></span></td>
+<td width="100px" align='center'><span datafld="統一編號"></span></td>
+<td width="100px" align='center'><span datafld="姓名"></span></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3" align="center">
+<input type="button" value=" 第一頁 " onclick="document.all.tbl1.firstPage()" id="b1">
+&nbsp;&nbsp;&nbsp;
+<input type="button" value=" 前一頁 " onclick="document.all.tbl1.previousPage()" id="b1">
+&nbsp;&nbsp;&nbsp;
+<input type="button" value=" 下一頁 " onclick="document.all.tbl1.nextPage()" id="b1">
+&nbsp;&nbsp;&nbsp;
+<input type="button" value=" 最後頁 " onclick="document.all.tbl1.lastPage()" id="b1">
+</td>
+</tr>
+</tfoot>
+</BODY>
+<script LANGUAGE="javascript">
+DSOX.XMLDocument.async = false;
+var xmlDocX = DSOX.XMLDocument;
+var oParam = window.dialogArguments;
+var vURL = "訂戶查詢.asp?type=" + oParam.type + "&keyword=" + oParam.keyword;
+xmlDocX.load(vURL);
+
+function doSubmit(obj)
+{
+//tdcComposers.recordset.AbsolutePosition = this.recordNumber;
+	var idx = obj.recordNumber-1;
+//	alert(xmlDocX.documentElement.childNodes.item(idx).xml);
+	window.returnValue = xmlDocX.documentElement.childNodes.item(idx).xml;
+	window.close();
+}
+</SCRIPT>
+</HTML>

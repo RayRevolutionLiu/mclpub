@@ -1,0 +1,39 @@
+CREATE VIEW dbo.v_c2_iaFm2_prelist2a
+AS
+SELECT         TOP 100 PERCENT dbo.c2_pub.pub_syscd, dbo.c2_pub.pub_contno,
+                          dbo.c2_cont.cont_conttp, dbo.c2_cont.cont_bkcd, dbo.c2_cont.cont_sdate,
+                          dbo.c2_cont.cont_edate, SUBSTRING(dbo.c2_cont.cont_sdate, 1, 4)
+                          + '/' + SUBSTRING(dbo.c2_cont.cont_sdate, 5, 6)
+                          + ' ~ ' + SUBSTRING(dbo.c2_cont.cont_edate, 1, 4)
+                          + '/' + SUBSTRING(dbo.c2_cont.cont_edate, 5, 6) AS cont_sedate,
+                          RTRIM(dbo.c2_cont.cont_mfrno) AS cont_mfrno, RTRIM(dbo.mfr.mfr_inm)
+                          AS mfr_inm, RTRIM(dbo.cust.cust_nm) AS cust_nm,
+                          dbo.c2_pub.pub_modempno, RTRIM(dbo.srspn.srspn_cname) AS srspn_cname,
+                          dbo.c2_cont.cont_totamt, dbo.c2_cont.cont_paidamt, dbo.c2_cont.cont_restamt,
+                          dbo.c2_pub.pub_imseq, dbo.invmfr.im_nm, dbo.invmfr.im_jbti,
+                          dbo.invmfr.im_zip, dbo.invmfr.im_addr, dbo.invmfr.im_tel, dbo.invmfr.im_invcd,
+                          dbo.invmfr.im_taxtp, RTRIM(dbo.invmfr.im_fgitri) AS im_fgitri,
+                          SUBSTRING(dbo.c2_pub.pub_yyyymm, 1, 4)
+                          + '/' + SUBSTRING(dbo.c2_pub.pub_yyyymm, 5, 6) AS pub_yyyymm,
+                          dbo.c2_pub.pub_pubseq, dbo.c2_pub.pub_clrcd, RTRIM(dbo.c2_clr.clr_nm)
+                          AS clr_nm, dbo.c2_pub.pub_projno, dbo.c2_pub.pub_ltpcd,
+                          dbo.c2_pub.pub_pgscd, dbo.c2_pub.pub_pgno, dbo.c2_pub.pub_adamt,
+                          dbo.c2_pub.pub_chgamt,
+                          dbo.c2_pub.pub_adamt + dbo.c2_pub.pub_chgamt AS pub_totamt,
+                          RTRIM(dbo.invmfr.im_mfrno) AS im_mfrno
+FROM             dbo.c2_pub INNER JOIN
+                          dbo.c2_cont ON dbo.c2_pub.pub_syscd = dbo.c2_cont.cont_syscd AND
+                          dbo.c2_pub.pub_contno = dbo.c2_cont.cont_contno INNER JOIN
+                          dbo.mfr ON dbo.c2_cont.cont_mfrno = dbo.mfr.mfr_mfrno INNER JOIN
+                          dbo.cust ON dbo.c2_cont.cont_custno = dbo.cust.cust_custno INNER JOIN
+                          dbo.srspn ON
+                          dbo.c2_pub.pub_modempno = dbo.srspn.srspn_empno INNER JOIN
+                          dbo.c2_clr ON dbo.c2_pub.pub_clrcd = dbo.c2_clr.clr_clrcd INNER JOIN
+                          dbo.invmfr ON dbo.c2_pub.pub_syscd = dbo.invmfr.im_syscd AND
+                          dbo.c2_pub.pub_contno = dbo.invmfr.im_contno AND
+                          dbo.c2_pub.pub_imseq = dbo.invmfr.im_imseq
+WHERE         (dbo.c2_pub.pub_fginved = 't') AND (dbo.c2_cont.cont_fgpubed = '1') AND
+                          (dbo.c2_cont.cont_fgpayonce = '0') AND (dbo.c2_cont.cont_fgcancel = '0') AND
+                          (dbo.c2_cont.cont_fgtemp = '0')
+ORDER BY  dbo.c2_pub.pub_contno, dbo.invmfr.im_imseq, dbo.c2_pub.pub_pubseq
+

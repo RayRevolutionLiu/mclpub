@@ -1,0 +1,209 @@
+/*找出某一合約之為開發票之落版的發票開立單*/
+CREATE proc dbo.sp_c2_add_1_ia (@syscd char(02), @contno char(6))  
+as
+begin 
+set nocount on
+/*declare @syscd char(2), @contno char(6)
+SELECT @syscd = 'C2'
+select @contno = '910031'*/
+DECLARE   @cname char(10), @tel char(12), @edate char(8), @yy char(02)
+
+select @edate = convert(char(8),getdate(),112)
+select @yy = substring(@edate,3,2)
+
+/*讀出c2_cont*/
+
+ SELECT @cname = srspn_cname,   
+                @tel = srspn_tel 
+    FROM c2_cont,   
+                 srspn  
+   WHERE ( c2_cont.cont_empno = srspn.srspn_empno ) and      
+          ( c2_cont.cont_syscd  =  @syscd ) AND  
+         ( c2_cont.cont_contno  =  @contno )    
+
+
+DECLARE  pub_cursor  CURSOR FOR  
+  SELECT c2_pub.pub_yyyymm, 
+          c2_pub.pub_pubseq,  
+         c2_pub.pub_imseq,   
+         c2_pub.pub_adamt,   
+         c2_pub.pub_chgamt,   
+         c2_pub.pub_projno,   
+         c2_pub.pub_costctr,     
+         c2_pub.pub_bkcd  
+    FROM c2_pub  
+   WHERE c2_pub.pub_fginved = '0' and
+           c2_pub.pub_contno = @contno    
+ORDER BY c2_pub.pub_imseq ASC      
+/* open the cursor */
+open pub_cursor
+/* Declare some variables to hold results.*/
+DECLARE @yyyymm char(6),  @pubseq char(02), @imseq char(2),     
+          @adamt real,   
+          @chgamt real,   
+          @projno char(10),   
+          @costctr char(7),    
+          @bkcd  char(2),
+          @tmp_imseq char(02)
+declare  @im_fgitri char(2),   
+        @im_nm   char(30),   
+        @im_jbti   char(12),   
+        @im_zip    char(5),   
+        @im_addr   char(120),   
+        @im_tel    char(30),   
+        @im_invcd  char(1),   
+        @im_taxtp  char(1),   
+        @im_mfrno char(10)
+declare @amt real, @amtnet real
+declare @desc char(100), @uprice real, @iaditem int, @s_iaditem char(3)
+declare @first_rec int, @iaseq real, @s_iaseq char(6)
+declare @iano char(8), @refno char(10)
+/* get the first row from the cursor */
+
+FETCH  NEXT FROM  pub_cursor
+ INTO @yyyymm, @pubseq, @imseq, @adamt, @chgamt, @projno, @costctr,    
+          @bkcd
+select @tmp_imseq = @imseq
+select @first_rec = 1
+begin  distributed transaction  tran_1
+
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+/*求發票主檔之銷售額、稅額、發票金額*/
+if @first_rec = 1 
+begin
+
+SELECT @iaseq =  max(substring(ia.ia_iano,3,6)) 
+    FROM ia   
+where substring(ia.ia_iano,1,2) = @yy and 
+ia.ia_syscd = @syscd
+
+select @iaseq = @iaseq + 1
+select @s_iaseq =  convert(char(6), @iaseq) 
+SELECT  @s_iaseq  = 
+      CASE 
+         WHEN @iaseq > 0 and @iaseq < 10 THEN '00000' + @s_iaseq
+         WHEN @iaseq > 9 and @iaseq < 100 THEN '0000' + @s_iaseq   
+         WHEN @iaseq >99 and @iaseq < 1000 THEN '000' + @s_iaseq
+         WHEN @iaseq > 999 and @iaseq < 10000 THEN '00' + @s_iaseq
+         WHEN @iaseq > 9999 and @iaseq < 100000 THEN '0' + @s_iaseq     
+      END  
+
+select @iano = @yy + @s_iaseq
+select @refno = @syscd + @iano 
+INSERT ia(ia_syscd, ia_iasdate, ia_iasseq, ia_iaitem, ia_iano, ia_refno, ia_mfrno, ia_pyno, ia_pyseq, ia_pyat, ia_ivat, ia_invno, ia_invdate, ia_fgitri, ia_rnm, ia_raddr, ia_rzip, ia_rjbti,   ia_rtel, ia_fgnonauto, ia_invcd, ia_taxtp, ia_status, ia_cname, ia_tel, ia_contno  )
+VALUES (@syscd, '', '', '', @iano, @refno, '', '', '', 0,0, '', '', '', '', '', '', '', '', '0',  '', '', '', @cname, @tel, @syscd + @contno)
+
+select @first_rec = 0
+SELECT @iaditem =0
+select @amt = 0
+end 
+If  @imseq <> @tmp_imseq 
+    BEGIN 
+    SELECT  @im_fgitri =  im_fgitri,@im_nm =  im_nm,@im_jbti =  im_jbti, @im_zip = im_zip, @im_addr = im_addr,@im_tel =  im_tel,
+                    @im_invcd =  im_invcd, @im_taxtp = im_taxtp, @im_mfrno = im_mfrno 
+    FROM invmfr
+    WHERE ( invmfr.im_syscd = @syscd ) AND  
+         ( invmfr.im_contno = @contno ) AND  
+         ( invmfr.im_imseq = @tmp_imseq )   
+   
+   
+   select @amtnet = round(@amt / 1.05, 0)
+UPDATE ia  
+     SET ia_mfrno =  @im_mfrno,
+ ia_pyat = @amt,
+ ia_ivat = @amtnet,
+ia_fgitri = @im_fgitri,
+ ia_rnm = @im_nm,
+ ia_raddr = @im_addr,
+ ia_rzip = @im_zip,
+ ia_rjbti = @im_jbti,
+   ia_rtel = @im_tel,
+ ia_invcd = @im_invcd,
+ ia_taxtp  = @im_taxtp 
+   WHERE ( ia.ia_syscd = @syscd ) AND  
+         ( ia.ia_iano = @iano )   
+                                  
+SELECT @iaseq = max(substring(ia.ia_iano,3,6)) 
+    FROM ia   
+where  substring(ia.ia_iano,1,2) = @yy and 
+ia.ia_syscd = @syscd
+
+  
+select @iaseq = @iaseq + 1
+select @s_iaseq =  convert(char(6), @iaseq) 
+
+SELECT  @s_iaseq  = 
+      CASE 
+         WHEN @iaseq > 0 and @iaseq < 10 THEN '00000' + @s_iaseq
+         WHEN @iaseq > 9 and @iaseq < 100 THEN '0000' + @s_iaseq   
+         WHEN @iaseq >99 and @iaseq < 1000 THEN '000' + @s_iaseq
+         WHEN @iaseq > 999 and @iaseq < 10000 THEN '00' + @s_iaseq
+         WHEN @iaseq > 9999 and @iaseq < 100000 THEN '0' + @s_iaseq     
+      END  
+
+select @iano = @yy + @s_iaseq
+select @refno = @syscd + @iano 
+INSERT ia(ia_syscd, ia_iasdate, ia_iasseq, ia_iaitem, ia_iano, ia_refno, ia_mfrno, ia_pyno, ia_pyseq, ia_pyat, ia_ivat, ia_invno, ia_invdate, ia_fgitri, ia_rnm, ia_raddr, ia_rzip, ia_rjbti,   ia_rtel, ia_fgnonauto, ia_invcd, ia_taxtp, ia_status, ia_cname, ia_tel, ia_contno  )
+VALUES (@syscd, '', '', '', @iano, @refno, '', '', '', 0,0, '', '', '', '', '', '', '', '', '',  '', '', '', @cname, @tel, @syscd + @contno)
+
+SELECT @iaditem =0
+select @amt = 0
+
+END
+
+SELECT @iaditem = @iaditem + 1
+select @s_iaditem =  convert(char(3), @iaditem)
+SELECT  @s_iaditem  = 
+      CASE 
+         WHEN @iaditem > 0 and @iaditem < 10 THEN '00' + @s_iaditem
+         WHEN @iaditem > 9 and @iaditem < 100 THEN '0' + @s_iaditem   
+      END  
+SELECT @desc = 
+CASE 
+   WHEN @bkcd = '01' then '工材雜誌'
+   WHEN @bkcd = '02' then '電材雜誌'
+END
+SELECT @desc = @desc + @yyyymm  + '廣告費' 
+select @uprice = @adamt + @chgamt
+select @amt = @amt + @uprice
+SELECT @syscd, @iano, @s_iaditem, @contno, @yyyymm, @pubseq,  @projno, @costctr, @desc,  @uprice, @uprice
+ 
+INSERT iad(iad_syscd, iad_iano, iad_iaditem, iad_fk1, iad_fk2, iad_fk3, iad_fk4, iad_projno, iad_costctr, iad_desc,  iad_qty, iad_unit, iad_uprice, iad_amt  )
+VALUES (@syscd, @iano, @s_iaditem, @contno, @yyyymm, @pubseq, '',  @projno, @costctr, @desc,  1,  '' , @uprice, @uprice)
+
+   
+
+ 
+
+FETCH  NEXT FROM  pub_cursor INTO
+         @yyyymm, @pubseq, @imseq, @adamt, @chgamt, @projno, @costctr, @bkcd
+
+END
+UPDATE ia  
+     SET ia_mfrno =  @im_mfrno,
+ ia_pyat = @amt,
+ia_ivat = @amtnet,
+ia_fgitri = @im_fgitri,
+ia_rnm = @im_nm,
+ia_raddr = @im_addr,
+ia_rzip = @im_zip,
+ia_rjbti = @im_jbti,
+ia_rtel = @im_tel,
+ia_invcd = @im_invcd,
+ia_taxtp = @im_taxtp 
+   WHERE ( ia.ia_syscd = @syscd ) AND
+( ia.ia_iano = @iano ) 
+
+update c2_pub
+  set  pub_fginved = '1'
+  WHERE c2_pub.pub_fginved = '0' and
+           c2_pub.pub_contno = @contno    
+
+commit transaction  tran_1 
+CLOSE  pub_cursor                                                                                                                                     
+DEALLOCATE  pub_cursor
+                       
+set nocount off            
+end
+GO

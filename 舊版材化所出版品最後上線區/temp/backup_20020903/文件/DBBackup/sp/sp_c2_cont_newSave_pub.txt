@@ -1,0 +1,53 @@
+CREATE PROCEDURE dbo.sp_c2_cont_newSave_pub 
+	@XML varchar(8000), @syscd varchar(2),
+	@contno varchar(6)
+AS
+set nocount on
+
+DECLARE @idoc	int
+--Create an internal representation of the XML document.
+exec sp_xml_preparedocument @idoc OUTPUT, @XML
+
+------合約書落版刊登資料  c2_pub
+delete c2_pub where pub_syscd=@syscd and pub_contno=@contno
+insert c2_pub 
+-- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/合約書落版刊登資料/落版明細表', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	刊登年月		char(6),
+	落版序號		char(2),
+	刊登頁碼		int,
+	廣告版面代碼		char(2),
+	廣告色彩代碼		char(2),
+	廣告篇幅代碼		char(2),
+	落版廣告金額		real         '落版細節/落版廣告金額',
+	換稿金額		real         '落版細節/換稿金額',
+	稿件類別代碼		char(1)      '落版細節/稿件類別代碼',
+	舊稿書籍代碼		char(2)      '落版細節/舊稿書籍代碼',
+	舊稿期別		int          '落版細節/舊稿期別',
+	舊稿頁碼		int          '落版細節/改稿書籍代碼',
+	改稿書籍代碼		char(2)      '落版細節/改稿書籍代碼',
+	改稿期別		int          '落版細節/改稿期別',
+	改稿頁碼		int          '落版細節/改稿頁碼',
+	改稿重出片註記		char(1)      '落版細節/改稿重出片註記',
+	到稿註記		char(1),
+	新稿製法代碼		char(2)      '落版細節/新稿製法代碼',
+	計劃代號		char(10),
+	成本中心		char(7),
+	已開立發票單註記	char(1)      '落版細節/已開立發票單註記',
+	發票開立單人工處理註記	char(1)      '落版細節/發票開立單人工處理註記',
+	書籍期別		char(4),
+	備註			varchar(50)  '落版細節/備註',
+	固定頁次註記		char(1),
+	落版最後修改日期	char(8),
+	落版修改業務員工號	char(7),
+	書籍類別代碼		char(2),
+	發票廠商序號		char(2)      '發票廠商收件人細節/發票廠商收件人明細/發票廠商序號',
+	樣後修改註記		char(1)
+	)
+
+-- Remove the internal representation.
+exec sp_xml_removedocument @idoc
+GO

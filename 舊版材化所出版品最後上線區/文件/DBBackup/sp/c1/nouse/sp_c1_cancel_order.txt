@@ -1,0 +1,31 @@
+CREATE PROCEDURE dbo.sp_c1_cancel_order
+	@syscd varchar(2), @custno varchar(6), @otp1cd  varchar(2), @otp1seq  varchar(3)
+	
+AS
+declare @iano varchar(8)
+set nocount on
+------쫇c1_orderㄴ¾켹iano
+select @iano=o_iano from c1_order
+  where o_syscd=@syscd and o_custno=@custno and o_otp1cd=@otp1cd and o_otp1seq=@otp1seq
+------쬟간c1_remail
+delete c1_remail
+  where rm_syscd=@syscd and rm_custno=@custno and rm_otp1cd=@otp1cd and rm_otp1seq=@otp1seq
+------쬟간c1_ramt
+delete c1_ramt
+  where ra_syscd=@syscd and ra_custno=@custno and ra_otp1cd=@otp1cd and ra_otp1seq=@otp1seq
+------쬟간c1_or
+delete c1_or
+  where or_syscd=@syscd and or_custno=@custno and or_otp1cd=@otp1cd and or_otp1seq=@otp1seq
+------쬟간c1_od
+delete c1_od
+  where od_syscd=@syscd and od_custno=@custno and od_otp1cd=@otp1cd and od_otp1seq=@otp1seq
+------쬟간iad
+delete iad where iad_syscd=@syscd and iad_iano= @iano
+------쬟간ia
+delete ia where ia_syscd=@syscd and ia_iano= @iano
+------쬟간c1_order
+delete c1_order 
+  where o_syscd=@syscd and o_custno=@custno and o_otp1cd=@otp1cd and o_otp1seq=@otp1seq
+------pyd�@딩푉ず딩캯
+update pyd set pyd_cancel='1' where pyd_syscd=@syscd and pyd_iano=@iano
+GO

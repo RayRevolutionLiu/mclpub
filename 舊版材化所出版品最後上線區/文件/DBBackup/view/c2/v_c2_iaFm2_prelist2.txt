@@ -1,0 +1,6 @@
+CREATE VIEW dbo.v_c2_iaFm2_prelist2
+AS
+SELECT         dbo.v_c2_iaFm2_prelist2a.*, dbo.mfr.mfr_inm AS im_mfrinm
+FROM             dbo.v_c2_iaFm2_prelist2a INNER JOIN
+                          dbo.mfr ON dbo.v_c2_iaFm2_prelist2a.im_mfrno = dbo.mfr.mfr_mfrno
+

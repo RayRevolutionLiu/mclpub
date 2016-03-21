@@ -1,0 +1,36 @@
+CREATE PROCEDURE dbo.sp_c2_cont_newSave_IM
+	@XML varchar(8000), @syscd varchar(2),
+	@contno varchar(6)
+AS
+set nocount on
+
+DECLARE @idoc	int
+--Create an internal representation of the XML document.
+exec sp_xml_preparedocument @idoc OUTPUT, @XML
+
+------發票廠商收件人檔  invmfr
+delete invmfr where im_syscd=@syscd and im_contno=@contno
+insert invmfr 
+---- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/發票廠商資料/發票廠商收件人明細', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	發票廠商序號		varchar(2),
+	發票收件人廠商統編	char(10),
+	發票收件人姓名	varchar(30),
+	發票收件人職稱	varchar(12),
+	發票收件人郵遞區號	char(5),
+	發票收件人地址	varchar(120),
+	發票收件人電話	varchar(30),
+	發票收件人傳真	varchar(30),
+	發票收件人手機	varchar(30),
+	發票收件人Email	varchar(80),
+	發票類別代碼		char(1),
+	發票課稅別代碼	char(1),
+	院所內註記		char(2)
+	)
+
+-- Remove the internal representation.
+exec sp_xml_removedocument @idoc
+GO

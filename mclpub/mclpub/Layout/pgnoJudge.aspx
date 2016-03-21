@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="pgnoJudge.aspx.cs" Inherits="mclpub.Layout.pgnoJudge" StylesheetTheme="" %>

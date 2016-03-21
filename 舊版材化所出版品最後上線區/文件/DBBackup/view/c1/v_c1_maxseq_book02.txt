@@ -1,0 +1,16 @@
+---取得電材訂閱最後的訂單流水號, sp_tmp_003中使用
+CREATE VIEW dbo.v_c1_maxseq_book02
+AS
+SELECT         dbo.c1_order.o_syscd, dbo.c1_order.o_custno, dbo.c1_order.o_otp1cd,
+                          MAX(dbo.c1_order.o_otp1seq) AS seq
+FROM             dbo.c1_order INNER JOIN
+                          dbo.c1_od ON dbo.c1_order.o_syscd = dbo.c1_od.od_syscd AND
+                          dbo.c1_order.o_custno = dbo.c1_od.od_custno AND
+                          dbo.c1_order.o_otp1cd = dbo.c1_od.od_otp1cd AND
+                          dbo.c1_order.o_otp1seq = dbo.c1_od.od_otp1seq
+GROUP BY  dbo.c1_order.o_syscd, dbo.c1_order.o_custno, dbo.c1_order.o_otp1cd,
+                          dbo.c1_od.od_btpcd
+HAVING          (dbo.c1_od.od_btpcd = '02')
+
+
+

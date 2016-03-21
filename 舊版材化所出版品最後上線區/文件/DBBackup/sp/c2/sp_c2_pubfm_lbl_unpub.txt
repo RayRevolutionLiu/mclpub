@@ -1,0 +1,33 @@
+CREATE PROCEDURE dbo.sp_c2_pubfm_lbl_unpub  ( @bkcd char(2), @conttp char(2), @fgmosea char(1), @yyyymm char(6) )
+as
+begin
+set nocount on
+SELECT         DISTINCT dbo.c2_cont.cont_contno, dbo.c2_cont.cont_sdate,
+                          dbo.c2_cont.cont_edate, SUBSTRING(dbo.c2_cont.cont_sdate, 1, 4)
+                          + '/' + SUBSTRING(dbo.c2_cont.cont_sdate, 5, 6)
+                          + ' ~ ' + SUBSTRING(dbo.c2_cont.cont_edate, 1, 4)
+                          + '/' + SUBSTRING(dbo.c2_cont.cont_edate, 5, 6) AS cont_sedate,
+                          RTRIM(dbo.c2_or.or_inm) AS or_inm, RTRIM(dbo.c2_or.or_nm) AS or_nm,
+                          RTRIM(dbo.c2_or.or_jbti) AS or_jbti, RTRIM(dbo.c2_or.or_zip) AS or_zip,
+                          RTRIM(dbo.c2_or.or_addr) AS or_addr, dbo.c2_or.or_unpubcnt,
+                          dbo.c2_or.or_mtpcd, RTRIM(dbo.mtp.mtp_nm) AS mtp_nm,
+		RTRIM(dbo.c2_cont.cont_empno) AS cont_empno, dbo.c2_or.or_oritem,
+		RTRIM(dbo.book.bk_nm) AS bk_nm,
+                          CASE WHEN dbo.c2_cont.cont_conttp = '01' THEN '¤@¯ë' ELSE '±À¼s' END AS cont_conttpName
+FROM             dbo.c2_cont INNER JOIN
+                          dbo.c2_or ON dbo.c2_cont.cont_syscd = dbo.c2_or.or_syscd AND
+                          dbo.c2_cont.cont_contno = dbo.c2_or.or_contno INNER JOIN
+                          dbo.mtp ON dbo.c2_or.or_mtpcd = dbo.mtp.mtp_mtpcd  INNER JOIN
+                          dbo.book ON dbo.c2_cont.cont_bkcd = dbo.book.bk_bkcd
+WHERE         (dbo.c2_cont.cont_fgclosed = '0')  AND (dbo.c2_cont.cont_fgcancel = '0') AND
+                          (dbo.c2_cont.cont_fgtemp = '0') AND (dbo.c2_or.or_unpubcnt > 0) AND
+                          (dbo.c2_cont.cont_contno NOT IN
+                              (SELECT DISTINCT c2_pub.pub_contno
+                                FROM              c2_pub
+                                WHERE          c2_pub.pub_yyyymm = @yyyymm))
+                          AND (c2_cont.cont_bkcd = @bkcd) AND (c2_cont.cont_conttp = @conttp)
+                          AND (c2_or.or_fgmosea = @fgmosea)
+ORDER BY  dbo.c2_or.or_unpubcnt, dbo.c2_cont.cont_contno
+set nocount off
+end
+GO

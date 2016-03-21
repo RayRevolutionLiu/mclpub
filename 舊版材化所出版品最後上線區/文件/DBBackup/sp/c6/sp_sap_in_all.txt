@@ -1,0 +1,11 @@
+CREATE proc dbo.sp_sap_in_all (@yyyymm  char(6), @batch_seq char(6), @rtn char(1) output )
+As
+set  xact_abort on 
+exec sp_sap_recovery_001 '200201','10001',0
+exec sp_sap_recovery_002 '200201','10001',0
+exec sp_to_sap_001 '200201','10001', '740320', '0'
+
+
+exec sp_to_sap_002 '200201', '10001'
+exec sp_to_sap_003 '200201', '10001', '',0
+GO

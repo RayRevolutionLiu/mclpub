@@ -1,0 +1,99 @@
+CREATE FUNCTION dbo.fn_c2_or
+(
+	@syscd varchar(2),
+	@contno varchar(6),
+	@oritem varchar(2)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+declare @nm varchar(30),@inm varchar(30),@jbti varchar(12)
+declare @tel varchar(30),@fax varchar(30),@cell varchar(30),@email varchar(80)
+declare @zip varchar(5),@addr varchar(120)
+declare @pubcnt varchar(4),@unpubcnt varchar(4),@mtpcd varchar(2),@fgmosea varchar(1)
+declare @xmldata varchar(8000)
+
+select @inm=rtrim(or_inm),@nm=rtrim(or_nm),@jbti=rtrim(or_jbti),@addr=rtrim(or_addr),@zip=rtrim(or_zip),
+ @tel=rtrim(or_tel),@fax=rtrim(or_fax),@cell=rtrim(or_cell),@email=rtrim(or_email),@fgmosea=or_fgmosea,
+ @mtpcd=or_mtpcd, @pubcnt=convert(varchar(4),or_pubcnt), @unpubcnt=convert(varchar(4),or_unpubcnt)
+ from c2_or
+ where or_syscd=@syscd and or_contno=@contno and or_oritem=@oritem
+
+ set @xmldata = '<雜誌收件人資料>' + '<雜誌收件人明細>' 
+
+ set @xmldata=@xmldata +  '<系統代碼>' + @syscd + '</系統代碼>' +  
+  '<合約書編號>' + @contno + '</合約書編號>' + 
+  '<雜誌收件人序號>' + @oritem + '</雜誌收件人序號>'
+
+  if @nm = ''	
+  	set @xmldata=@xmldata + '<雜誌收件人姓名 />'
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人姓名>' + @nm + '</雜誌收件人姓名>' 
+
+  if @inm = ''	
+  	set @xmldata=@xmldata + '<雜誌收件人公司名稱 />'
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人公司名稱>' + @inm + '</雜誌收件人公司名稱>' 
+
+  if @jbti = ''	
+  	set @xmldata=@xmldata + '<雜誌收件人職稱 />'
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人職稱>' + @jbti + '</雜誌收件人職稱>' 
+   
+  if @tel = ''
+  	set @xmldata=@xmldata + '<雜誌收件人電話 />'  
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人電話>' + @tel + '</雜誌收件人電話>'  
+
+  if @fax = ''
+  	set @xmldata=@xmldata + '<雜誌收件人傳真 />'  
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人傳真>' + @fax + '</雜誌收件人傳真>'  
+
+  if @cell = ''
+  	set @xmldata=@xmldata + '<雜誌收件人手機 />'  
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人手機>' + @cell + '</雜誌收件人手機>'  
+
+  if @email = ''
+  	set @xmldata=@xmldata + '<雜誌收件人Email />'  
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人Email>' + @email + '</雜誌收件人Email>'  
+
+  if @zip = ''
+  	set @xmldata=@xmldata + '<雜誌收件人郵遞區號 />'
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人郵遞區號>' + @zip + '</雜誌收件人郵遞區號>' 
+
+  if @addr = ''
+  	set @xmldata=@xmldata + '<雜誌收件人地址 />'
+  else
+  	set @xmldata=@xmldata + '<雜誌收件人地址>' + @addr + '</雜誌收件人地址>' 
+
+  if @pubcnt = ''
+  	set @xmldata=@xmldata + '<有登本數 />'  
+  else
+  	set @xmldata=@xmldata + '<有登本數>' + @pubcnt + '</有登本數>'  
+
+  if @unpubcnt = ''
+  	set @xmldata=@xmldata + '<未登本數 />'  
+  else
+  	set @xmldata=@xmldata + '<未登本數>' + @unpubcnt + '</未登本數>'  
+
+  if @mtpcd = ''
+  	set @xmldata=@xmldata + '<郵寄類別代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<郵寄類別代碼>' + @mtpcd + '</郵寄類別代碼>'  
+
+  if @fgmosea = ''
+  	set @xmldata=@xmldata + '<海外郵寄註記 />'  
+  else
+  	set @xmldata=@xmldata + '<海外郵寄註記>' + @fgmosea + '</海外郵寄註記>'  
+
+
+  set @xmldata=@xmldata + '</雜誌收件人明細>' + '</雜誌收件人資料>'
+ 
+
+ 	RETURN @xmldata
+	END
+

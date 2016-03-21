@@ -1,0 +1,40 @@
+CREATE proc dbo.sp_c2_getad_2 ( @contno char(6) )
+as
+begin
+set nocount on
+
+DECLARE  getad_cursor_2  CURSOR FOR
+  SELECT c2_pub.pub_yyyymm
+    FROM c2_cont,
+         c2_pub
+   WHERE ( c2_cont.cont_contno = c2_pub.pub_contno ) and
+         ( c2_cont.cont_syscd = c2_pub.pub_syscd ) and
+         ( ( c2_cont.cont_contno = @contno )  )
+
+open getad_cursor_2
+declare @pubmm varchar(6), @pubmmstr varchar(216)
+select @pubmmstr = ''
+FETCH  NEXT FROM  getad_cursor_2 INTO
+         @pubmm
+WHILE (@@FETCH_STATUS = 0)
+
+BEGIN
+
+select @pubmmstr = @pubmmstr + substring(@pubmm,1,4) + '/' +  substring(@pubmm,5,2)  + ','
+
+FETCH  NEXT FROM  getad_cursor_2 INTO
+         @pubmm
+
+end
+declare @i_len int
+ select @i_len =  LEN(@pubmmstr) - 1
+ select @pubmmstr = substring(@pubmmstr, 1, @i_len)
+insert c2_getad(syscd, contno,pubmmstr)
+values ('C2', @contno, @pubmmstr)
+
+CLOSE  getad_cursor_2
+DEALLOCATE  getad_cursor_2
+
+set nocount off
+end
+GO

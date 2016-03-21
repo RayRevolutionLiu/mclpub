@@ -1,0 +1,135 @@
+CREATE proc dbo.sp_c2_rp2(@bkcd char(2), @yyyymm  char(6))
+as
+delete wk_c2_rp2
+insert into  wk_c2_rp2(
+         contno,
+         yyyymm,
+         pubseq,
+         pgno,
+         clr_nm,
+         ltp_nm,
+         pgs_nm,
+         mfr_inm,
+         fggot,
+         srspn_cname,
+         drafttp,
+         fgrechg,
+         unfgrechg,
+         chgbk_nm,
+         chgjno,
+         chgjbkno,
+         origbk_nm,
+         origjno,
+         origjbkno,
+         njtpcd01,
+         njtpcd02,
+         njtpcd03,
+         njtpcd04,
+         njtpcd05,
+         fgupdated,
+         clrcd,
+         empno,
+         fgfixpg,
+         lp_priorseq  )
+ SELECT   a.cont_contno,
+         b.pub_yyyymm,
+         b.pub_pubseq,
+         b.pub_pgno,
+         d.clr_nm,
+         e.ltp_nm,
+         f.pgs_nm,
+         c.mfr_inm,
+         fggot =
+          case
+                  when  b.pub_fggot =  '0' then '§_'
+                  when   b.pub_fggot = '1' then '¬O'
+                  else ''
+          end,
+         g.srspn_cname,
+         b.pub_drafttp,
+         fgrechg =
+          case
+                  when  b.pub_fgrechg =  '1' then 1
+                  else 0
+          end,
+          unfgrechg =
+          case
+                  when  b.pub_fgrechg =  '0' then 1
+                  else 0
+           end,
+          chgbk_nm =
+          case  b.pub_chgbkcd
+                  when     '01' then '¤u§÷Âø»x'
+                  when     '02' then '¹q§÷Âø»x'
+                  else ''
+          end,
+         b.pub_chgjno,
+         b.pub_chgjbkno,
+         origbk_nm =
+          case  b.pub_origbkcd
+                  when     '01' then '¤u§÷Âø»x'
+                  when     '02' then '¹q§÷Âø»x'
+                  else ''
+          end,
+         b.pub_origjno,
+         b.pub_origjbkno,
+        njtpcd01 =
+          case
+                  when  b.pub_njtpcd =  '01' then 1
+                  else 0
+          end,
+        njtpcd02 =
+          case
+                  when  b.pub_njtpcd =  '02' then 1
+                  else 0
+          end,
+        njtpcd03 =
+          case
+                  when  b.pub_njtpcd =  '03' then 1
+                  else 0
+          end,
+        njtpcd04 =
+          case
+                  when  b.pub_njtpcd =  '04' then 1
+                  else 0
+          end,
+        njtpcd05 =
+          case
+                  when  b.pub_njtpcd =  '05' then 1
+                  else 0
+          end,
+          b.pub_fgupdated,
+          b.pub_clrcd,
+          a.cont_empno,
+          fgfixpg =
+          case
+                  when  b.pub_fgfixpg =  '0' then '§_'
+                  when   b.pub_fgfixpg = '1' then '¬O'
+                  else ''
+          end,
+          h.lp_priorseq
+    FROM c2_cont      a,
+                c2_pub       b,
+                mfr            c,
+                c2_clr        d,
+                c2_ltp        e,
+                c2_pgsize   f,
+                srspn         g,
+	   c2_lprior    h
+   WHERE ( a.cont_syscd = b.pub_syscd ) and
+         ( a.cont_contno = b.pub_contno ) and
+         ( a.cont_mfrno = c.mfr_mfrno ) and
+         ( b.pub_ltpcd = e.ltp_ltpcd ) and
+         ( b.pub_clrcd = d.clr_clrcd ) and
+         ( b.pub_pgscd = f.pgs_pgscd ) and
+         ( a.cont_empno = g.srspn_empno ) and
+         ( b.pub_bkcd = h.lp_bkcd ) and
+         ( b.pub_ltpcd = h.lp_ltpcd ) and
+         ( b.pub_clrcd = h.lp_clrcd ) and
+         ( b.pub_pgscd = h.lp_pgscd ) and
+         ( (a.cont_bkcd = @bkcd) and
+ ( b.pub_yyyymm =@yyyymm )  )
+ORDER BY d.clr_clrcd ASC,
+                      a.cont_contno ASC,
+                      b.pub_pubseq ASC
+GO

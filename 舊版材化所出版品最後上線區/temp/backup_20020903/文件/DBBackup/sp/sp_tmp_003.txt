@@ -1,0 +1,49 @@
+CREATE PROCEDURE dbo.sp_tmp_003
+	@syscd varchar(2), @otp1cd varchar(2), @btpcd varchar(2), @sdate varchar(6), @edate varchar(6)
+	
+AS
+set nocount on
+
+DECLARE @idoc	int
+------Äò­q¼ÐÅÒ¼È¦sÀÉ
+--truncate table tmp_label1
+delete tmp_label1
+if @btpcd='01' or  @btpcd='02'
+insert tmp_label1 
+SELECT          dbo.c1_od.od_odid, dbo.c1_order.o_syscd, dbo.c1_order.o_custno, 
+                          dbo.c1_order.o_otp1cd, MAX(dbo.c1_order.o_otp1seq) AS seq, dbo.c1_od.od_oditem,
+		substring(dbo.c1_od.od_sdate,1,4)+'/'+substring(dbo.c1_od.od_sdate,5,2)+'/'+substring(dbo.c1_od.od_sdate,7,2),
+		substring(dbo.c1_od.od_edate,1,4)+'/'+substring(dbo.c1_od.od_edate,5,2)+'/'+substring(dbo.c1_od.od_edate,7,2), 
+		'','','', dbo.c1_obtp.obtp_obtpnm,''
+FROM             dbo.c1_order INNER JOIN
+                          dbo.c1_od ON dbo.c1_order.o_syscd = dbo.c1_od.od_syscd AND 
+                          dbo.c1_order.o_custno = dbo.c1_od.od_custno AND 
+                          dbo.c1_order.o_otp1cd = dbo.c1_od.od_otp1cd AND 
+                          dbo.c1_order.o_otp1seq = dbo.c1_od.od_otp1seq INNER JOIN
+                          dbo.c1_obtp ON dbo.c1_od.od_otp1cd = dbo.c1_obtp.obtp_otp1cd AND 
+                          dbo.c1_od.od_btpcd = dbo.c1_obtp.obtp_obtpcd
+GROUP BY  dbo.c1_od.od_odid, dbo.c1_order.o_syscd, dbo.c1_order.o_custno, dbo.c1_order.o_otp1cd, dbo.c1_od.od_oditem,  dbo.c1_od.od_sdate, 
+                          dbo.c1_od.od_edate, dbo.c1_obtp.obtp_obtpnm, dbo.c1_od.od_btpcd
+HAVING          (SUBSTRING(dbo.c1_od.od_edate, 1, 6) >= @sdate) AND 
+                          (SUBSTRING(dbo.c1_od.od_edate, 1, 6) <= @edate) AND
+		(dbo.c1_order.o_otp1cd=@otp1cd) AND (dbo.c1_order.o_syscd=@syscd) AND (dbo.c1_od.od_btpcd=@btpcd)
+else
+insert tmp_label1 
+SELECT          dbo.c1_od.od_odid, dbo.c1_order.o_syscd, dbo.c1_order.o_custno, 
+                          dbo.c1_order.o_otp1cd, MAX(dbo.c1_order.o_otp1seq) AS seq, dbo.c1_od.od_oditem, 
+		substring(dbo.c1_od.od_sdate,1,4)+'/'+substring(dbo.c1_od.od_sdate,5,2)+'/'+substring(dbo.c1_od.od_sdate,7,2),
+		substring(dbo.c1_od.od_edate,1,4)+'/'+substring(dbo.c1_od.od_edate,5,2)+'/'+substring(dbo.c1_od.od_edate,7,2), 
+		'','','', dbo.c1_obtp.obtp_obtpnm,''
+FROM             dbo.c1_order INNER JOIN
+                          dbo.c1_od ON dbo.c1_order.o_syscd = dbo.c1_od.od_syscd AND 
+                          dbo.c1_order.o_custno = dbo.c1_od.od_custno AND 
+                          dbo.c1_order.o_otp1cd = dbo.c1_od.od_otp1cd AND 
+                          dbo.c1_order.o_otp1seq = dbo.c1_od.od_otp1seq INNER JOIN
+                          dbo.c1_obtp ON dbo.c1_od.od_otp1cd = dbo.c1_obtp.obtp_otp1cd AND 
+                          dbo.c1_od.od_btpcd = dbo.c1_obtp.obtp_obtpcd
+GROUP BY  dbo.c1_od.od_odid, dbo.c1_order.o_syscd, dbo.c1_order.o_custno, dbo.c1_order.o_otp1cd, dbo.c1_od.od_oditem,  dbo.c1_od.od_sdate, 
+                          dbo.c1_od.od_edate, dbo.c1_obtp.obtp_obtpnm
+HAVING          (SUBSTRING(dbo.c1_od.od_edate, 1, 6) >= @sdate) AND 
+                          (SUBSTRING(dbo.c1_od.od_edate, 1, 6) <= @edate) AND
+		(dbo.c1_order.o_otp1cd=@otp1cd) AND (dbo.c1_order.o_syscd=@syscd)
+GO

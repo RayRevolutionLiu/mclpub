@@ -1,0 +1,56 @@
+CREATE proc dbo.sp_c2_contlist2_1 (@bkcd char(2))
+as
+
+begin
+set nocount on
+
+
+declare @contno char(6)
+
+/* 將 table 資料清空 */
+delete from c2_contlist2
+
+
+/* 讀出 c2_cont, c2_or 資料: 抓 @contno */
+DECLARE  contor_cursor  CURSOR FOR
+	SELECT DISTINCT c2_cont.cont_contno
+	FROM             c2_cont INNER JOIN
+	                          c2_or ON c2_cont.cont_syscd = c2_or.or_syscd AND
+	                          c2_cont.cont_contno = c2_or.or_contno
+	WHERE         (c2_cont.cont_bkcd = @bkcd)
+	ORDER BY  c2_cont.cont_contno
+
+
+/* open the cursor */
+open contor_cursor
+
+
+------Transaction
+begin  distributed transaction  tran_1
+
+
+FETCH  NEXT FROM  contor_cursor
+  INTO @contno
+
+
+/* 若有 contor_cursor 資料, 則做以下之處理 */
+-- Check @@FETCH_STATUS to see if there are any more rows to fetch.
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+	select @contno
+	exec sp_c2_contlist2_2  @contno
+
+	FETCH  NEXT FROM  contor_cursor
+	  INTO @contno
+END
+
+commit transaction  tran_1
+
+
+CLOSE  contor_cursor
+DEALLOCATE  contor_cursor
+
+
+set nocount off
+end
+GO

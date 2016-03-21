@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* common */
+
+*{ font-family:Verdana, Arial, Helvetica, sans-serif;}
+body{margin:0px; background:url(../images/bg.gif) repeat-x #ebebeb;}
+
+#main{width:980px; margin:0 auto; background:url(../images/header.jpg) no-repeat; height:175px;}
+.footer{background:url(../images/footer.gif) repeat-x; height:60px;}
+#menu{ position:absolute; margin-top:100px;}
+.home{position:absolute; margin-left:10px; margin-top:5px;}
+#headerinfo{position:absolute; margin-left:450px; margin-top:10px;}
+#basecontent{width:980px; margin:0 auto;}
+#fullcontent{width:100%; margin:0 auto;}
+.pager{width:980px; text-align:center; margin:10px 0;}
+
+.btn_mouseout{background:url(../images/btn_bg.gif) 50% 50% repeat-x; border:1px solid #D2DDC6; padding:4px 10px;color:#ffffff; font-weight:bold; font-size:15px; margin:2px;}
+.btn_mouseover{background:url(../images/btn_bg_over.gif) 50% 50% repeat-x; border:1px solid #D2DDC6; padding:4px 10px;color:#ffffff; font-weight:bold; font-size:15px;CURSOR: hand; margin:2px;}
+
+
+
+
+/* 雙色表單 */
+.stripeMe table{border-collapse:collapse;}
+.stripeMe td{background-color:#e6f3fa; padding:4px; border-collapse:collapse; border:1px solid #4f677b;}
+.stripeMe th{background-color:#34ade0; color:#ffffff; padding:5px; border-collapse:collapse; border:1px solid #4f677b;}
+tr.alt td {background-color:#f4fafd;}
+tr.over td { background-color:#FFFFFF;}
+
+.stripMenone td{border:0; background-color:#E4F0F3; padding:3px;}
+
+/* line-hight */
+.linehight01{line-height:1.2em;}
+.linehight02{line-height:1.5em;}
+.linehight03{line-height:1.8em;}
+.linehight04{line-height:2em;}
+ 
+
+/* font */
+.font_size12{font-size:12px;}
+.font_size13{font-size:13px;}
+.font_size15{font-size:15px;}
+.font_size18{font-size:18px;}
+.font_size21{font-size:21px;}
+.font_size24{font-size:24px;}
+.font_size30{font-size:30px;}
+.font_bold{font-weight:bold;}
+
+.font_gray{color:#666666;}
+.font_gray a{color:#666666; text-decoration:none;}
+.font_gray a:hover{color:#00CCFF;}
+
+.font_black{color:#3e3e3e;}
+.font_black a{color:#3e3e3e; text-decoration:none;}
+.font_black a:hover{color:#006699;}
+
+.font_blacklink{color:#3e3e3e;}
+.font_blacklink a{color:#0099CC; text-decoration:none;}
+.font_blacklink a:hover{color:#006699;}
+
+.font_darkblue{color:#1E466F;}
+.font_darkblue a{color:#1E466F; text-decoration:none;}
+.font_darkblue{color:#006699;}
+
+.font_blue{color:#0099FF;}
+.font_blue a{color:#0099FF; text-decoration:none;}
+.font_blue a:hover{color:#00CCFF;}
+
+.font_lightgray{color:#999999;}
+.font_lightgray a{color:#999999; text-decoration:none;}
+.font_lightgray a:hover{color:#00CCFF;}
+
+.font_white{color:#f3f3f3;}
+.font_white a{color:#f3f3f3; text-decoration:none;}
+.font_white a:hover{color:#ffffff;}
+
+.font_red{color:#FF0000;}
+
+/*
+*{
+scrollbar-3Dlight-color:#433E30;
+scrollbar-arrow-color:#756842;
+scrollbar-darkshadow-color:#555144;
+scrollbar-face-color:#AB9962;
+scrollbar-highlight-color:#CAC5A6;
+scrollbar-shadow-color:#766E38;
+scrollbar-track-color:#605F53;
+}
+SCROLLBAR-3DLIGHT-COLOR 捲軸邊框3D底部顏色 
+SCROLLBAR-ARROW-COLOR 捲軸箭頭顏色 
+SCROLLBAR-DARKSHADOW-COLOR 捲軸右下邊框陰影顏色 
+SCROLLBAR-FACE-COLOR 捲軸整體面顏色 
+SCROLLBAR-HIGHLIGHT-COLOR 捲軸邊框亮面顏色 
+SCROLLBAR-SHADOW-COLOR 捲軸左上邊框陰影顏色 
+SCROLLBAR-TRACK-COLOR 捲軸底部顏色 
+
+*/

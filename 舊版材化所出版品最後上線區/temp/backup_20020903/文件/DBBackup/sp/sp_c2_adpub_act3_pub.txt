@@ -1,0 +1,11 @@
+CREATE PROCEDURE dbo.sp_c2_update_adpub 
+(@syscd char(2), 
+@contno char(6), 
+@yyyymm char(6), 
+@pubseq char(2),
+@pgno int)
+AS
+UPDATE        c2_pub
+SET                  pub_pgno = @pgno
+WHERE         (pub_syscd = @syscd) AND (pub_contno = @contno) AND (pub_yyyymm = @yyyymm) AND (pub_pubseq = @pubseq)
+GO

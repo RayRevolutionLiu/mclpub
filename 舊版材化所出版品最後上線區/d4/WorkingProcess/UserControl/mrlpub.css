@@ -1,0 +1,30 @@
+<!--
+TD{font-size:9pt}
+
+A:link {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:visited {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:active {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:hover {color: #ff3300; text-decoration: none; font-family: 新細明體}
+
+A.header:link { color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:visited {color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:active {color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:hover {color: #ffffff; text-decoration: none; font-family: 新細明體}
+img.ico { cursor:hand; }
+
+A.page:link { color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.page:visited {color: #3333ff; text-decoration: none; font-family: 新細明體}
+A.page:active {color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.page:hover {color: #ffffff; text-decoration: none; font-family: 新細明體}
+img.ico { cursor:hand; }
+
+.welcome{text-transform: uppercase; text-decoration: underline; COLOR=BLUE; FONT-WEIGHT:BOLD;}
+.highlight{FONT-SIZE:10pt; background-color: #B0E0E6}
+.copyright{FONT-SIZE:8pt;}
+
+TD.Title{FONT-SIZE:10pt; color: 0033cc;}
+TD.content{FONT-SIZE:10pt; color: 0033cc;}
+
+LI.Outside{list-style-position: outside; list-style-type: upper-roman}
+
+-->

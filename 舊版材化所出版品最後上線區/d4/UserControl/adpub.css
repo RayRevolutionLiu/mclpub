@@ -1,0 +1,69 @@
+TD SPAN {cursor:default}
+
+#pageorder { text-align:center; }
+#cssDetail { text-align:left; }
+#pagelayout2 { text-align:center; }
+.cssOrder { width: 20px; }
+.cssColumn { font-family:Arial, 新細明體; font-size: 8pt; }
+.cssCompanyName { font-family:Arial, 新細明體; font-size: 8pt; color: Red; }
+.cssColumnDiffColor { font-family:Arial, 新細明體; font-size: 8pt; ; color: #336699;}
+.cssPageLayout2 { font-family:Arial, 新細明體; font-size: 8pt; }
+#fMenu
+{
+	width:100px;
+	BACKGROUND-COLOR: #99cc99;
+	BORDER-RIGHT:  #99cc99 thin solid;
+	BORDER-TOP:  #99cc99 thin solid;
+	BORDER-LEFT:  #99cc99 thin solid;
+	BORDER-BOTTOM:  #99cc99 thin solid;
+}
+.fixMenu
+{
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT: darkseagreen thin outset;
+	BORDER-TOP: darkseagreen thin outset;
+	BORDER-LEFT: darkseagreen thin outset;
+	BORDER-BOTTOM: darkseagreen thin outset;
+	BACKGROUND-COLOR: #99cc99;
+	COLOR:#336633;
+	font-size:9pt;
+	text-align:center;
+	vertical-align:middle;
+}
+.srcData
+{
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	BORDER-RIGHT: darkseagreen thin outset;
+	BORDER-TOP: darkseagreen thin outset;
+	BORDER-LEFT: darkseagreen thin outset;
+	BORDER-BOTTOM: darkseagreen thin outset;
+	BACKGROUND-COLOR: #99cc99;
+	COLOR:#336633;
+	font-size:10pt;
+	vertical-align:middle;
+}
+.help1
+{
+	Font-Size: 9pt;
+	BORDER-RIGHT: darkseagreen thin outset;
+	BORDER-TOP: darkseagreen thin outset;
+	BORDER-LEFT: darkseagreen thin outset;
+	BORDER-BOTTOM: darkseagreen thin outset;
+	scrollbar-3dlight-color:;
+	scrollbar-arrow-color:yellow;
+	scrollbar-base-color:darkseagreen;
+	scrollbar-darkshadow-color:;
+	scrollbar-face-color:darkseagreen;
+	scrollbar-highlight-color:;
+	scrollbar-shadow-color:teal;
+	BACKGROUND-COLOR: #99cc99;
+	width:200px;
+	height:100px;
+	overflow:auto;
+}

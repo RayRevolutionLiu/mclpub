@@ -1,0 +1,9 @@
+/*¸¨ª©²M³æ*/
+SELECT         c4_adr.*, c4_cont.cont_mfrno, mfr.mfr_inm, c4_cont.cont_empno, 
+                          srspn.srspn_cname
+FROM             c4_adr INNER JOIN
+                          c4_cont ON c4_adr.adr_syscd = c4_cont.cont_syscd AND 
+                          c4_adr.adr_contno = c4_cont.cont_contno INNER JOIN
+                          srspn ON c4_cont.cont_empno = srspn.srspn_empno INNER JOIN
+                          mfr ON c4_cont.cont_mfrno = mfr.mfr_mfrno
+ORDER BY  c4_adr.adr_keyword, c4_adr.adr_addate

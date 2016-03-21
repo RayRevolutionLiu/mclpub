@@ -1,0 +1,95 @@
+SELECT         pub_contno, pub_pubseq, pub_yyyymm, pub_pgno, pub_clrcd, pub_pgscd, 
+                          pub_ltpcd, pub_fgfixpg, pub_fggot, pub_modempno, pub_remark, pub_origbkcd, 
+                          pub_origjno, pub_origjbkno
+FROM             c2_pub
+
+
+
+SELECT         pub_contno AS 合約編號, pub_pubseq AS 落版序號, pub_yyyymm AS 刊登年月, 
+                          pub_pgno AS 刊登頁碼, pub_clrcd AS 色彩, pub_pgscd AS 版面, 
+                          pub_ltpcd AS 篇幅, pub_fgfixpg AS 到稿註記, pub_fggot AS 固定頁次註記, 
+                          pub_modempno AS 業務員工號, pub_remark AS 備註, pub_origbkcd AS 舊稿書籍, 
+                          pub_origjno AS 舊稿期數, pub_origjbkno AS 舊稿頁碼
+FROM             c2_pub
+
+
+
+SELECT         c2_pub.pub_contno AS 合約編號, c2_pub.pub_pubseq AS 落版序號, 
+                          c2_pub.pub_yyyymm AS 刊登年月, c2_pub.pub_pgno AS 刊登頁碼, 
+                          c2_pub.pub_clrcd AS 色彩, c2_pub.pub_pgscd AS 版面, 
+                          c2_pub.pub_ltpcd AS 篇幅, c2_pub.pub_fgfixpg AS 固定頁次註記, 
+                          c2_pub.pub_fggot AS 到稿註記, c2_pub.pub_modempno AS 業務員工號, 
+                          c2_pub.pub_remark AS 備註, c2_pub.pub_origbkcd AS 舊稿書籍, 
+                          c2_pub.pub_origjno AS 舊稿期數, c2_pub.pub_origjbkno AS 舊稿頁碼, 
+                          RTRIM(mfr.mfr_inm) AS 索引
+FROM             c2_pub INNER JOIN
+                          c2_cont ON c2_pub.pub_contno = c2_cont.cont_contno AND 
+                          c2_pub.pub_syscd = c2_cont.cont_syscd INNER JOIN
+                          mfr ON c2_cont.cont_mfrno = mfr.mfr_mfrno
+                       
+                       
+                       SELECT         RTRIM(dbo.c2_pub.pub_contno) AS 合約編號, RTRIM(dbo.c2_pub.pub_pubseq) 
+                          AS 落版序號, RTRIM(dbo.c2_pub.pub_yyyymm) AS 刊登年月, 
+                          RTRIM(dbo.c2_pub.pub_pgno) AS 刊登頁碼, RTRIM(dbo.c2_pub.pub_clrcd) 
+                          AS 色彩, RTRIM(dbo.c2_pub.pub_pgscd) AS 版面, RTRIM(dbo.c2_pub.pub_ltpcd) 
+                          AS 篇幅, RTRIM(dbo.c2_pub.pub_fgfixpg) AS 固定頁次註記, 
+                          RTRIM(dbo.c2_pub.pub_fggot) AS 到稿註記, RTRIM(dbo.c2_pub.pub_modempno)
+                           AS 業務員工號, RTRIM(dbo.c2_pub.pub_remark) AS 備註, 
+                          RTRIM(dbo.c2_pub.pub_origbkcd) AS 舊稿書籍, RTRIM(dbo.c2_pub.pub_origjno) 
+                          AS 舊稿期數, RTRIM(dbo.c2_pub.pub_origjbkno) AS 舊稿頁碼, 
+                          RTRIM(dbo.c2_pub.pub_chgbkcd) AS 改稿書籍, RTRIM(dbo.c2_pub.pub_chgjno) 
+                          AS 改稿期數, RTRIM(dbo.c2_pub.pub_chgjbkno) AS 改稿頁碼, 
+                          RTRIM(dbo.c2_pub.pub_fgrechg) AS 改稿重出片註記, 
+                          RTRIM(dbo.c2_pub.pub_njtpcd) AS 新稿製法代碼, RTRIM(dbo.mfr.mfr_inm) 
+                          AS 索引
+FROM             dbo.c2_pub INNER JOIN
+                          dbo.c2_cont ON dbo.c2_pub.pub_contno = dbo.c2_cont.cont_contno AND 
+                          dbo.c2_pub.pub_syscd = dbo.c2_cont.cont_syscd INNER JOIN
+                          dbo.mfr ON dbo.c2_cont.cont_mfrno = dbo.mfr.mfr_mfrno
+
+=================================================================
+                           
+** 91/3/27 final sqlcmd **
+
+SELECT         TOP 100 PERCENT 0 AS 頁次, RTRIM(c2_pub.pub_contno) AS 合約編號, 
+                          RTRIM(c2_pub.pub_pubseq) AS 落版序號, RTRIM(c2_pub.pub_yyyymm)
+                           AS 刊登年月, c2_pub.pub_pgno AS 刊登頁碼, 
+                          RTRIM(c2_pub.pub_clrcd) AS 廣告色彩代碼, RTRIM(c2_pub.pub_pgscd) 
+                          AS 廣告版面代碼, RTRIM(c2_pub.pub_ltpcd) AS 廣告篇幅代碼, 
+                          RTRIM(c2_pub.pub_fgfixpg) AS 固定頁次註記, RTRIM(c2_pub.pub_fggot)
+                           AS 到稿註記, RTRIM(c2_pub.pub_modempno) AS 落版業務員工號, 
+                          RTRIM(c2_pub.pub_remark) AS 備註, RTRIM(c2_pub.pub_origbkcd) 
+                          AS 舊稿書籍代碼, RTRIM(c2_pub.pub_origjno) AS 舊稿期數, 
+                          RTRIM(c2_pub.pub_origjbkno) AS 舊稿頁碼, 
+                          RTRIM(c2_pub.pub_chgbkcd) AS 改稿書籍代碼, 
+                          RTRIM(c2_pub.pub_chgjno) AS 改稿期數, RTRIM(c2_pub.pub_chgjbkno) 
+                          AS 改稿頁碼, RTRIM(c2_pub.pub_fgrechg) AS 改稿重出片註記, 
+                          RTRIM(c2_pub.pub_njtpcd) AS 新稿製法代碼, RTRIM(mfr.mfr_inm) 
+                          AS 公司名稱, 8 AS 版面2, RTRIM(c2_pub.pub_bkcd) AS 書籍類別代碼, 
+                          RTRIM(c2_clr.clr_nm) AS 廣告彩色, RTRIM(c2_ltp.ltp_nm) AS 廣告版面, 
+                          RTRIM(c2_pgsize.pgs_nm) AS 廣告篇幅, RTRIM(c2_njtp.njtp_nm) 
+                          AS 新稿製法, RTRIM(book.bk_nm) AS 舊稿書籍名稱, 
+                          RTRIM(srspn.srspn_cname) AS 落版業務員姓名
+FROM             c2_pub INNER JOIN
+                          c2_cont ON c2_pub.pub_contno = c2_cont.cont_contno AND 
+                          c2_pub.pub_syscd = c2_cont.cont_syscd INNER JOIN
+                          mfr ON c2_cont.cont_mfrno = mfr.mfr_mfrno LEFT OUTER JOIN
+                          srspn ON 
+                          c2_cont.cont_empno = srspn.srspn_empno LEFT OUTER JOIN
+                          book ON c2_pub.pub_origbkcd = book.bk_bkcd LEFT OUTER JOIN
+                          c2_njtp ON 
+                          c2_pub.pub_njtpcd = c2_njtp.njtp_njtpcd LEFT OUTER JOIN
+                          c2_pgsize ON 
+                          c2_pub.pub_pgscd = c2_pgsize.pgs_pgscd LEFT OUTER JOIN
+                          c2_clr ON c2_pub.pub_clrcd = c2_clr.clr_clrcd LEFT OUTER JOIN
+                          c2_ltp ON c2_pub.pub_ltpcd = c2_ltp.ltp_ltpcd
+WHERE         (c2_pub.pub_bkcd = 01) AND (c2_pub.pub_yyyymm LIKE '%2002%')
+ORDER BY 刊登頁碼, 合約編號, 刊登年月, 落版序號
+
+	0	910012	1	200203	1	01	01	06	0	1	800443	註一	01	142	0		0	0			財團法人工業技術研究院	8	01	彩色	內頁	全頁		工材雜誌	康靜怡
+	0	910019	1	200203	5		01		0	1	521017		01	142	0		0	0			財團法人工業技術研究院	8	01			全頁		工材雜誌	張雅雯
+	0	910021	1	200204	9	06	01	01	0	0	800443			0	1	01	184	0	0		金讚實業有限公司	8	01		封面	全頁			康靜怡
+	0	910012	2	200203	10		01		0	0	800443			0	0		0	0		01	財團法人工業技術研究院	8	01			全頁	內製		康靜怡
+	0	910012	3	200203	11		01		0	0	800443		01	142	0		0	0			財團法人工業技術研究院	8	01			全頁		工材雜誌	康靜怡
+	0	910020	1	200203	34	06	02	01	1	1	521017		01	123	0		0	0			財團法人工業技術研究院	8	01		封面	半頁		工材雜誌	張雅雯
+	0	910020	2	200203	34	06	02	01	1	1	521017		01	123	0		0	0			財團法人工業技術研究院	8	01		封面	半頁		工材雜誌	張雅雯

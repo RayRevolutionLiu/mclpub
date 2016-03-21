@@ -1,0 +1,65 @@
+CREATE PROC dbo.sp_c4_update_adcnt(@syscd CHAR(2), @contno CHAR(6))
+AS
+BEGIN
+
+SET NOCOUNT ON
+
+/*測試用資料
+DECLARE @syscd CHAR(2), @contno CHAR(6)
+SELECT @syscd='C4'
+SELECT @contno='000024'
+*/
+DECLARE @sdate CHAR(8), @edate CHAR(8), @adcate CHAR(1), @keyword CHAR(2), @impr INT
+DECLARE @tmpdate CHAR(8)
+
+DECLARE adcnt_cursor CURSOR FOR
+SELECT adr_sdate,adr_edate,adr_adcate,adr_keyword,adr_impr
+FROM c4_adr
+WHERE (adr_syscd = @syscd) AND (adr_contno = @contno)
+
+OPEN adcnt_cursor
+
+FETCH NEXT FROM adcnt_cursor
+INTO @sdate, @edate, @adcate, @keyword, @impr
+
+
+WHILE (@@FETCH_STATUS=0)
+BEGIN
+	SELECT @tmpdate = @sdate
+	WHILE (DATEDIFF(DAY, CONVERT(DATETIME, @tmpdate, 112),  CONVERT(DATETIME, @edate, 112))>=0)
+	BEGIN
+		IF @keyword='h0'
+                               		UPDATE c4_adcnt SET cnt_h0=cnt_h0-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+                                ELSE IF @keyword='h1'
+			UPDATE c4_adcnt SET cnt_h1=cnt_h1-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='h2'
+			UPDATE c4_adcnt SET cnt_h2=cnt_h2-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='h3'
+			UPDATE c4_adcnt SET cnt_h3=cnt_h3-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='h4'
+			UPDATE c4_adcnt SET cnt_h4=cnt_h4-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w1'
+			UPDATE c4_adcnt SET cnt_w1=cnt_w1-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w2'
+			UPDATE c4_adcnt SET cnt_w2=cnt_w2-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w3'
+			UPDATE c4_adcnt SET cnt_w3=cnt_w3-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w4'
+			UPDATE c4_adcnt SET cnt_w4=cnt_w4-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w5'
+			UPDATE c4_adcnt SET cnt_w5=cnt_w5-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+		ELSE IF @keyword='w6'
+			UPDATE c4_adcnt SET cnt_w6=cnt_w6-@impr WHERE cnt_date=@tmpdate AND cnt_adcate=@adcate
+
+		SELECT @tmpdate = CONVERT(CHAR(8), DATEADD(DAY, 1, @tmpdate), 112)
+	END
+
+FETCH NEXT FROM adcnt_cursor
+END
+
+CLOSE adcnt_cursor
+DEALLOCATE adcnt_cursor
+
+SET NOCOUNT OFF
+END
+GO

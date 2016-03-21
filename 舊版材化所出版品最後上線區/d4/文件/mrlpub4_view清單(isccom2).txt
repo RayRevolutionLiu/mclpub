@@ -1,0 +1,14 @@
+Name	Owner	Type	Create Date
+v_c1_income1	dbo	User	2003/5/9 下午 04:34:46
+v_c1_maxseq_book01	dbo	User	2003/5/9 下午 04:34:45
+v_c1_maxseq_book02	dbo	User	2003/5/9 下午 04:34:46
+v_c1_tmp_001	dbo	User	2003/5/9 下午 04:34:47
+v_c2_count_pubseq_of_cont	dbo	User	2003/5/9 下午 04:34:42
+v_c2_iaFm2_prelist2a	dbo	User	2003/5/9 下午 04:34:43
+v_c4_adamtlist	dbo	User	2004/2/4 下午 02:52:31
+v_c4_admadelist	dbo	User	2004/2/6 下午 04:06:02
+v_c4_invbatch	dbo	User	2003/5/9 下午 04:34:44
+v_c4_mailmnt	dbo	User	2004/2/12 下午 02:32:32
+v_c4_pub	dbo	User	2004/2/18 下午 05:23:07
+v_c4_sum_adr_amt	dbo	User	2004/2/2 下午 02:09:55
+v_c4_unpub	dbo	User	2004/2/18 下午 05:22:35

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>
+  <Ad>
+    <ImageUrl>ADImages/materialsnet.jpg</ImageUrl>
+    <NavigateUrl>http://www.materialsnet.com.tw</NavigateUrl>
+    <AlternateText>預設廣告</AlternateText>
+    <Keyword>Right</Keyword>
+    <Impression>1</Impression>
+  </Ad>
+  <Ad>
+    <ImageUrl>ADImages/materialsnetbanner.gif</ImageUrl>
+    <NavigateUrl>http://www.materialsnet.com.tw</NavigateUrl>
+    <AlternateText>預設廣告</AlternateText>
+    <Keyword>Top</Keyword>
+    <Impression>1</Impression>
+  </Ad>  
+</Advertisements>

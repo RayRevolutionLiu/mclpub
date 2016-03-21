@@ -1,0 +1,190 @@
+<html>
+
+<HEAD>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!--
+No3 = (parseInt(navigator.appVersion) > 3) ? 1:0;
+layer = (document.all && No3) ? "document.all['L'+menu].style" : (document.layers && No3) ? "document.layers['L'+menu]" : 0;
+var timer;
+
+function JavaM() { if(layer) {
+    if(timer) clearTimeout(timer);
+    for(menu=0; menu<Layer.length; menu++) { if(Layer[menu]) { eval(layer).visibility = "hidden"; } }
+    for(i=0; i<arguments.length; i++) { menu=arguments[i]; eval(layer).visibility = "visible"; }
+} }
+function Hide() { timer = setTimeout("JavaM()", 500); }
+//-->
+</SCRIPT>
+
+<style type="text/css">
+TD{font-size:9pt}
+
+A:link {color: #ffffff; text-decoration: none}
+A:visited {color: #ffffff; text-decoration: none}
+A:active {color: #ffffff; text-decoration: none}
+A:hover {color: #ffffff; text-decoration: none}
+</style>
+
+</HEAD>
+
+<BODY topmargin="0" leftmargin="0">
+
+<p><img border="0" src="book_0011.gif" width="31" height="26">
+<font color="#FF0066" size="2">工業技術研究院材料所出版品客戶管理系統</font></p>
+
+<TABLE WIDTH="100%" BORDER=0 CELLPADDING=3 CELLSPACING=0 height="18" style="border-collapse: collapse" bordercolor="#111111" ><TR>
+
+<TD width="49" align="center" height="12" onMouseOver="this.style.background='#1A3264';" onMouseOut="this.style.background='#3366CC';" bgcolor="#3366CC" nowrap><A HREF="http://javamagic.hypermart.net">
+系統首頁</A></TD>
+<td height="5" width="10" bgcolor="#3366CC" align="center" nowrap>
+<font color="#F7F9FD">
+<span style="font-style:normal; font-variant:normal; font-weight:normal; font-family:Verdana">
+|</span></font></td>
+<TD bgcolor="#3366CC" width="109" align="center" height="12" onMouseOver="this.style.background='#1A3264';" onMouseOut="this.style.background='#3366CC';" nowrap><A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)" onMouseOut="Hide(1)">
+雜誌叢書訂閱次系統</A></TD>
+<td height="5" width="13" bgcolor="#3366CC" align="center" nowrap>
+<font color="#F7F9FD">
+<span style="font-style:normal; font-variant:normal; font-weight:normal; font-family:Verdana">
+|</span></font></td>
+<TD bgcolor="#3366CC" width="86" align="center" height="12" onMouseOver="this.style.background='#1A3264';" onMouseOut="this.style.background='#3366CC';" nowrap><A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)" onMouseOut="Hide(2)">
+平面廣告次系統</A></TD>
+<td height="5" width="13" bgcolor="#3366CC" align="center" nowrap>
+<font color="#F7F9FD">
+<span style="font-style:normal; font-variant:normal; font-weight:normal; font-family:Verdana">
+|</span></font></td>
+<TD bgcolor="#3366CC" width="121" align="center" height="12" onMouseOver="this.style.background='#1A3264';" onMouseOut="this.style.background='#3366CC';" nowrap><A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(3)" onMouseOut="Hide(3)">
+材料世界網收費次系統</A></TD>
+<td height="5" width="15" bgcolor="#3366CC" align="center" nowrap>
+<font color="#F7F9FD">
+<span style="font-style:normal; font-variant:normal; font-weight:normal; font-family:Verdana">
+|</span></font></td>
+<TD bgcolor="#3366CC" width="85" align="center" height="12" onMouseOver="this.style.background='#1A3264';" onMouseOut="this.style.background='#3366CC';" nowrap><A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(4)" onMouseOut="Hide(4)">
+網路廣告次系統</A></TD>
+<TD bgcolor="#3366CC" width="" align="center" height="12" nowrap>　</TD>
+
+</TR></TABLE>
+</SPAN>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+
+//////////////////////////////////////////////////////
+
+    hovercolor = "#1A3264"; 
+    bgcolor = "#000000"; 
+    background = "072700_1.jpg";  
+    
+    menu_border = 1; 
+    border_color = "white"; 
+    
+    arrow_pic = "right02.gif"; 
+
+//////////////////////////////////////////////////////
+
+
+if(document.all) { if(!background) { background=bgcolor; } else { background = "url("+background+")"; } }
+
+function LayerSpecs(Left,Top,Width) { if(No3) {
+    if(document.all) { Top+=7; Left+=2; Width-=6; }
+    this.left = Left;
+    this.top = Top;
+    this.info = "";
+    T=0;
+    for(i=3; i<arguments.length; i++) {
+        if(document.all) { this.info += "<TR><TD WIDTH="+Width+" onMouseOver='this.bgColor=\""+hovercolor+"\"' onMouseOut='this.bgColor=\"\"'>"+arguments[i]+"</TD></TR>"; }
+        else { this.info += "<LAYER onMouseOver='this.bgColor=\""+hovercolor+"\"' onMouseOut='this.bgColor=\""+bgcolor+"\"' WIDTH="+Width+" POSITION=RELATIVE TOP="+T+">&nbsp;"+arguments[i]+"</LAYER>"; }
+        T+=20;
+    }
+} }
+
+Layer = new Array();
+arrow = "<IMG SRC='"+arrow_pic+"' BORDER=0 ALT=''>";
+
+
+//////////////////////////////////////////////
+
+Layer[1] =    new LayerSpecs(62,64,80,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(5,1)"> &nbsp; 訂單處理</A> &nbsp; '+arrow,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 缺書處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 發票處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 缺款處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 續訂處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 繳款處理</A> ',
+			'<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 標籤處理</A> ',
+			'<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 推廣戶處理</A> ',
+			'<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 贈戶處理</A> '
+);
+
+Layer[2] =    new LayerSpecs(198,64,80,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(6,2)"> &nbsp; 合約處理</A> &nbsp; '+arrow,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 催稿處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(7,2)"> &nbsp; 落版處理</A> &nbsp; '+arrow,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 發票處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 繳款處理</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 缺書處理</A> ',
+			'<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 催款處理</A> ',
+			'<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(2)"> &nbsp; 推廣戶處理</A> '
+);
+
+Layer[3] =    new LayerSpecs(307,64,80,
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 目錄三</A> ',
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 連結網頁</A> '
+);
+
+Layer[4] =    new LayerSpecs(455,64,80,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(4,1)"> &nbsp; 目錄一</A> '+arrow,
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net" onMouseOver="JavaM(1)"> &nbsp; 連結網頁</A> '
+);
+
+Layer[5] =    new LayerSpecs(143,64,80,
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 一般訂書</A> ',
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 補書處理</A> '
+);
+
+Layer[6] =    new LayerSpecs(279,64,80,
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 補書處理</A> '
+);
+
+Layer[7] =    new LayerSpecs(279,100,80,
+            '<A HREF="http://javamagic.hypermart.net"> &nbsp; 標籤處理</A> '
+);
+
+Layer[8] =    new LayerSpecs(185,64,80,
+            '<A HREF="http://javamagic.hypermart.net">子目錄八</A> ',
+            '<A HREF="http://javamagic.hypermart.net">連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net">連結網頁</A> ',
+            '<A HREF="http://javamagic.hypermart.net">連結網頁</A> '
+);
+
+
+
+////////////////////////////////////////////////////////////////
+
+j = (Layer[0]) ? 0:1;
+
+for(i=j; i<Layer.length; i++) {
+    if(document.all && No3) { document.write("<SPAN onMouseOver='clearTimeout(timer)' onMouseOut='Hide("+i+")' ID='L"+i+"' STYLE='position:absolute; visibility:hidden; background:"+background+"; top:"+Layer[i].top+"; left:"+Layer[i].left+";'><TABLE STYLE='border:solid "+menu_border+" "+border_color+"'>"+Layer[i].info+"</TABLE></SPAN>"); }
+    else if(document.layers && No3) { document.write("<LAYER onMouseOver='clearTimeout(timer)' onMouseOut='Hide("+i+")' ID='L"+i+"' POSITION=ABSOLUTE VISIBILITY=HIDDEN BGCOLOR='"+bgcolor+"' BACKGROUND='"+background+"' TOP="+Layer[i].top+" LEFT="+Layer[i].left+">"+Layer[i].info+"</LAYER>"); }
+}
+
+if(document.all) { document.all["menubar"].style.visibility = "visible"; }
+else if(document.layers) { document.layers["menubar"].visibility = "visible"; }
+
+// -->
+</SCRIPT>
+
+<p>　</p>
+<form method="POST" action="--WEBBOT-SELF--">
+  <!--webbot bot="SaveResults" u-file="fpweb:///_private/form_results.csv" s-format="TEXT/CSV" s-label-fields="TRUE" --><p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="text" name="T1" size="20"><input type="submit" value="提交" name="B1"><input type="reset" value="重新設定" name="B2"></p>
+</form>
+
+
+</html>

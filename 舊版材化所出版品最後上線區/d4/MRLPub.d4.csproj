@@ -1,0 +1,674 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{E90B4F23-EF4E-44D1-8532-9A9DE4AFC899}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "MRLPub.d4"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                RootNamespace = "MRLPub.d4"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "mrlpub.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MRLPub.d4.vsdisco"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Configurations\D4Settings.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Advertisements.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\AtpMtps.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\BookReceivers.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Contracts.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Customers.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\FreeBooks.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\InvMfrs.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\ItriUser.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\LostBooks.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\MailAmounts.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Manufacturers.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Mtps.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\ReMailBooks.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DataTypes\Srspns.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <Folder RelPath = "Images\" />
+                <File
+                    RelPath = "Pages\Page.cs"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Pages\SubPage.cs"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\adpub.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserControl\footer.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserControl\footer_tu.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserControl\header.ascx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserControl\mrlpub.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserControl\watermark.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFileUp.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFileUp.aspx.cs"
+                    DependentUpon = "AdrFileUp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFileUp.aspx.resx"
+                    DependentUpon = "AdrFileUp.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFreeSlots.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFreeSlots.aspx.cs"
+                    DependentUpon = "AdrFreeSlots.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrFreeSlots.aspx.resx"
+                    DependentUpon = "AdrFreeSlots.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrGenXml.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrGenXml.aspx.cs"
+                    DependentUpon = "AdrGenXml.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrGenXml.aspx.resx"
+                    DependentUpon = "AdrGenXml.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrImages.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrImages.aspx.cs"
+                    DependentUpon = "AdrImages.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrImages.aspx.resx"
+                    DependentUpon = "AdrImages.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrPublish.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrPublish.aspx.cs"
+                    DependentUpon = "AdrPublish.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrPublish.aspx.resx"
+                    DependentUpon = "AdrPublish.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryCont.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryCont.aspx.cs"
+                    DependentUpon = "AdrQueryCont.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryCont.aspx.resx"
+                    DependentUpon = "AdrQueryCont.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryPublished.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryPublished.aspx.cs"
+                    DependentUpon = "AdrQueryPublished.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrQueryPublished.aspx.resx"
+                    DependentUpon = "AdrQueryPublished.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrUpload.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrUpload.aspx.cs"
+                    DependentUpon = "AdrUpload.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrUpload.aspx.resx"
+                    DependentUpon = "AdrUpload.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrXmlManage.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrXmlManage.aspx.cs"
+                    DependentUpon = "AdrXmlManage.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AdrXmlManage.aspx.resx"
+                    DependentUpon = "AdrXmlManage.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\AtpMatp.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\AtpMatp.aspx.cs"
+                    DependentUpon = "AtpMatp.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\AtpMatp.aspx.resx"
+                    DependentUpon = "AtpMatp.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\calendar.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContCanceled.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContCanceled.aspx.cs"
+                    DependentUpon = "ContCanceled.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContCanceled.aspx.resx"
+                    DependentUpon = "ContCanceled.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\Content.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContMaintain.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContMaintain.aspx.cs"
+                    DependentUpon = "ContMaintain.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContMaintain.aspx.resx"
+                    DependentUpon = "ContMaintain.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContNew.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContNew.aspx.cs"
+                    DependentUpon = "ContNew.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContNew.aspx.resx"
+                    DependentUpon = "ContNew.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryCust.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryCust.aspx.cs"
+                    DependentUpon = "ContQueryCust.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryCust.aspx.resx"
+                    DependentUpon = "ContQueryCust.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryFormal.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryFormal.aspx.cs"
+                    DependentUpon = "ContQueryFormal.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryFormal.aspx.resx"
+                    DependentUpon = "ContQueryFormal.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryHistory.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryHistory.aspx.cs"
+                    DependentUpon = "ContQueryHistory.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryHistory.aspx.resx"
+                    DependentUpon = "ContQueryHistory.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryMaintain.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryMaintain.aspx.cs"
+                    DependentUpon = "ContQueryMaintain.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContQueryMaintain.aspx.resx"
+                    DependentUpon = "ContQueryMaintain.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContShow.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContShow.aspx.cs"
+                    DependentUpon = "ContShow.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\ContShow.aspx.resx"
+                    DependentUpon = "ContShow.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\cust_detail.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\cust_detail.aspx.cs"
+                    DependentUpon = "cust_detail.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\cust_detail.aspx.resx"
+                    DependentUpon = "cust_detail.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\FreeBook.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\FreeBook.aspx.cs"
+                    DependentUpon = "FreeBook.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\FreeBook.aspx.resx"
+                    DependentUpon = "FreeBook.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1ConfirmChecked.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1ConfirmChecked.aspx.cs"
+                    DependentUpon = "IA1ConfirmChecked.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1ConfirmChecked.aspx.resx"
+                    DependentUpon = "IA1ConfirmChecked.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1QueryCont.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1QueryCont.aspx.cs"
+                    DependentUpon = "IA1QueryCont.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\IA1QueryCont.aspx.resx"
+                    DependentUpon = "IA1QueryCont.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostAdd.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostAdd.aspx.cs"
+                    DependentUpon = "LostAdd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostAdd.aspx.resx"
+                    DependentUpon = "LostAdd.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostMaintain.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostMaintain.aspx.cs"
+                    DependentUpon = "LostMaintain.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\LostMaintain.aspx.resx"
+                    DependentUpon = "LostMaintain.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\mfr_detail.aspx"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\mfr_detail.aspx.cs"
+                    DependentUpon = "mfr_detail.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\mfr_detail.aspx.resx"
+                    DependentUpon = "mfr_detail.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailAdd.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailAdd.aspx.cs"
+                    DependentUpon = "RemailAdd.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailAdd.aspx.resx"
+                    DependentUpon = "RemailAdd.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailMaintain.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailMaintain.aspx.cs"
+                    DependentUpon = "RemailMaintain.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "WorkingProcess\RemailMaintain.aspx.resx"
+                    DependentUpon = "RemailMaintain.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "WorkingProcess\ClientScripts\jsCalendar.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "WorkingProcess\ClientScripts\jsContNew.js"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "XmlFiles\" />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

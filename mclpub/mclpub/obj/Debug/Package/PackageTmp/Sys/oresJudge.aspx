@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="oresJudge.aspx.cs" Inherits="mclpub.Sys.oresJudge" StylesheetTheme="" %>

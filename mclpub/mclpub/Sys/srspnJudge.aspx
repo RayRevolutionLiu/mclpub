@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="srspnJudge.aspx.cs" Inherits="mclpub.Sys.srspnJudge" StylesheetTheme="" %>

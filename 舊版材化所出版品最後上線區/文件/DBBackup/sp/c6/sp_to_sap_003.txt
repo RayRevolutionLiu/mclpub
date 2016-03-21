@@ -1,0 +1,72 @@
+/*set ansi_warnings on  */
+/*go                 可參考文件:E:\PB\SQLserver\storeprocedure\...*/
+CREATE proc  sp_to_sap_003( @yyyymm  char(6), @batch_seq char(6), @rtn char(1) output, @cnt  int output  )
+as
+
+
+
+declare @seq int
+insert  into itridp9.sapdb.dbo.inftmp20
+SELECT inf20_orgcd,   
+               inf20_type,   
+               inf20_yyyymm,   
+               inf20_seq,   
+               inf20_infno,   
+               inf20_ref,   
+               inf20_date,   
+               inf20_invtp,   
+               inf20_invcd,   
+               inf20_taxtp,   
+               inf20_remark,   
+               inf20_cusno,   
+               inf20_title,   
+               inf20_address,   
+               inf20_saleamt,   
+               inf20_taxamt,   
+               inf20_invoamt,   
+               inf20_curr,   
+               inf20_rate,   
+               inf20_prtctl,   
+               inf20_postdate,   
+               inf20_accddr,   
+               inf20_attach,   
+               inf20_exptype,   
+               inf20_expremark,   
+               inf20_vseq,   
+               inf20_accdcr,   
+               inf20_projno,   
+               inf20_costctr,   
+               inf20_contno,   
+               inf20_period,   
+               inf20_amt,   
+               inf20_descr,   
+               inf20_alloc,   
+               inf20_iseq,   
+               inf20_idescr,   
+               inf20_iunit,   
+               inf20_iqty,   
+               inf20_iuniprice,   
+               inf20_iremark 
+    FROM isccom1.mrlpub.dbo.inftmp20   
+    WHERE (inftmp20.inf20_orgcd = '05' )and   
+         (inftmp20.inf20_type = 'AR') and   
+         (inftmp20.inf20_yyyymm = @yyyymm) and   
+         (inftmp20.inf20_seq  = @batch_seq )
+
+select @seq = convert(int, @batch_seq )
+
+insert  into itridp9.sapdb.dbo.saplog
+SELECT sap_type,   
+        sap_yyyymm,   
+        sap_seq,   
+        sap_smark,   
+        sap_uid,   
+        sap_moddate,   
+        sap_orgcd  
+    FROM isccom1.mrlpub.dbo.saplog     
+    WHERE (saplog.sap_orgcd = '05' )and   
+         (saplog.sap_type = 'AR') and   
+         (saplog.sap_yyyymm = @yyyymm) and   
+         (saplog.sap_seq  = @seq )
+
+GO

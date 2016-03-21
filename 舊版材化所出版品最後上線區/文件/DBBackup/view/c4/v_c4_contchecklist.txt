@@ -1,0 +1,26 @@
+CREATE VIEW dbo.v_c4_contchecklist
+AS
+SELECT dbo.c4_cont.cont_contid, dbo.c4_cont.cont_syscd, dbo.c4_cont.cont_contno,
+                  dbo.c4_cont.cont_custno, dbo.c4_cont.cont_conttp, dbo.c4_cont.cont_signdate,
+                  dbo.c4_cont.cont_sdate, dbo.c4_cont.cont_edate, dbo.c4_cont.cont_empno,
+                  dbo.c4_cont.cont_mfrno, dbo.c4_cont.cont_pubcate, dbo.c4_cont.cont_aunm,
+                  dbo.c4_cont.cont_autel, dbo.c4_cont.cont_aufax, dbo.c4_cont.cont_aucell,
+                  dbo.c4_cont.cont_auemail, dbo.c4_cont.cont_disc, dbo.c4_cont.cont_freetm,
+                  dbo.c4_cont.cont_pubtm, dbo.c4_cont.cont_resttm, dbo.c4_cont.cont_totamt,
+                  dbo.c4_cont.cont_paidamt, dbo.c4_cont.cont_restamt, dbo.c4_cont.cont_ccont,
+                  dbo.c4_cont.cont_csdate, dbo.c4_cont.cont_atp, dbo.c4_cont.cont_matp,
+                  dbo.c4_cont.cont_fgclosed, dbo.c4_cont.cont_adremark, dbo.c4_cont.cont_pdcont,
+                  dbo.c4_cont.cont_moddate, dbo.c4_cont.cont_fgpayonce, dbo.c4_cont.cont_fgtemp,
+                  dbo.c4_cont.cont_fgpubed, dbo.c4_cont.cont_modempno, dbo.c4_cont.cont_credate,
+                  dbo.c4_cont.cont_totimgtm, dbo.c4_cont.cont_toturltm, dbo.c4_cont.cont_adsprem,
+                  dbo.c4_cont.cont_fgcancel AS mfr_mfrnm, dbo.mfr.mfr_inm, dbo.mfr.mfr_mfrno
+FROM     dbo.c4_cont LEFT OUTER JOIN
+                  dbo.mfr ON dbo.c4_cont.cont_mfrno = dbo.mfr.mfr_mfrno LEFT OUTER JOIN
+                      (SELECT DISTINCT adrd_syscd, adrd_contno
+                       FROM      c4_adrd
+                       WHERE   adrd_fginved = '0') DRIVERTBL ON
+                  dbo.c4_cont.cont_syscd = DRIVERTBL.adrd_syscd AND
+                  dbo.c4_cont.cont_contno = DRIVERTBL.adrd_contno
+WHERE  (dbo.c4_cont.cont_fgtemp <> '1') AND (dbo.c4_cont.cont_fgcancel <> '1') AND
+                  (dbo.c4_cont.cont_fgclosed <> '1')
+

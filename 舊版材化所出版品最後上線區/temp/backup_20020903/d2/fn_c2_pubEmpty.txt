@@ -1,0 +1,86 @@
+CREATE FUNCTION dbo.fn_c2_pubEmpty
+(
+	@syscd varchar(2),
+	@contno varchar(6)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+declare @custno varchar(6), @mfrno varchar(10)
+declare @xmldata varchar(8000)
+
+select @syscd=rtrim(cont_syscd),@contno=rtrim(cont_contno),@custno=rtrim(cont_custno),@mfrno=rtrim(cont_mfrno)
+ from c2_cont
+ where cont_syscd=@syscd and cont_contno=@contno
+
+ set @xmldata = '<合約書落版刊登資料>'
+ set @xmldata=@xmldata + '<落版明細表>'
+ 
+ set @xmldata=@xmldata + '<序號>1</序號>'
+ set @xmldata=@xmldata + '<系統代碼>C2</系統代碼>'
+ set @xmldata=@xmldata + '<合約書編號>' + @contno + '</合約書編號>'
+ set @xmldata=@xmldata + '<合約類別代碼>01</合約類別代碼>'
+ set @xmldata=@xmldata + '<客戶編號>' + @custno + '</客戶編號>'
+ set @xmldata=@xmldata + '<計劃代號>DF1559C330</計劃代號>'
+ set @xmldata=@xmldata + '<成本中心>050C300</成本中心>'
+ set @xmldata=@xmldata + '<書籍類別代碼>01</書籍類別代碼>' 
+ set @xmldata=@xmldata + '<書籍全碼>01DF1559C330050C300</書籍全碼>' 
+ set @xmldata=@xmldata + '<刊登年月 />'
+ set @xmldata=@xmldata + '<落版序號>1</落版序號>'
+ set @xmldata=@xmldata + '<書籍期別 />'
+ set @xmldata=@xmldata + '<刊登頁碼 />'
+ set @xmldata=@xmldata + '<固定頁次註記>0</固定頁次註記>'
+ set @xmldata=@xmldata + '<廣告色彩代碼>01</廣告色彩代碼>'
+ set @xmldata=@xmldata + '<廣告篇幅代碼>01</廣告篇幅代碼>'
+ set @xmldata=@xmldata + '<廣告版面代碼>06</廣告版面代碼>'
+ set @xmldata=@xmldata + '<到稿註記>0</到稿註記>'
+ set @xmldata=@xmldata + '<落版後金額 />'
+ set @xmldata=@xmldata + '<換稿費用 />'
+ set @xmldata=@xmldata + '<落版最後修改日期 />'
+ set @xmldata=@xmldata + '<落版修改業務員工號 />'
+ set @xmldata=@xmldata + '<樣後修改註記>0</樣後修改註記>'
+
+ set @xmldata=@xmldata + '<發票廠商收件人細節>'
+ set @xmldata=@xmldata + '<發票廠商收件人明細>'
+ set @xmldata=@xmldata + '<系統代碼>C2</系統代碼>' 
+ set @xmldata=@xmldata + '<合約書編號>' + @contno + '</合約書編號>' 
+ set @xmldata=@xmldata + '<發票廠商序號>1</發票廠商序號>'
+ set @xmldata=@xmldata + '<發票收件人廠商統編>' + @mfrno + '</發票收件人廠商統編>' 
+ set @xmldata=@xmldata + '<發票收件人姓名 />'
+ set @xmldata=@xmldata + '<發票收件人職稱 />'
+ set @xmldata=@xmldata + '<發票收件人郵遞區號 />'
+ set @xmldata=@xmldata + '<發票收件人地址 />'
+ set @xmldata=@xmldata + '<發票收件人電話 />'  
+ set @xmldata=@xmldata + '<發票收件人傳真 />'  
+ set @xmldata=@xmldata + '<發票收件人手機 />'  
+ set @xmldata=@xmldata + '<發票收件人Email />'  
+ set @xmldata=@xmldata + '<發票類別代碼>3</發票類別代碼>'
+ set @xmldata=@xmldata + '<發票課稅別代碼>1</發票課稅別代碼>'
+ set @xmldata=@xmldata + '<院所內註記></院所內註記>'
+ set @xmldata=@xmldata + '</發票廠商收件人明細>'
+ set @xmldata=@xmldata + '</發票廠商收件人細節>'
+ 
+ set @xmldata=@xmldata + '<落版細節>'
+ set @xmldata=@xmldata + '<落版廣告金額>0</落版廣告金額>'
+ set @xmldata=@xmldata + '<換稿金額>0</換稿金額>'
+ set @xmldata=@xmldata + '<已開立發票單註記>0</已開立發票單註記>'
+ set @xmldata=@xmldata + '<發票開立單人工處理註記>0</發票開立單人工處理註記>'
+ set @xmldata=@xmldata + '<備註 />'
+ set @xmldata=@xmldata + '<稿件類別代碼>01</稿件類別代碼>'
+ set @xmldata=@xmldata + '<舊稿書籍代碼 />'
+ set @xmldata=@xmldata + '<舊稿期別 />'
+ set @xmldata=@xmldata + '<舊稿頁碼 />'
+ set @xmldata=@xmldata + '<改稿書籍代碼>01</改稿書籍代碼>'
+ set @xmldata=@xmldata + '<改稿期別 />'
+ set @xmldata=@xmldata + '<改稿頁碼 />'
+ set @xmldata=@xmldata + '<改稿重出片註記></改稿重出片註記>'
+ set @xmldata=@xmldata + '<新稿製法代碼>01</新稿製法代碼>'
+ set @xmldata=@xmldata + '</落版細節>'
+
+ set @xmldata=@xmldata + '</落版明細表>'
+ set @xmldata=@xmldata + '</合約書落版刊登資料>' 
+
+
+ 	RETURN @xmldata
+	END
+

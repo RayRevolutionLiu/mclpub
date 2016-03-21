@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<TITLE>選單內容</TITLE>
+		<META content="Microsoft Visual Studio 7.0" name="GENERATOR">
+	</HEAD>
+	<BODY vLink="blue" link="blue">
+		<P><FONT face="新細明體">合約處理</FONT></P>
+		<UL>
+			<LI>
+				<FONT face="新細明體"><A href="ContQueryCust.aspx">合約書新增</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="ContQueryMaintain.aspx">合約書維護</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="ContCanceled.aspx">已註銷合約書維護</A></FONT>
+			<LI>
+				<FONT face="新細明體">單一合約書檢核表</A></FONT>
+			<LI>
+				<FONT face="新細明體">大批合約書檢核表</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="RptSingleCont0.aspx">單一合約書清單</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="RptContList0.aspx">大批合約書清單</A></FONT></LI></UL>
+		<P><FONT face="新細明體">催稿處理</FONT></P>
+		<UL>
+			<LI>
+				<FONT face="新細明體">催稿單</FONT></LI></UL>
+		<P><FONT face="新細明體">廣告落版處理</FONT></P>
+		<UL>
+			<LI>
+				<FONT face="新細明體"><A href="AdrQueryCont.aspx">廣告落版處理</A></FONT>
+			<LI>
+				<FONT face="新細明體">網路廣告落版清單</FONT>
+			<LI>
+				<FONT face="新細明體"><A href="AdrQueryPublished.aspx">美編上稿處理</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="AdrGenXml.aspx">產生落版播出檔</A></FONT>
+			<LI>
+				<FONT face="新細明體">落版播出清單</FONT>
+			<LI>
+				<FONT face="新細明體"><A href="AdrXmlManage.aspx">xml檔案維護</A></FONT></LI></UL>
+		<P><FONT face="新細明體">發票處理</FONT></P>
+		<P><FONT face="新細明體">繳款處理</FONT></P>
+		<P><FONT face="新細明體">補書處理</FONT></P>
+		<UL>
+			<LI>
+				<FONT face="新細明體"><A href="RemailAdd.aspx">補書登錄</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="RemailMaintain.aspx">補書修改</A></FONT>
+			<LI>
+				<FONT face="新細明體">補書清單</FONT></LI></UL>
+		<P><FONT face="新細明體">缺書處理</FONT></P>
+		<UL>
+			<LI>
+				<FONT face="新細明體"><A href="LostAdd.aspx">缺書登錄</A></FONT>
+			<LI>
+				<FONT face="新細明體"><A href="LostMaintain.aspx">缺書修改</A></FONT>
+			<LI>
+				<FONT face="新細明體">缺書清單</FONT></LI></UL>
+		<P><FONT face="新細明體">標籤處理</FONT></P>
+	</BODY>
+</HTML>

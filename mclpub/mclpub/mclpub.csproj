@@ -1,0 +1,2547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B5CD5436-F102-4543-97CD-A18947F06544}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mclpub</RootNamespace>
+    <AssemblyName>mclpub</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlexCel, Version=5.3.0.0, Culture=neutral, PublicKeyToken=cb8f6080e6d5a4d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FlexCelDll存放區\NET35\FlexCel.dll</HintPath>
+    </Reference>
+    <Reference Include="FlexCel.AspNet, Version=5.3.0.0, Culture=neutral, PublicKeyToken=cb8f6080e6d5a4d6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FlexCelDll存放區\NET35\FlexCel.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Json\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Art\css\start\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Art\css\start\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Art\css\start\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Art\css\start\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Art\css\start\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Art\css\start\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="Art\css\start\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="Art\css\start\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="Art\css\start\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Art\css\start\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_056b93_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Art\css\start\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="Art\css\start\jquery-ui-1.8.17.custom.css" />
+    <Content Include="Contract\ContShow.aspx" />
+    <Content Include="LabelArea\PubFm_label3print.aspx" />
+    <Content Include="LabelArea\PubFm_label_search3.aspx" />
+    <Content Include="LabelArea\PubFm_label_search3Print.aspx" />
+    <Content Include="Layout\adcolor.aspx" />
+    <Content Include="Layout\adcolorJudge.aspx" />
+    <Content Include="Layout\adlayout.aspx" />
+    <Content Include="Layout\adlayoutJudge.aspx" />
+    <Content Include="Layout\adlprior.aspx" />
+    <Content Include="Layout\admade_stat.aspx" />
+    <Content Include="Layout\adpgsize.aspx" />
+    <Content Include="Layout\adpgsizeJudge.aspx" />
+    <Content Include="Layout\adpub_act2.aspx" />
+    <Content Include="Layout\adpub_act3.aspx" />
+    <Content Include="Layout\adpub_actupdate.aspx" />
+    <Content Include="Layout\adpub_data.xml" />
+    <Content Include="Layout\adpub_data_empty.xml" />
+    <Content Include="Layout\adpub_form.aspx" />
+    <Content Include="Layout\adpub_list.aspx" />
+    <Content Include="Layout\AdrFileUp.aspx" />
+    <Content Include="Layout\AdrGenXml.aspx" />
+    <Content Include="Layout\AdrPublish.aspx" />
+    <Content Include="Layout\AdrQueryCont.aspx" />
+    <Content Include="Layout\AdrQueryPublished.aspx" />
+    <Content Include="Layout\AdrXmlManage.aspx" />
+    <Content Include="Layout\CheckImage.aspx" />
+    <Content Include="Layout\contpubfm_search.aspx" />
+    <Content Include="Layout\ImagePage.aspx" />
+    <Content Include="Layout\njtp_detail.aspx" />
+    <Content Include="Layout\njtype.aspx" />
+    <Content Include="Layout\pgno.aspx" />
+    <Content Include="Layout\pgnoJudge.aspx" />
+    <Content Include="Layout\PubFm_chklist.aspx" />
+    <Content Include="Layout\pubpgno_get.aspx" />
+    <Content Include="Layout\pub_new1.aspx" />
+    <Content Include="Layout\pub_new2.aspx" />
+    <Content Include="Layout\RptAdrBillQuery.aspx" />
+    <Content Include="Layout\RptAdrQuery.aspx" />
+    <Content Include="Layout\RptFileUpQuery.aspx" />
+    <Content Include="Layout\SubmitJudge.aspx" />
+    <Content Include="Myjs\comemyfamily_call_Ajax_post.js" />
+    <Content Include="Myjs\watermark.js" />
+    <Content Include="Pay\CheckList7.aspx" />
+    <Content Include="Pay\PayDelete.aspx" />
+    <Content Include="Pay\PayFilter.aspx" />
+    <Content Include="Pay\PayFMFilter.aspx" />
+    <Content Include="Pay\PayListFilter.aspx" />
+    <Content Include="Pay\PayListPrint.aspx" />
+    <Content Include="Pay\PayListPrintExcel.aspx" />
+    <Content Include="Pay\PayTypeFM.aspx" />
+    <Content Include="Pay\PayTypeForm.aspx" />
+    <Content Include="Pay\RecoveryPayList.aspx" />
+    <Content Include="Pay\UnpaidListFilter.aspx" />
+    <Content Include="SetAccount\CheckList3.aspx" />
+    <Content Include="SetAccount\CreateIa.aspx" />
+    <Content Include="SetAccount\CreateInvoiceList.aspx" />
+    <Content Include="SetAccount\DeleteIa.aspx" />
+    <Content Include="SetAccount\detail.aspx" />
+    <Content Include="SetAccount\GetInvno.aspx" />
+    <Content Include="SetAccount\IA1ConfirmChecked.aspx" />
+    <Content Include="SetAccount\IA1Query.aspx" />
+    <Content Include="SetAccount\IA1QueryCont.aspx" />
+    <Content Include="SetAccount\IA1RecoveryQuery.aspx" />
+    <Content Include="SetAccount\iaFm1_Add.aspx" />
+    <Content Include="SetAccount\iaFm1_Addia.aspx" />
+    <Content Include="SetAccount\iaFm1_chklist.aspx" />
+    <Content Include="SetAccount\iaFm1_Chklist2.aspx" />
+    <Content Include="SetAccount\iaFm1_Chklist_query.aspx" />
+    <Content Include="SetAccount\iaFm1_Rec.aspx" />
+    <Content Include="SetAccount\iaFm1_Recia.aspx" />
+    <Content Include="SetAccount\iaFm2_Addia.aspx" />
+    <Content Include="SetAccount\iaFm2_chklist_ia.aspx" />
+    <Content Include="SetAccount\iaFm2_RecAll.aspx" />
+    <Content Include="SetAccount\IAQuery.aspx" />
+    <Content Include="SetAccount\IARecoveryQuery.aspx" />
+    <Content Include="SetAccount\InvoiceListPrintCancle.aspx" />
+    <Content Include="SetAccount\RecoveryIa.aspx" />
+    <Content Include="SetAccount\RptIA1_ChkFilter.aspx" />
+    <Content Include="SetAccount\RptIA_ChkFilter.aspx" />
+    <Content Include="SetAccount\SAP.aspx" />
+    <Content Include="SetAccount\SAPListEdit.aspx" />
+    <Content Include="SetAccount\SAPRecovery.aspx" />
+    <Content Include="SetAccount\SetSAPManage.aspx" />
+    <Content Include="SetAccount\SpecialFM.aspx" />
+    <Content Include="Statistics\adincome_stat.aspx" />
+    <Content Include="Statistics\BookMntFilter.aspx" />
+    <Content Include="Statistics\CustMntFilter.aspx" />
+    <Content Include="Statistics\IncomeFilter.aspx" />
+    <Content Include="Statistics\orcounts_stat_search1.aspx" />
+    <Content Include="Statistics\orcounts_stat_search2.aspx" />
+    <Content Include="Statistics\orcounts_stat_search3.aspx" />
+    <Content Include="Statistics\ormtpcounts_stat_search1.aspx" />
+    <Content Include="Statistics\ormtpcounts_stat_search2.aspx" />
+    <Content Include="Statistics\RptIncomeQuery.aspx" />
+    <Content Include="Sys\book.aspx" />
+    <Content Include="Sys\bookJudge.aspx" />
+    <Content Include="Sys\bookp.aspx" />
+    <Content Include="Sys\bookpJudge.aspx" />
+    <Content Include="Sys\btp.aspx" />
+    <Content Include="Sys\btpJudge.aspx" />
+    <Content Include="Sys\EmptyList.xml" />
+    <Content Include="Sys\EmptyOrder.xml" />
+    <Content Include="Sys\itp.aspx" />
+    <Content Include="Sys\itpJudge.aspx" />
+    <Content Include="LabelArea\label.htm" />
+    <Content Include="Sys\LostForm.aspx" />
+    <Content Include="Sys\LostSearch.aspx" />
+    <Content Include="Sys\mtp.aspx" />
+    <Content Include="Sys\mtpJudge.aspx" />
+    <Content Include="Sys\ores.aspx" />
+    <Content Include="Sys\oresJudge.aspx" />
+    <Content Include="Sys\otp.aspx" />
+    <Content Include="Sys\otpJudge.aspx" />
+    <Content Include="Sys\proj.aspx" />
+    <Content Include="Contract\PlaneCont2New.aspx" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Art\DownPage.aspx.cs">
+      <DependentUpon>DownPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Art\DownPage.aspx.designer.cs">
+      <DependentUpon>DownPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Contract\AMEntry.cs" />
+    <Compile Include="Class\Contract\AtpMatp_DB.cs" />
+    <Compile Include="Class\Contract\CancelAndCloseShow_DB.cs" />
+    <Compile Include="Class\Contract\ContCanceled_DB.cs" />
+    <Compile Include="Class\Contract\ContChkList_DB.cs" />
+    <Compile Include="Class\Contract\contfm_chk_DB.cs" />
+    <Compile Include="Class\Contract\ContFm_chklist_DB.cs" />
+    <Compile Include="Class\Contract\ContMaintain_DB.cs" />
+    <Compile Include="Class\Contract\ContNew_DB.cs" />
+    <Compile Include="Class\Contract\ContQueryFormal_DB.cs" />
+    <Compile Include="Class\Contract\ContShowDetail_DB.cs" />
+    <Compile Include="Class\Contract\ContShow_DB.cs" />
+    <Compile Include="Class\Contract\cont_list_DB.cs" />
+    <Compile Include="Class\Contract\cust_detail_DB.cs" />
+    <Compile Include="Class\Contract\FreeBook_DB.cs" />
+    <Compile Include="Class\Contract\InterPlaneCont_DB.cs" />
+    <Compile Include="Class\Contract\InvMfrForm_DB.cs" />
+    <Compile Include="Class\Contract\InvMfr_DB.cs" />
+    <Compile Include="Class\Contract\ORForm_DB.cs" />
+    <Compile Include="Class\Contract\PlaneCont2Edit_DB.cs" />
+    <Compile Include="Class\Contract\PlaneCont2New_DB.cs" />
+    <Compile Include="Class\Contract\PlaneCont_2_DB.cs" />
+    <Compile Include="Class\Contract\PlaneCont_DB.cs" />
+    <Compile Include="Class\Contract\RptAdAmtQuery_DB.cs" />
+    <Compile Include="Class\Contract\RptCont_DB.cs" />
+    <Compile Include="Class\Default_DB.cs" />
+    <Compile Include="Class\LabalArea\appriseFilter_DB.cs" />
+    <Compile Include="Class\LabalArea\appriselabel_DB.cs" />
+    <Compile Include="Class\LabalArea\label_DB.cs" />
+    <Compile Include="Class\LabalArea\LostLabelFilter_DB.cs" />
+    <Compile Include="Class\LabalArea\lost_label_DB.cs" />
+    <Compile Include="Class\LabalArea\LstLabelFilter_DB.cs" />
+    <Compile Include="Class\LabalArea\PubFm_label_DB.cs" />
+    <Compile Include="Class\LabalArea\PubFm_label_search_DB.cs" />
+    <Compile Include="Class\LabalArea\Pub_labelFilter_DB.cs" />
+    <Compile Include="Class\LabalArea\remail_label_DB.cs" />
+    <Compile Include="Class\LabalArea\RmLabelFilterInternet_DB.cs" />
+    <Compile Include="Class\LabalArea\RmLabelFilter_DB.cs" />
+    <Compile Include="Class\LabalArea\search_label_DB.cs" />
+    <Compile Include="Class\LabalArea\UnPub_LabelFilter_DB.cs" />
+    <Compile Include="Class\Layout\adcolor_DB.cs" />
+    <Compile Include="Class\Layout\adlayout_DB.cs" />
+    <Compile Include="Class\Layout\adlprior_DB.cs" />
+    <Compile Include="Class\Layout\adlprior_get_DB.cs" />
+    <Compile Include="Class\Layout\admade_stat_DB.cs" />
+    <Compile Include="Class\Layout\adpgsize_DB.cs" />
+    <Compile Include="Class\Layout\adpub_act1_DB.cs" />
+    <Compile Include="Class\Layout\adpub_act2_DB.cs" />
+    <Compile Include="Class\Layout\adpub_actupdate_DB.cs" />
+    <Compile Include="Class\Layout\adpub_form_DB.cs" />
+    <Compile Include="Class\Layout\adpub_list_DB.cs" />
+    <Compile Include="Class\Layout\AdrFileUp_DB.cs" />
+    <Compile Include="Class\Layout\AdrGenXml_DB.cs" />
+    <Compile Include="Class\Layout\AdrPublish_DB.cs" />
+    <Compile Include="Class\Layout\AdrQueryCont_DB.cs" />
+    <Compile Include="Class\Layout\contpubfm_search_DB.cs" />
+    <Compile Include="Class\Layout\pgno_DB.cs" />
+    <Compile Include="Class\Layout\PubFm_chklist_DB.cs" />
+    <Compile Include="Class\Layout\PubFm_DB.cs" />
+    <Compile Include="Class\Layout\pub_new1_DB.cs" />
+    <Compile Include="Class\Layout\pub_new2_DB.cs" />
+    <Compile Include="Class\Pay\PayDelete_DB.cs" />
+    <Compile Include="Class\Pay\PayFilter_DB.cs" />
+    <Compile Include="Class\Pay\PayFMFilter_DB.cs" />
+    <Compile Include="Class\Pay\PayListFilter_DB.cs" />
+    <Compile Include="Class\Pay\PayListPrint_DB.cs" />
+    <Compile Include="Class\Pay\PayTypeForm_DB.cs" />
+    <Compile Include="Class\Pay\UnpaidListFilter_DB.cs" />
+    <Compile Include="Class\SetAccount\CheckList3_DB.cs" />
+    <Compile Include="Class\SetAccount\CreateIa_DB.cs" />
+    <Compile Include="Class\SetAccount\DeleteIa_DB.cs" />
+    <Compile Include="Class\SetAccount\IA1ConfirmChecked_DB.cs" />
+    <Compile Include="Class\SetAccount\IA1QueryCont_DB.cs" />
+    <Compile Include="Class\SetAccount\IA1Query_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm1_Addia_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm1_Add_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm1_chklist_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm1_Recia_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm1_Rec_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm2_Addia_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm2_chklist_ia_DB.cs" />
+    <Compile Include="Class\SetAccount\iaFm2_RecAll_DB.cs" />
+    <Compile Include="Class\SetAccount\IAQuery_DB.cs" />
+    <Compile Include="Class\SetAccount\InvoiceListPrintCancle_DB.cs" />
+    <Compile Include="Class\SetAccount\RecoveryIa_DB.cs" />
+    <Compile Include="Class\SetAccount\RptIA1_ChkFilter_DB.cs" />
+    <Compile Include="Class\SetAccount\RptIA_ChkFilter_DB.cs" />
+    <Compile Include="Class\SetAccount\SAPListEdit_DB.cs" />
+    <Compile Include="Class\SetAccount\SAP_DB.cs" />
+    <Compile Include="Class\SetAccount\SetSAPManage_DB.cs" />
+    <Compile Include="Class\Statistics\adincome_stat_DB.cs" />
+    <Compile Include="Class\Statistics\BookMntFilter_DB.cs" />
+    <Compile Include="Class\Statistics\CustMntFilter_DB.cs" />
+    <Compile Include="Class\Statistics\IncomeFilter_DB.cs" />
+    <Compile Include="Class\Statistics\orcounts_stat_search1_DB.cs" />
+    <Compile Include="Class\Statistics\ormtpcounts_stat_search1_DB.cs" />
+    <Compile Include="Class\Statistics\RptIncomeQuery_DB.cs" />
+    <Compile Include="Class\Sys\bookp_DB.cs" />
+    <Compile Include="Class\Sys\book_DB.cs" />
+    <Compile Include="Class\Sys\btp_DB.cs" />
+    <Compile Include="Class\Sys\itp_DB.cs" />
+    <Compile Include="Class\Sys\LostSearch_DB.cs" />
+    <Compile Include="Class\Sys\mtp_DB.cs" />
+    <Compile Include="Class\Sys\ores_DB.cs" />
+    <Compile Include="Class\Sys\otp_DB.cs" />
+    <Compile Include="Class\Sys\pytp_DB.cs" />
+    <Compile Include="Class\Sys\refd_DB.cs" />
+    <Compile Include="Class\Sys\refm_DB.cs" />
+    <Compile Include="Class\Sys\RemailFM_DB.cs" />
+    <Compile Include="Class\Sys\RemailForm_DB.cs" />
+    <Compile Include="Class\Sys\RemailSearch_DB.cs" />
+    <Compile Include="Class\Layout\RptAdrBillQuery_DB.cs" />
+    <Compile Include="Class\Layout\RptFileUpQuery_DB.cs" />
+    <Compile Include="Class\Layout\SubmitJudge_DB.cs" />
+    <Compile Include="Class\Order\BulkOrder_DB.cs" />
+    <Compile Include="Class\Order\CheckList_DB.cs" />
+    <Compile Include="Class\Order\CustDetail_DB.cs" />
+    <Compile Include="Class\Order\FreeFM_DB.cs" />
+    <Compile Include="Class\Order\FreeForm_DB.cs" />
+    <Compile Include="Class\Order\OrderFM_DB.cs" />
+    <Compile Include="Class\Order\OrderForm_DB.cs" />
+    <Compile Include="Class\Order\OrderListFilter_DB.cs" />
+    <Compile Include="Class\Order\SearchCustOrder_DB.cs" />
+    <Compile Include="Class\Order\SetRecForm_DB.cs" />
+    <Compile Include="Class\Order\ShowOrder_DB.cs" />
+    <Compile Include="Class\Subscriber\AddComp_DB.cs" />
+    <Compile Include="Class\Subscriber\AddCust_DB.cs" />
+    <Compile Include="Class\Common.cs" />
+    <Compile Include="Class\Subscriber\Company_DB.cs" />
+    <Compile Include="Class\Subscriber\CustListFilter_DB.cs" />
+    <Compile Include="Class\Subscriber\Customer_DB.cs" />
+    <Compile Include="Class\Subscriber\Cust_Edit_DB.cs" />
+    <Compile Include="Class\Subscriber\MasterPageHelper.cs" />
+    <Compile Include="Class\Subscriber\MfrSearch_DB.cs" />
+    <Compile Include="Class\Subscriber\Printadvert_DB.cs" />
+    <Compile Include="Class\Subscriber\PubSearchCustEdit_DB.cs" />
+    <Compile Include="Class\Subscriber\PubSearchCust_DB.cs" />
+    <Compile Include="Class\Contract\RptCustQuery_DB.cs" />
+    <Compile Include="Class\Sys\proj_DB.cs" />
+    <Compile Include="Class\Sys\RmListFilter_DB.cs" />
+    <Compile Include="Class\Sys\srspn_DB.cs" />
+    <Compile Include="Class\Sys\syscd_DB.cs" />
+    <Compile Include="Contract\ContShow.aspx.cs">
+      <DependentUpon>ContShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContShow.aspx.designer.cs">
+      <DependentUpon>ContShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label3print.aspx.cs">
+      <DependentUpon>PubFm_label3print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label3print.aspx.designer.cs">
+      <DependentUpon>PubFm_label3print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search3.aspx.cs">
+      <DependentUpon>PubFm_label_search3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search3.aspx.designer.cs">
+      <DependentUpon>PubFm_label_search3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search3Print.aspx.cs">
+      <DependentUpon>PubFm_label_search3Print.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search3Print.aspx.designer.cs">
+      <DependentUpon>PubFm_label_search3Print.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adcolor.aspx.cs">
+      <DependentUpon>adcolor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adcolor.aspx.designer.cs">
+      <DependentUpon>adcolor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adcolorJudge.aspx.cs">
+      <DependentUpon>adcolorJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adcolorJudge.aspx.designer.cs">
+      <DependentUpon>adcolorJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adlayout.aspx.cs">
+      <DependentUpon>adlayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adlayout.aspx.designer.cs">
+      <DependentUpon>adlayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adlayoutJudge.aspx.cs">
+      <DependentUpon>adlayoutJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adlayoutJudge.aspx.designer.cs">
+      <DependentUpon>adlayoutJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adlprior.aspx.cs">
+      <DependentUpon>adlprior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adlprior.aspx.designer.cs">
+      <DependentUpon>adlprior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\admade_stat.aspx.cs">
+      <DependentUpon>admade_stat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\admade_stat.aspx.designer.cs">
+      <DependentUpon>admade_stat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpgsize.aspx.cs">
+      <DependentUpon>adpgsize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpgsize.aspx.designer.cs">
+      <DependentUpon>adpgsize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpgsizeJudge.aspx.cs">
+      <DependentUpon>adpgsizeJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpgsizeJudge.aspx.designer.cs">
+      <DependentUpon>adpgsizeJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_act2.aspx.cs">
+      <DependentUpon>adpub_act2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_act2.aspx.designer.cs">
+      <DependentUpon>adpub_act2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_act3.aspx.cs">
+      <DependentUpon>adpub_act3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_act3.aspx.designer.cs">
+      <DependentUpon>adpub_act3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_actupdate.aspx.cs">
+      <DependentUpon>adpub_actupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_actupdate.aspx.designer.cs">
+      <DependentUpon>adpub_actupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_form.aspx.cs">
+      <DependentUpon>adpub_form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_form.aspx.designer.cs">
+      <DependentUpon>adpub_form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_list.aspx.cs">
+      <DependentUpon>adpub_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_list.aspx.designer.cs">
+      <DependentUpon>adpub_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrFileUp.aspx.cs">
+      <DependentUpon>AdrFileUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrFileUp.aspx.designer.cs">
+      <DependentUpon>AdrFileUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrGenXml.aspx.cs">
+      <DependentUpon>AdrGenXml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrGenXml.aspx.designer.cs">
+      <DependentUpon>AdrGenXml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrPublish.aspx.cs">
+      <DependentUpon>AdrPublish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrPublish.aspx.designer.cs">
+      <DependentUpon>AdrPublish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrQueryCont.aspx.cs">
+      <DependentUpon>AdrQueryCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrQueryCont.aspx.designer.cs">
+      <DependentUpon>AdrQueryCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrQueryPublished.aspx.cs">
+      <DependentUpon>AdrQueryPublished.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrQueryPublished.aspx.designer.cs">
+      <DependentUpon>AdrQueryPublished.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\AdrXmlManage.aspx.cs">
+      <DependentUpon>AdrXmlManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\AdrXmlManage.aspx.designer.cs">
+      <DependentUpon>AdrXmlManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\CheckImage.aspx.cs">
+      <DependentUpon>CheckImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\CheckImage.aspx.designer.cs">
+      <DependentUpon>CheckImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\contpubfm_search.aspx.cs">
+      <DependentUpon>contpubfm_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\contpubfm_search.aspx.designer.cs">
+      <DependentUpon>contpubfm_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\ImagePage.aspx.cs">
+      <DependentUpon>ImagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\ImagePage.aspx.designer.cs">
+      <DependentUpon>ImagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\njtp_detail.aspx.cs">
+      <DependentUpon>njtp_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\njtp_detail.aspx.designer.cs">
+      <DependentUpon>njtp_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\njtype.aspx.cs">
+      <DependentUpon>njtype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\njtype.aspx.designer.cs">
+      <DependentUpon>njtype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\pgno.aspx.cs">
+      <DependentUpon>pgno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\pgno.aspx.designer.cs">
+      <DependentUpon>pgno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\pgnoJudge.aspx.cs">
+      <DependentUpon>pgnoJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\pgnoJudge.aspx.designer.cs">
+      <DependentUpon>pgnoJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PubFm_chklist.aspx.cs">
+      <DependentUpon>PubFm_chklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\PubFm_chklist.aspx.designer.cs">
+      <DependentUpon>PubFm_chklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\pubpgno_get.aspx.cs">
+      <DependentUpon>pubpgno_get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\pubpgno_get.aspx.designer.cs">
+      <DependentUpon>pubpgno_get.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\pub_new1.aspx.cs">
+      <DependentUpon>pub_new1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\pub_new1.aspx.designer.cs">
+      <DependentUpon>pub_new1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\pub_new2.aspx.cs">
+      <DependentUpon>pub_new2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\pub_new2.aspx.designer.cs">
+      <DependentUpon>pub_new2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\RptAdrBillQuery.aspx.cs">
+      <DependentUpon>RptAdrBillQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\RptAdrBillQuery.aspx.designer.cs">
+      <DependentUpon>RptAdrBillQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\RptAdrQuery.aspx.cs">
+      <DependentUpon>RptAdrQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\RptAdrQuery.aspx.designer.cs">
+      <DependentUpon>RptAdrQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\RptFileUpQuery.aspx.cs">
+      <DependentUpon>RptFileUpQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\RptFileUpQuery.aspx.designer.cs">
+      <DependentUpon>RptFileUpQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\SubmitJudge.aspx.cs">
+      <DependentUpon>SubmitJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\SubmitJudge.aspx.designer.cs">
+      <DependentUpon>SubmitJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\CheckList7.aspx.cs">
+      <DependentUpon>CheckList7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\CheckList7.aspx.designer.cs">
+      <DependentUpon>CheckList7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayDelete.aspx.cs">
+      <DependentUpon>PayDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayDelete.aspx.designer.cs">
+      <DependentUpon>PayDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayFilter.aspx.cs">
+      <DependentUpon>PayFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayFilter.aspx.designer.cs">
+      <DependentUpon>PayFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayFMFilter.aspx.cs">
+      <DependentUpon>PayFMFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayFMFilter.aspx.designer.cs">
+      <DependentUpon>PayFMFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayListFilter.aspx.cs">
+      <DependentUpon>PayListFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayListFilter.aspx.designer.cs">
+      <DependentUpon>PayListFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayListPrint.aspx.cs">
+      <DependentUpon>PayListPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayListPrint.aspx.designer.cs">
+      <DependentUpon>PayListPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayListPrintExcel.aspx.cs">
+      <DependentUpon>PayListPrintExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayListPrintExcel.aspx.designer.cs">
+      <DependentUpon>PayListPrintExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayListPrintGen.ashx.cs">
+      <DependentUpon>PayListPrintGen.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayTypeFM.aspx.cs">
+      <DependentUpon>PayTypeFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayTypeFM.aspx.designer.cs">
+      <DependentUpon>PayTypeFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\PayTypeForm.aspx.cs">
+      <DependentUpon>PayTypeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\PayTypeForm.aspx.designer.cs">
+      <DependentUpon>PayTypeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\RecoveryPayList.aspx.cs">
+      <DependentUpon>RecoveryPayList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\RecoveryPayList.aspx.designer.cs">
+      <DependentUpon>RecoveryPayList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\RecoveryPayListDel.ashx.cs">
+      <DependentUpon>RecoveryPayListDel.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Pay\UnpaidListFilter.aspx.cs">
+      <DependentUpon>UnpaidListFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pay\UnpaidListFilter.aspx.designer.cs">
+      <DependentUpon>UnpaidListFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\CheckList3.aspx.cs">
+      <DependentUpon>CheckList3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\CheckList3.aspx.designer.cs">
+      <DependentUpon>CheckList3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\CreateIa.aspx.cs">
+      <DependentUpon>CreateIa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\CreateIa.aspx.designer.cs">
+      <DependentUpon>CreateIa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\CreateInvoiceList.aspx.cs">
+      <DependentUpon>CreateInvoiceList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\CreateInvoiceList.aspx.designer.cs">
+      <DependentUpon>CreateInvoiceList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\DeleteIa.aspx.cs">
+      <DependentUpon>DeleteIa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\DeleteIa.aspx.designer.cs">
+      <DependentUpon>DeleteIa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\GetInvno.aspx.cs">
+      <DependentUpon>GetInvno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\GetInvno.aspx.designer.cs">
+      <DependentUpon>GetInvno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IA1ConfirmChecked.aspx.cs">
+      <DependentUpon>IA1ConfirmChecked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IA1ConfirmChecked.aspx.designer.cs">
+      <DependentUpon>IA1ConfirmChecked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IA1Query.aspx.cs">
+      <DependentUpon>IA1Query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IA1Query.aspx.designer.cs">
+      <DependentUpon>IA1Query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IA1QueryCont.aspx.cs">
+      <DependentUpon>IA1QueryCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IA1QueryCont.aspx.designer.cs">
+      <DependentUpon>IA1QueryCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IA1RecoveryQuery.aspx.cs">
+      <DependentUpon>IA1RecoveryQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IA1RecoveryQuery.aspx.designer.cs">
+      <DependentUpon>IA1RecoveryQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Add.aspx.cs">
+      <DependentUpon>iaFm1_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Add.aspx.designer.cs">
+      <DependentUpon>iaFm1_Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Addia.aspx.cs">
+      <DependentUpon>iaFm1_Addia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Addia.aspx.designer.cs">
+      <DependentUpon>iaFm1_Addia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_chklist.aspx.cs">
+      <DependentUpon>iaFm1_chklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_chklist.aspx.designer.cs">
+      <DependentUpon>iaFm1_chklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Chklist2.aspx.cs">
+      <DependentUpon>iaFm1_Chklist2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Chklist2.aspx.designer.cs">
+      <DependentUpon>iaFm1_Chklist2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Chklist_query.aspx.cs">
+      <DependentUpon>iaFm1_Chklist_query.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Chklist_query.aspx.designer.cs">
+      <DependentUpon>iaFm1_Chklist_query.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Rec.aspx.cs">
+      <DependentUpon>iaFm1_Rec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Rec.aspx.designer.cs">
+      <DependentUpon>iaFm1_Rec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Recia.aspx.cs">
+      <DependentUpon>iaFm1_Recia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm1_Recia.aspx.designer.cs">
+      <DependentUpon>iaFm1_Recia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_Addia.aspx.cs">
+      <DependentUpon>iaFm2_Addia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_Addia.aspx.designer.cs">
+      <DependentUpon>iaFm2_Addia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_chklist_ia.aspx.cs">
+      <DependentUpon>iaFm2_chklist_ia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_chklist_ia.aspx.designer.cs">
+      <DependentUpon>iaFm2_chklist_ia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_RecAll.aspx.cs">
+      <DependentUpon>iaFm2_RecAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\iaFm2_RecAll.aspx.designer.cs">
+      <DependentUpon>iaFm2_RecAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IAQuery.aspx.cs">
+      <DependentUpon>IAQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IAQuery.aspx.designer.cs">
+      <DependentUpon>IAQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\IARecoveryQuery.aspx.cs">
+      <DependentUpon>IARecoveryQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\IARecoveryQuery.aspx.designer.cs">
+      <DependentUpon>IARecoveryQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\InvoiceListPrintCancle.aspx.cs">
+      <DependentUpon>InvoiceListPrintCancle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\InvoiceListPrintCancle.aspx.designer.cs">
+      <DependentUpon>InvoiceListPrintCancle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\RecoveryIa.aspx.cs">
+      <DependentUpon>RecoveryIa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\RecoveryIa.aspx.designer.cs">
+      <DependentUpon>RecoveryIa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\RptIA1_ChkFilter.aspx.cs">
+      <DependentUpon>RptIA1_ChkFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\RptIA1_ChkFilter.aspx.designer.cs">
+      <DependentUpon>RptIA1_ChkFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\RptIA_ChkFilter.aspx.cs">
+      <DependentUpon>RptIA_ChkFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\RptIA_ChkFilter.aspx.designer.cs">
+      <DependentUpon>RptIA_ChkFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SAP.ashx.cs">
+      <DependentUpon>SAP.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SAP.aspx.cs">
+      <DependentUpon>SAP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\SAP.aspx.designer.cs">
+      <DependentUpon>SAP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SAPListEdit.ashx.cs">
+      <DependentUpon>SAPListEdit.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SAPListEdit.aspx.cs">
+      <DependentUpon>SAPListEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\SAPListEdit.aspx.designer.cs">
+      <DependentUpon>SAPListEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SAPRecovery.aspx.cs">
+      <DependentUpon>SAPRecovery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\SAPRecovery.aspx.designer.cs">
+      <DependentUpon>SAPRecovery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SetSAPManage.aspx.cs">
+      <DependentUpon>SetSAPManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\SetSAPManage.aspx.designer.cs">
+      <DependentUpon>SetSAPManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetAccount\SpecialFM.aspx.cs">
+      <DependentUpon>SpecialFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetAccount\SpecialFM.aspx.designer.cs">
+      <DependentUpon>SpecialFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\adincome_stat.aspx.cs">
+      <DependentUpon>adincome_stat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\adincome_stat.aspx.designer.cs">
+      <DependentUpon>adincome_stat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\BookMntFilter.aspx.cs">
+      <DependentUpon>BookMntFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\BookMntFilter.aspx.designer.cs">
+      <DependentUpon>BookMntFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\CustMntFilter.aspx.cs">
+      <DependentUpon>CustMntFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\CustMntFilter.aspx.designer.cs">
+      <DependentUpon>CustMntFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\IncomeFilter.aspx.cs">
+      <DependentUpon>IncomeFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\IncomeFilter.aspx.designer.cs">
+      <DependentUpon>IncomeFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search1.aspx.cs">
+      <DependentUpon>orcounts_stat_search1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search1.aspx.designer.cs">
+      <DependentUpon>orcounts_stat_search1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search2.aspx.cs">
+      <DependentUpon>orcounts_stat_search2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search2.aspx.designer.cs">
+      <DependentUpon>orcounts_stat_search2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search3.aspx.cs">
+      <DependentUpon>orcounts_stat_search3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\orcounts_stat_search3.aspx.designer.cs">
+      <DependentUpon>orcounts_stat_search3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ormtpcounts_stat_search1.aspx.cs">
+      <DependentUpon>ormtpcounts_stat_search1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\ormtpcounts_stat_search1.aspx.designer.cs">
+      <DependentUpon>ormtpcounts_stat_search1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\ormtpcounts_stat_search2.aspx.cs">
+      <DependentUpon>ormtpcounts_stat_search2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\ormtpcounts_stat_search2.aspx.designer.cs">
+      <DependentUpon>ormtpcounts_stat_search2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics\RptIncomeQuery.aspx.cs">
+      <DependentUpon>RptIncomeQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics\RptIncomeQuery.aspx.designer.cs">
+      <DependentUpon>RptIncomeQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\book.aspx.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\book.aspx.designer.cs">
+      <DependentUpon>book.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\bookJudge.aspx.cs">
+      <DependentUpon>bookJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\bookJudge.aspx.designer.cs">
+      <DependentUpon>bookJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\bookp.aspx.cs">
+      <DependentUpon>bookp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\bookp.aspx.designer.cs">
+      <DependentUpon>bookp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\bookpJudge.aspx.cs">
+      <DependentUpon>bookpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\bookpJudge.aspx.designer.cs">
+      <DependentUpon>bookpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\btp.aspx.cs">
+      <DependentUpon>btp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\btp.aspx.designer.cs">
+      <DependentUpon>btp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\btpJudge.aspx.cs">
+      <DependentUpon>btpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\btpJudge.aspx.designer.cs">
+      <DependentUpon>btpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\HandlerOtp.ashx.cs">
+      <DependentUpon>HandlerOtp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\itp.aspx.cs">
+      <DependentUpon>itp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\itp.aspx.designer.cs">
+      <DependentUpon>itp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\itpJudge.aspx.cs">
+      <DependentUpon>itpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\itpJudge.aspx.designer.cs">
+      <DependentUpon>itpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\LostForm.aspx.cs">
+      <DependentUpon>LostForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\LostForm.aspx.designer.cs">
+      <DependentUpon>LostForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\LostSearch.aspx.cs">
+      <DependentUpon>LostSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\LostSearch.aspx.designer.cs">
+      <DependentUpon>LostSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\mtp.aspx.cs">
+      <DependentUpon>mtp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\mtp.aspx.designer.cs">
+      <DependentUpon>mtp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\mtpJudge.aspx.cs">
+      <DependentUpon>mtpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\mtpJudge.aspx.designer.cs">
+      <DependentUpon>mtpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\ores.aspx.cs">
+      <DependentUpon>ores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\ores.aspx.designer.cs">
+      <DependentUpon>ores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\oresJudge.aspx.cs">
+      <DependentUpon>oresJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\oresJudge.aspx.designer.cs">
+      <DependentUpon>oresJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\otp.aspx.cs">
+      <DependentUpon>otp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\otp.aspx.designer.cs">
+      <DependentUpon>otp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\otpJudge.aspx.cs">
+      <DependentUpon>otpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\otpJudge.aspx.designer.cs">
+      <DependentUpon>otpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\proj.aspx.cs">
+      <DependentUpon>proj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\proj.aspx.designer.cs">
+      <DependentUpon>proj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\AtpMatp.aspx.cs">
+      <DependentUpon>AtpMatp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\AtpMatp.aspx.designer.cs">
+      <DependentUpon>AtpMatp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\CancelAndColseShow.aspx.cs">
+      <DependentUpon>CancelAndColseShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\CancelAndColseShow.aspx.designer.cs">
+      <DependentUpon>CancelAndColseShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContCanceled.aspx.cs">
+      <DependentUpon>ContCanceled.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContCanceled.aspx.designer.cs">
+      <DependentUpon>ContCanceled.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContChkList.aspx.cs">
+      <DependentUpon>ContChkList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContChkList.aspx.designer.cs">
+      <DependentUpon>ContChkList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\contfm_chk.aspx.cs">
+      <DependentUpon>contfm_chk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\contfm_chk.aspx.designer.cs">
+      <DependentUpon>contfm_chk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContFm_chklist.aspx.cs">
+      <DependentUpon>ContFm_chklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContFm_chklist.aspx.designer.cs">
+      <DependentUpon>ContFm_chklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContMaintain.aspx.cs">
+      <DependentUpon>ContMaintain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContMaintain.aspx.designer.cs">
+      <DependentUpon>ContMaintain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContNew.aspx.cs">
+      <DependentUpon>ContNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContNew.aspx.designer.cs">
+      <DependentUpon>ContNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContQueryFormal.aspx.cs">
+      <DependentUpon>ContQueryFormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContQueryFormal.aspx.designer.cs">
+      <DependentUpon>ContQueryFormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ContShowDetail.aspx.cs">
+      <DependentUpon>ContShowDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ContShowDetail.aspx.designer.cs">
+      <DependentUpon>ContShowDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\cont_list.aspx.cs">
+      <DependentUpon>cont_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\cont_list.aspx.designer.cs">
+      <DependentUpon>cont_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\cust_detail.aspx.cs">
+      <DependentUpon>cust_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\cust_detail.aspx.designer.cs">
+      <DependentUpon>cust_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\FreeBook.aspx.cs">
+      <DependentUpon>FreeBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\FreeBook.aspx.designer.cs">
+      <DependentUpon>FreeBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\InterPlaneCont.aspx.cs">
+      <DependentUpon>InterPlaneCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\InterPlaneCont.aspx.designer.cs">
+      <DependentUpon>InterPlaneCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\InvMfr.aspx.cs">
+      <DependentUpon>InvMfr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\InvMfr.aspx.designer.cs">
+      <DependentUpon>InvMfr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\InvMfrForm.aspx.cs">
+      <DependentUpon>InvMfrForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\InvMfrForm.aspx.designer.cs">
+      <DependentUpon>InvMfrForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\mfr_detail.aspx.cs">
+      <DependentUpon>mfr_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\mfr_detail.aspx.designer.cs">
+      <DependentUpon>mfr_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\ORForm.aspx.cs">
+      <DependentUpon>ORForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\ORForm.aspx.designer.cs">
+      <DependentUpon>ORForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\PlaneCont.aspx.cs">
+      <DependentUpon>PlaneCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\PlaneCont.aspx.designer.cs">
+      <DependentUpon>PlaneCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\PlaneCont2Edit.aspx.cs">
+      <DependentUpon>PlaneCont2Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\PlaneCont2Edit.aspx.designer.cs">
+      <DependentUpon>PlaneCont2Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\PlaneCont2New.aspx.cs">
+      <DependentUpon>PlaneCont2New.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\PlaneCont2New.aspx.designer.cs">
+      <DependentUpon>PlaneCont2New.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\PlaneCont_2.aspx.cs">
+      <DependentUpon>PlaneCont_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\PlaneCont_2.aspx.designer.cs">
+      <DependentUpon>PlaneCont_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\RptAdAmtQuery.aspx.cs">
+      <DependentUpon>RptAdAmtQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\RptAdAmtQuery.aspx.designer.cs">
+      <DependentUpon>RptAdAmtQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\RptCont.aspx.cs">
+      <DependentUpon>RptCont.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\RptCont.aspx.designer.cs">
+      <DependentUpon>RptCont.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errorPage.aspx.cs">
+      <DependentUpon>errorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errorPage.aspx.designer.cs">
+      <DependentUpon>errorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\appriseFilter.aspx.cs">
+      <DependentUpon>appriseFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\appriseFilter.aspx.designer.cs">
+      <DependentUpon>appriseFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\appriselabel.aspx.cs">
+      <DependentUpon>appriselabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\appriselabel.aspx.designer.cs">
+      <DependentUpon>appriselabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\label.aspx.cs">
+      <DependentUpon>label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\label.aspx.designer.cs">
+      <DependentUpon>label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\LostLabelFilter.aspx.cs">
+      <DependentUpon>LostLabelFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\LostLabelFilter.aspx.designer.cs">
+      <DependentUpon>LostLabelFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\lost_label.aspx.cs">
+      <DependentUpon>lost_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\lost_label.aspx.designer.cs">
+      <DependentUpon>lost_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\Lost_label_Internet.aspx.cs">
+      <DependentUpon>Lost_label_Internet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\Lost_label_Internet.aspx.designer.cs">
+      <DependentUpon>Lost_label_Internet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\LstLabelFilter.aspx.cs">
+      <DependentUpon>LstLabelFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\LstLabelFilter.aspx.designer.cs">
+      <DependentUpon>LstLabelFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label.aspx.cs">
+      <DependentUpon>PubFm_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label.aspx.designer.cs">
+      <DependentUpon>PubFm_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label2.aspx.cs">
+      <DependentUpon>PubFm_label2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label2.aspx.designer.cs">
+      <DependentUpon>PubFm_label2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_Internet.aspx.cs">
+      <DependentUpon>PubFm_label_Internet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_Internet.aspx.designer.cs">
+      <DependentUpon>PubFm_label_Internet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search.aspx.cs">
+      <DependentUpon>PubFm_label_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search.aspx.designer.cs">
+      <DependentUpon>PubFm_label_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search2.aspx.cs">
+      <DependentUpon>PubFm_label_search2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\PubFm_label_search2.aspx.designer.cs">
+      <DependentUpon>PubFm_label_search2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\Pub_LabelFilter.aspx.cs">
+      <DependentUpon>Pub_LabelFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\Pub_LabelFilter.aspx.designer.cs">
+      <DependentUpon>Pub_LabelFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\remail_label.aspx.cs">
+      <DependentUpon>remail_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\remail_label.aspx.designer.cs">
+      <DependentUpon>remail_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\Remail_labelInternet.aspx.cs">
+      <DependentUpon>Remail_labelInternet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\Remail_labelInternet.aspx.designer.cs">
+      <DependentUpon>Remail_labelInternet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\RmLabelFilter.aspx.cs">
+      <DependentUpon>RmLabelFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\RmLabelFilter.aspx.designer.cs">
+      <DependentUpon>RmLabelFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\RmLabelFilterInternet.aspx.cs">
+      <DependentUpon>RmLabelFilterInternet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\RmLabelFilterInternet.aspx.designer.cs">
+      <DependentUpon>RmLabelFilterInternet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\search_label.aspx.cs">
+      <DependentUpon>search_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\search_label.aspx.designer.cs">
+      <DependentUpon>search_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\UnPubFm_label.aspx.cs">
+      <DependentUpon>UnPubFm_label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\UnPubFm_label.aspx.designer.cs">
+      <DependentUpon>UnPubFm_label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabelArea\UnPub_LabelFilter.aspx.cs">
+      <DependentUpon>UnPub_LabelFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabelArea\UnPub_LabelFilter.aspx.designer.cs">
+      <DependentUpon>UnPub_LabelFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adlprior_get.aspx.cs">
+      <DependentUpon>adlprior_get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adlprior_get.aspx.designer.cs">
+      <DependentUpon>adlprior_get.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\adpub_act1.aspx.cs">
+      <DependentUpon>adpub_act1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\adpub_act1.aspx.designer.cs">
+      <DependentUpon>adpub_act1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\bookp_get.aspx.cs">
+      <DependentUpon>bookp_get.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\bookp_get.aspx.designer.cs">
+      <DependentUpon>bookp_get.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\PubFm.aspx.cs">
+      <DependentUpon>PubFm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\PubFm.aspx.designer.cs">
+      <DependentUpon>PubFm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Order\BulkOrder.aspx.cs">
+      <DependentUpon>BulkOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\BulkOrder.aspx.designer.cs">
+      <DependentUpon>BulkOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\CheckList.aspx.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CheckList.aspx.designer.cs">
+      <DependentUpon>CheckList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\CustDetail.aspx.cs">
+      <DependentUpon>CustDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\CustDetail.aspx.designer.cs">
+      <DependentUpon>CustDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FreeFM.aspx.cs">
+      <DependentUpon>FreeFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\FreeFM.aspx.designer.cs">
+      <DependentUpon>FreeFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\FreeForm.aspx.cs">
+      <DependentUpon>FreeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\FreeForm.aspx.designer.cs">
+      <DependentUpon>FreeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ModifyOrder.aspx.cs">
+      <DependentUpon>ModifyOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\ModifyOrder.aspx.designer.cs">
+      <DependentUpon>ModifyOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderFM.aspx.cs">
+      <DependentUpon>OrderFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\OrderFM.aspx.designer.cs">
+      <DependentUpon>OrderFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderForm.aspx.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\OrderForm.aspx.designer.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\OrderListFilter.aspx.cs">
+      <DependentUpon>OrderListFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\OrderListFilter.aspx.designer.cs">
+      <DependentUpon>OrderListFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\RecForm.aspx.cs">
+      <DependentUpon>RecForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\RecForm.aspx.designer.cs">
+      <DependentUpon>RecForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\SaveOrder.aspx.cs">
+      <DependentUpon>SaveOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\SaveOrder.aspx.designer.cs">
+      <DependentUpon>SaveOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\SearchCustOrder.aspx.cs">
+      <DependentUpon>SearchCustOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\SearchCustOrder.aspx.designer.cs">
+      <DependentUpon>SearchCustOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\SetRecForm.aspx.cs">
+      <DependentUpon>SetRecForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\SetRecForm.aspx.designer.cs">
+      <DependentUpon>SetRecForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\ShowOrder.aspx.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\ShowOrder.aspx.designer.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Subscriber\AddComp.aspx.cs">
+      <DependentUpon>AddComp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\AddComp.aspx.designer.cs">
+      <DependentUpon>AddComp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\AddCust.aspx.cs">
+      <DependentUpon>AddCust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\AddCust.aspx.designer.cs">
+      <DependentUpon>AddCust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\CustListFilter.aspx.cs">
+      <DependentUpon>CustListFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\CustListFilter.aspx.designer.cs">
+      <DependentUpon>CustListFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\Cust_Edit.aspx.cs">
+      <DependentUpon>Cust_Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\Cust_Edit.aspx.designer.cs">
+      <DependentUpon>Cust_Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\Company.aspx.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\Company.aspx.designer.cs">
+      <DependentUpon>Company.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\MfrSearch.aspx.cs">
+      <DependentUpon>MfrSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\MfrSearch.aspx.designer.cs">
+      <DependentUpon>MfrSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\Printadvert.aspx.cs">
+      <DependentUpon>Printadvert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\Printadvert.aspx.designer.cs">
+      <DependentUpon>Printadvert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\Printadvert2.aspx.cs">
+      <DependentUpon>Printadvert2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\Printadvert2.aspx.designer.cs">
+      <DependentUpon>Printadvert2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\PubSearchCust.aspx.cs">
+      <DependentUpon>PubSearchCust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\PubSearchCust.aspx.designer.cs">
+      <DependentUpon>PubSearchCust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subscriber\PubSearchCustEdit.aspx.cs">
+      <DependentUpon>PubSearchCustEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subscriber\PubSearchCustEdit.aspx.designer.cs">
+      <DependentUpon>PubSearchCustEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\RptCustQuery.aspx.cs">
+      <DependentUpon>RptCustQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contract\RptCustQuery.aspx.designer.cs">
+      <DependentUpon>RptCustQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\projJudge.aspx.cs">
+      <DependentUpon>projJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\projJudge.aspx.designer.cs">
+      <DependentUpon>projJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\pytp.aspx.cs">
+      <DependentUpon>pytp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\pytp.aspx.designer.cs">
+      <DependentUpon>pytp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\pytpJudge.aspx.cs">
+      <DependentUpon>pytpJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\pytpJudge.aspx.designer.cs">
+      <DependentUpon>pytpJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\RemailFM.aspx.cs">
+      <DependentUpon>RemailFM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\RemailFM.aspx.designer.cs">
+      <DependentUpon>RemailFM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\RemailForm.aspx.cs">
+      <DependentUpon>RemailForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\RemailForm.aspx.designer.cs">
+      <DependentUpon>RemailForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\RemailSearch.aspx.cs">
+      <DependentUpon>RemailSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\RemailSearch.aspx.designer.cs">
+      <DependentUpon>RemailSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\RmListFilter.aspx.cs">
+      <DependentUpon>RmListFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\RmListFilter.aspx.designer.cs">
+      <DependentUpon>RmListFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\refd.ashx.cs">
+      <DependentUpon>refd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\refd.aspx.cs">
+      <DependentUpon>refd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\refd.aspx.designer.cs">
+      <DependentUpon>refd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\refm.ashx.cs">
+      <DependentUpon>refm.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\refm.aspx.cs">
+      <DependentUpon>refm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\refm.aspx.designer.cs">
+      <DependentUpon>refm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\srspn.aspx.cs">
+      <DependentUpon>srspn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\srspn.aspx.designer.cs">
+      <DependentUpon>srspn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\srspnJudge.aspx.cs">
+      <DependentUpon>srspnJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\srspnJudge.aspx.designer.cs">
+      <DependentUpon>srspnJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\syscd.aspx.cs">
+      <DependentUpon>syscd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\syscd.aspx.designer.cs">
+      <DependentUpon>syscd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\syscdJudge.aspx.cs">
+      <DependentUpon>syscdJudge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\syscdJudge.aspx.designer.cs">
+      <DependentUpon>syscdJudge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\S_CustDetail.aspx.cs">
+      <DependentUpon>S_CustDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\S_CustDetail.aspx.designer.cs">
+      <DependentUpon>S_CustDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\S_FixCostCenter.aspx.cs">
+      <DependentUpon>S_FixCostCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\S_FixCostCenter.aspx.designer.cs">
+      <DependentUpon>S_FixCostCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\S_OrderForm.aspx.cs">
+      <DependentUpon>S_OrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\S_OrderForm.aspx.designer.cs">
+      <DependentUpon>S_OrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\S_SaveOrder.aspx.cs">
+      <DependentUpon>S_SaveOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\S_SaveOrder.aspx.designer.cs">
+      <DependentUpon>S_SaveOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\S_SearchCust1.aspx.cs">
+      <DependentUpon>S_SearchCust1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sys\S_SearchCust1.aspx.designer.cs">
+      <DependentUpon>S_SearchCust1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Pager.ascx.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Pager.ascx.designer.cs">
+      <DependentUpon>Pager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ShowRight.ascx.cs">
+      <DependentUpon>ShowRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ShowRight.ascx.designer.cs">
+      <DependentUpon>ShowRight.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\style.css" />
+    <Content Include="App_Themes\Default\superfish.css" />
+    <Content Include="Art\css\style.css" />
+    <Content Include="Art\css\superfish.css" />
+    <Content Include="Art\images\bg.gif" />
+    <Content Include="Art\images\btn01_out.gif" />
+    <Content Include="Art\images\btn01_over.gif" />
+    <Content Include="Art\images\btn02_out.gif" />
+    <Content Include="Art\images\btn02_over.gif" />
+    <Content Include="Art\images\btn03_out.gif" />
+    <Content Include="Art\images\btn03_over.gif" />
+    <Content Include="Art\images\btn04_out.gif" />
+    <Content Include="Art\images\btn04_over.gif" />
+    <Content Include="Art\images\btn05_out.gif" />
+    <Content Include="Art\images\btn05_over.gif" />
+    <Content Include="Art\images\btn06_out.gif" />
+    <Content Include="Art\images\btn06_over.gif" />
+    <Content Include="Art\images\btn07_out.gif" />
+    <Content Include="Art\images\btn07_over.gif" />
+    <Content Include="Art\images\btn08_out.gif" />
+    <Content Include="Art\images\btn08_over.gif" />
+    <Content Include="Art\images\btn_bg.gif" />
+    <Content Include="Art\images\btn_bg_over.gif" />
+    <Content Include="Art\images\btn_data.gif" />
+    <Content Include="Art\images\btn_home.gif" />
+    <Content Include="Art\images\btn_next.gif" />
+    <Content Include="Art\images\btn_pre.gif" />
+    <Content Include="Art\images\btn_search.gif" />
+    <Content Include="Art\images\btn_tofinal.gif" />
+    <Content Include="Art\images\btn_tofirst.gif" />
+    <Content Include="Art\images\btn_view.gif" />
+    <Content Include="Art\images\footer.gif" />
+    <Content Include="Art\images\footer_itri.gif" />
+    <Content Include="Art\images\header.jpg" />
+    <Content Include="Art\images\icon_1601.gif" />
+    <Content Include="Art\images\icon_2401.gif" />
+    <Content Include="Art\images\icon_2402.gif" />
+    <Content Include="Art\images\icon_search.gif" />
+    <Content Include="Art\images\shadow.png" />
+    <Content Include="Art\index.html" />
+    <Content Include="Art\js\jquery-1.4.2.min.js" />
+    <Content Include="Art\js\jquery.bgiframe.min.js" />
+    <Content Include="Art\js\superfish.js" />
+    <Content Include="Art\page01.html" />
+    <Content Include="Art\page02-1.html" />
+    <Content Include="Art\page02-2.html" />
+    <Content Include="Art\page02-3.html" />
+    <Content Include="Art\page02.html" />
+    <Content Include="Art\page03-1.html" />
+    <Content Include="Art\page03-2.html" />
+    <Content Include="Art\page03.html" />
+    <Content Include="Art\page04.html" />
+    <Content Include="Art\page05.html" />
+    <Content Include="Art\page06.html" />
+    <Content Include="Art\page07-1.html" />
+    <Content Include="Art\page07-2.html" />
+    <Content Include="Art\page08-1.html" />
+    <Content Include="Art\page08-2.html" />
+    <Content Include="Art\page08-3.html" />
+    <Content Include="Art\page09-1.html" />
+    <Content Include="Contract\PlaneCont.aspx" />
+    <Content Include="errorPage.aspx" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\jquery-ui-1.8.11.custom.css" />
+    <Content Include="jquery\development-bundle\AUTHORS.txt" />
+    <Content Include="jquery\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\default.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\index.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\addClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\addClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\animate\default.html" />
+    <Content Include="jquery\development-bundle\demos\animate\index.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="jquery\development-bundle\demos\button\checkbox.html" />
+    <Content Include="jquery\development-bundle\demos\button\default.html" />
+    <Content Include="jquery\development-bundle\demos\button\icons.html" />
+    <Content Include="jquery\development-bundle\demos\button\index.html" />
+    <Content Include="jquery\development-bundle\demos\button\radio.html" />
+    <Content Include="jquery\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="jquery\development-bundle\demos\button\toolbar.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\date-range.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\default.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="jquery\development-bundle\demos\datepicker\index.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="jquery\development-bundle\demos\demos.css" />
+    <Content Include="jquery\development-bundle\demos\dialog\animated.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\default.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\index.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\default.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\events.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\handle.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\index.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\revert.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\default.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\index.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\revert.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\effect\default.html" />
+    <Content Include="jquery\development-bundle\demos\effect\easing.html" />
+    <Content Include="jquery\development-bundle\demos\effect\index.html" />
+    <Content Include="jquery\development-bundle\demos\hide\default.html" />
+    <Content Include="jquery\development-bundle\demos\hide\index.html" />
+    <Content Include="jquery\development-bundle\demos\images\calendar.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="jquery\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="jquery\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="jquery\development-bundle\demos\index.html" />
+    <Content Include="jquery\development-bundle\demos\position\cycler.html" />
+    <Content Include="jquery\development-bundle\demos\position\default.html" />
+    <Content Include="jquery\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\index.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\default.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="jquery\development-bundle\demos\progressbar\index.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="jquery\development-bundle\demos\removeClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\removeClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\animate.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\default.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\helper.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\index.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\default.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\index.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="jquery\development-bundle\demos\show\default.html" />
+    <Content Include="jquery\development-bundle\demos\show\index.html" />
+    <Content Include="jquery\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="jquery\development-bundle\demos\slider\default.html" />
+    <Content Include="jquery\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="jquery\development-bundle\demos\slider\index.html" />
+    <Content Include="jquery\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\range.html" />
+    <Content Include="jquery\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="jquery\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="jquery\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="jquery\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\steps.html" />
+    <Content Include="jquery\development-bundle\demos\slider\tabs.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\default.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\index.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\items.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="jquery\development-bundle\demos\switchClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\switchClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\cookie.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\default.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\index.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="jquery\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\toggle\default.html" />
+    <Content Include="jquery\development-bundle\demos\toggle\index.html" />
+    <Content Include="jquery\development-bundle\docs\accordion.html" />
+    <Content Include="jquery\development-bundle\docs\addClass.html" />
+    <Content Include="jquery\development-bundle\docs\animate.html" />
+    <Content Include="jquery\development-bundle\docs\autocomplete.html" />
+    <Content Include="jquery\development-bundle\docs\button.html" />
+    <Content Include="jquery\development-bundle\docs\datepicker.html" />
+    <Content Include="jquery\development-bundle\docs\dialog.html" />
+    <Content Include="jquery\development-bundle\docs\draggable.html" />
+    <Content Include="jquery\development-bundle\docs\droppable.html" />
+    <Content Include="jquery\development-bundle\docs\effect.html" />
+    <Content Include="jquery\development-bundle\docs\hide.html" />
+    <Content Include="jquery\development-bundle\docs\position.html" />
+    <Content Include="jquery\development-bundle\docs\progressbar.html" />
+    <Content Include="jquery\development-bundle\docs\removeClass.html" />
+    <Content Include="jquery\development-bundle\docs\resizable.html" />
+    <Content Include="jquery\development-bundle\docs\selectable.html" />
+    <Content Include="jquery\development-bundle\docs\show.html" />
+    <Content Include="jquery\development-bundle\docs\slider.html" />
+    <Content Include="jquery\development-bundle\docs\sortable.html" />
+    <Content Include="jquery\development-bundle\docs\switchClass.html" />
+    <Content Include="jquery\development-bundle\docs\tabs.html" />
+    <Content Include="jquery\development-bundle\docs\toggle.html" />
+    <Content Include="jquery\development-bundle\docs\toggleClass.html" />
+    <Content Include="jquery\development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="jquery\development-bundle\external\jquery.cookie.js" />
+    <Content Include="jquery\development-bundle\external\jquery.metadata.js" />
+    <Content Include="jquery\development-bundle\external\qunit.css" />
+    <Content Include="jquery\development-bundle\external\qunit.js" />
+    <Content Include="jquery\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="jquery\development-bundle\jquery-1.5.1.js" />
+    <Content Include="jquery\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery-ui-1.8.11.custom.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.accordion.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.all.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.autocomplete.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.base.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.button.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.core.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.datepicker.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.dialog.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.progressbar.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.resizable.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.selectable.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.slider.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.tabs.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.theme.css" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-kz.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="jquery\development-bundle\ui\jquery-ui-1.8.11.custom.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="jquery\development-bundle\version.txt" />
+    <Content Include="jquery\index.html" />
+    <Content Include="jquery\js\jquery-1.5.1.min.js" />
+    <Content Include="jquery\js\jquery-ui-1.8.11.custom.min.js" />
+    <Content Include="LabelArea\appriseFilter.aspx" />
+    <Content Include="LabelArea\appriselabel.aspx" />
+    <Content Include="LabelArea\label.aspx" />
+    <Content Include="LabelArea\LostLabelFilter.aspx" />
+    <Content Include="LabelArea\lost_label.aspx" />
+    <Content Include="LabelArea\Lost_label_Internet.aspx" />
+    <Content Include="LabelArea\LstLabelFilter.aspx" />
+    <Content Include="LabelArea\PubFm_label.aspx" />
+    <Content Include="LabelArea\PubFm_label2.aspx" />
+    <Content Include="LabelArea\PubFm_label_Internet.aspx" />
+    <Content Include="LabelArea\PubFm_label_search.aspx" />
+    <Content Include="LabelArea\PubFm_label_search2.aspx" />
+    <Content Include="LabelArea\Pub_LabelFilter.aspx" />
+    <Content Include="LabelArea\remail_label.aspx" />
+    <Content Include="LabelArea\Remail_labelInternet.aspx" />
+    <Content Include="LabelArea\RmLabelFilter.aspx" />
+    <Content Include="LabelArea\RmLabelFilterInternet.aspx" />
+    <Content Include="LabelArea\search_label.aspx" />
+    <Content Include="LabelArea\UnPubFm_label.aspx" />
+    <Content Include="LabelArea\UnPub_LabelFilter.aspx" />
+    <Content Include="Layout\adlprior_get.aspx" />
+    <Content Include="Layout\adpub_act1.aspx" />
+    <Content Include="Layout\bookp_get.aspx" />
+    <Content Include="Layout\PubFm.aspx" />
+    <Content Include="MasterPage.Master" />
+    <Content Include="Subscriber\AddComp.aspx" />
+    <Content Include="Subscriber\AddCust.aspx" />
+    <Content Include="Subscriber\CustListFilter.aspx" />
+    <Content Include="Subscriber\Cust_Edit.aspx" />
+    <Content Include="Subscriber\Company.aspx" />
+    <Content Include="Subscriber\Customer.aspx" />
+    <Content Include="Subscriber\MfrSearch.aspx" />
+    <Content Include="Subscriber\Printadvert.aspx" />
+    <Content Include="Subscriber\Printadvert2.aspx" />
+    <Content Include="Subscriber\PubSearchCust.aspx" />
+    <Content Include="Subscriber\PubSearchCustEdit.aspx" />
+    <Content Include="Contract\RptCustQuery.aspx" />
+    <Content Include="Sys\projJudge.aspx" />
+    <Content Include="Sys\pytp.aspx" />
+    <Content Include="Sys\pytpJudge.aspx" />
+    <Content Include="Order\RemailFM.aspx" />
+    <Content Include="Order\RemailForm.aspx" />
+    <Content Include="Order\RemailSearch.aspx" />
+    <Content Include="Order\RmListFilter.aspx" />
+    <Content Include="Sys\refd.aspx" />
+    <Content Include="Sys\refm.aspx" />
+    <Content Include="Sys\srspn.aspx" />
+    <Content Include="Sys\srspnJudge.aspx" />
+    <Content Include="Sys\syscd.aspx" />
+    <Content Include="Sys\syscdJudge.aspx" />
+    <Content Include="Sys\S_CustDetail.aspx" />
+    <Content Include="Sys\S_FixCostCenter.aspx" />
+    <Content Include="Sys\S_OrderForm.aspx" />
+    <Content Include="Sys\S_SaveOrder.aspx" />
+    <Content Include="Sys\S_SearchCust1.aspx" />
+    <Content Include="UserControl\footer.ascx" />
+    <Content Include="UserControl\Pager.ascx" />
+    <Content Include="UserControl\ShowRight.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Button.skin" />
+    <Content Include="App_Themes\images\bg.gif" />
+    <Content Include="App_Themes\images\btn01_out.gif" />
+    <Content Include="App_Themes\images\btn01_over.gif" />
+    <Content Include="App_Themes\images\btn02_out.gif" />
+    <Content Include="App_Themes\images\btn02_over.gif" />
+    <Content Include="App_Themes\images\btn03_out.gif" />
+    <Content Include="App_Themes\images\btn03_over.gif" />
+    <Content Include="App_Themes\images\btn04_out.gif" />
+    <Content Include="App_Themes\images\btn04_over.gif" />
+    <Content Include="App_Themes\images\btn05_out.gif" />
+    <Content Include="App_Themes\images\btn05_over.gif" />
+    <Content Include="App_Themes\images\btn06_out.gif" />
+    <Content Include="App_Themes\images\btn06_over.gif" />
+    <Content Include="App_Themes\images\btn07_out.gif" />
+    <Content Include="App_Themes\images\btn07_over.gif" />
+    <Content Include="App_Themes\images\btn08_out.gif" />
+    <Content Include="App_Themes\images\btn08_over.gif" />
+    <Content Include="App_Themes\images\btn_bg.gif" />
+    <Content Include="App_Themes\images\btn_bg_over.gif" />
+    <Content Include="App_Themes\images\btn_data.gif" />
+    <Content Include="App_Themes\images\btn_home.gif" />
+    <Content Include="App_Themes\images\btn_next.gif" />
+    <Content Include="App_Themes\images\btn_pre.gif" />
+    <Content Include="App_Themes\images\btn_search.gif" />
+    <Content Include="App_Themes\images\btn_tofinal.gif" />
+    <Content Include="App_Themes\images\btn_tofirst.gif" />
+    <Content Include="App_Themes\images\btn_view.gif" />
+    <Content Include="App_Themes\images\footer.gif" />
+    <Content Include="App_Themes\images\footer_itri.gif" />
+    <Content Include="App_Themes\images\header.jpg" />
+    <Content Include="App_Themes\images\icon_1601.gif" />
+    <Content Include="App_Themes\images\icon_2401.gif" />
+    <Content Include="App_Themes\images\icon_2402.gif" />
+    <Content Include="App_Themes\images\icon_search.gif" />
+    <Content Include="App_Themes\images\shadow.png" />
+    <Content Include="Art\DownPage.aspx" />
+    <Content Include="Art\DownPageImages\110406235012f997b410371e8d.jpg" />
+    <Content Include="Art\DownPageImages\14124566.png" />
+    <Content Include="Art\DownPageImages\15.jpg" />
+    <Content Include="Art\DownPageImages\268479_10150258718338522_243782363521_7409448_955403_n.jpg" />
+    <Content Include="Art\DownPageImages\35754_133897243296602_100000289826119_273753_1463124_n.jpg" />
+    <Content Include="Art\DownPageImages\37312_407412654870_183954419870_4175923_6149111_n.jpg" />
+    <Content Include="Art\DownPageImages\ATT00009.jpg" />
+    <Content Include="Art\DownPageImages\Jk063.jpg" />
+    <Content Include="Art\DownPageImages\msnMSN.jpg" />
+    <Content Include="Art\DownPageImages\不刷牙的下場.jpg" />
+    <Content Include="Art\DownPageImages\有梗.jpg" />
+    <Content Include="Art\DownPageImages\畫的不錯.jpg" />
+    <Content Include="Art\DownPageImages\虎頭蜂.jpg" />
+    <Content Include="Art\images\cut.gif" />
+    <Content Include="Art\images\refresh.gif" />
+    <Content Include="Art\thickbox.css" />
+    <Content Include="Art\thickbox.js" />
+    <Content Include="Contract\AtpMatp.aspx" />
+    <Content Include="Contract\CancelAndColseShow.aspx" />
+    <Content Include="Contract\ContCanceled.aspx" />
+    <Content Include="Contract\ContChkList.aspx" />
+    <Content Include="Contract\contfm_chk.aspx" />
+    <Content Include="Contract\ContFm_chklist.aspx" />
+    <Content Include="Contract\ContMaintain.aspx" />
+    <Content Include="Contract\ContNew.aspx" />
+    <Content Include="Contract\ContQueryFormal.aspx" />
+    <Content Include="Contract\ContShowDetail.aspx" />
+    <Content Include="Contract\cont_list.aspx" />
+    <Content Include="Contract\cust_detail.aspx" />
+    <Content Include="Contract\FreeBook.aspx" />
+    <Content Include="Contract\InterPlaneCont.aspx" />
+    <Content Include="Contract\InvMfr.aspx" />
+    <Content Include="Contract\InvMfrForm.aspx" />
+    <Content Include="Contract\mfr_detail.aspx" />
+    <Content Include="Contract\ORForm.aspx" />
+    <Content Include="Contract\PlaneCont2Edit.aspx" />
+    <Content Include="Contract\PlaneCont_2.aspx" />
+    <Content Include="Contract\RptAdAmtQuery.aspx" />
+    <Content Include="Contract\RptCont.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Myjs\MyCommon.js" />
+    <Content Include="Contract\Template\cont_list.xls" />
+    <Content Include="Contract\Template\RptAdAmtQuery.xls" />
+    <Content Include="Contract\Template\RptCont.xls" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="jquery\development-bundle\demos\autocomplete\search.php" />
+    <None Include="jquery\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="jquery\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <Content Include="Order\Template\od_list.xls" />
+    <None Include="LabelArea\Template\mail_list1.xls" />
+    <None Include="LabelArea\Template\mail_list2.xls" />
+    <None Include="LabelArea\Template\PubFm_list2.xls" />
+    <None Include="LabelArea\Template\Pub_LabelList.xls" />
+    <None Include="Layout\Template\admade_stat2.xls" />
+    <None Include="Layout\Template\adpub_act2.xls" />
+    <None Include="Layout\Template\adpub_form2.xls" />
+    <None Include="Layout\Template\adpub_list2.xls" />
+    <None Include="Layout\Template\RptAdrBill.xls" />
+    <None Include="Layout\Template\RptAdrList.xls" />
+    <None Include="Layout\Template\RptFileUpList.xls" />
+    <Content Include="Pay\PayListPrintGen.ashx" />
+    <Content Include="Pay\RecoveryPayListDel.ashx" />
+    <None Include="Pay\Template\py_list1.xls" />
+    <None Include="Pay\Template\py_list2.xls" />
+    <None Include="Pay\Template\py_list3.xls" />
+    <None Include="Pay\Template\py_list4.xls" />
+    <None Include="Pay\Template\py_list5.xls" />
+    <None Include="Pay\Template\unpaid_list.xls" />
+    <Content Include="SetAccount\SAP.ashx" />
+    <Content Include="SetAccount\SAPListEdit.ashx" />
+    <None Include="SetAccount\template\iaFm1_list2b.xls" />
+    <None Include="SetAccount\template\iaFm2_list2.xls" />
+    <None Include="SetAccount\template\iaFm2_prelist2.xls" />
+    <None Include="SetAccount\template\invoiceApply.xls" />
+    <None Include="SetAccount\template\invoiceList.xls" />
+    <None Include="SetAccount\template\invoiceSend.xls" />
+    <None Include="SetAccount\template\RptIA1_ChkList.xls" />
+    <None Include="SetAccount\template\RptIA1_ChkListNew.xls" />
+    <None Include="SetAccount\template\RptIA1_PreList.xls" />
+    <None Include="SetAccount\template\RptIA1_PreList1.xls" />
+    <None Include="SetAccount\template\RptIA_ChkList.xls" />
+    <None Include="SetAccount\template\RptIA_ChkListNew.xls" />
+    <None Include="SetAccount\template\RptIA_PreList.xls" />
+    <None Include="Statistics\Template\adincome_stat2.xls" />
+    <None Include="Statistics\Template\book_mnt1.xls" />
+    <None Include="Statistics\Template\book_mnt2.xls" />
+    <None Include="Statistics\Template\cust_mnt.xls" />
+    <None Include="Statistics\Template\income1.xls" />
+    <None Include="Statistics\Template\ORCounts_stat2a.xls" />
+    <None Include="Statistics\Template\ORMtpCounts_stat2a.xls" />
+    <None Include="Statistics\Template\RptIncome.xls" />
+    <None Include="StoreProcedure\Subscriber_CustListFilter.sql" />
+    <Content Include="Subscriber\Template\RptCustQuery.xls" />
+    <Content Include="Subscriber\Template\Printadvert.xls" />
+    <Content Include="Subscriber\Template\Printadvert2.xls" />
+    <Content Include="Subscriber\Template\CustListFilter.xls" />
+    <Content Include="Order\BulkOrder.aspx" />
+    <Content Include="Order\Calendar.htm" />
+    <Content Include="Order\CheckList.aspx" />
+    <Content Include="Order\CustDetail.aspx" />
+    <Content Include="Order\EmptyList.xml" />
+    <Content Include="Order\EmptyOrder.xml" />
+    <Content Include="Order\FreeFM.aspx" />
+    <Content Include="Order\FreeForm.aspx" />
+    <Content Include="Order\ModifyOrder.aspx" />
+    <Content Include="Order\OrderFM.aspx" />
+    <Content Include="Order\OrderForm.aspx" />
+    <Content Include="Order\OrderListFilter.aspx" />
+    <Content Include="Order\RecAddr.xml" />
+    <Content Include="Order\RecForm.aspx" />
+    <Content Include="Order\SaveOrder.aspx" />
+    <Content Include="Order\SearchCustOrder.aspx" />
+    <Content Include="Order\SetRecForm.aspx" />
+    <Content Include="Order\ShowOrder.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Subscriber\Template\CustListFilterEmail.xls" />
+    <None Include="Subscriber\Template\Customer.xls" />
+    <None Include="Subscriber\Template\CustomerEmail.xls" />
+    <Content Include="Sys\HandlerOtp.ashx" />
+    <Content Include="Sys\refm.ashx" />
+    <Content Include="Sys\refd.ashx" />
+    <None Include="Sys\Template\remail_list.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="UserImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>9524</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

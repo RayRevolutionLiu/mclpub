@@ -1,0 +1,96 @@
+CREATE FUNCTION dbo.fn_c2_im
+(
+	@syscd varchar(2),
+	@contno varchar(6),
+	@imseq varchar(2)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+declare @mfrno varchar(10),@nm varchar(30),@jbti varchar(12)
+declare @zip varchar(5),@addr varchar(120),@tel varchar(30),@fax varchar(30)
+declare @cell varchar(30),@email varchar(80),@invcd varchar(1),@taxtp varchar(1)
+declare @fgitri varchar(2)
+declare @xmldata varchar(8000)
+
+select @mfrno=rtrim(im_mfrno),@nm=rtrim(im_nm),@jbti=rtrim(im_jbti),
+ @zip=rtrim(im_zip),@addr=rtrim(im_addr),@tel=rtrim(im_tel),@fax=rtrim(im_fax),
+ @cell=rtrim(im_cell),@email=rtrim(im_email),@invcd=im_invcd,@taxtp=im_taxtp,
+ @fgitri=im_fgitri
+ from invmfr
+ where im_syscd=@syscd and im_contno=@contno and im_imseq=@imseq
+
+
+ set @xmldata = '<發票廠商資料>' + '<發票廠商收件人明細>' 
+
+ set @xmldata=@xmldata +  '<系統代碼>' + @syscd + '</系統代碼>' +  
+  '<合約書編號>' + @contno + '</合約書編號>' + 
+  '<發票廠商序號>' + @imseq + '</發票廠商序號>'
+
+  if @mfrno = ''	
+  	set @xmldata=@xmldata + '<發票收件人廠商統編 />'
+  else
+  	set @xmldata=@xmldata + '<發票收件人廠商統編>' + @mfrno + '</發票收件人廠商統編>' 
+
+  if @nm = ''	
+  	set @xmldata=@xmldata + '<發票收件人姓名 />'
+  else
+  	set @xmldata=@xmldata + '<發票收件人姓名>' + @nm + '</發票收件人姓名>' 
+
+  if @jbti = ''	
+  	set @xmldata=@xmldata + '<發票收件人職稱 />'
+  else
+  	set @xmldata=@xmldata + '<發票收件人職稱>' + @jbti + '</發票收件人職稱>' 
+
+  if @zip = ''
+  	set @xmldata=@xmldata + '<發票收件人郵遞區號 />'
+  else
+  	set @xmldata=@xmldata + '<發票收件人郵遞區號>' + @zip + '</發票收件人郵遞區號>' 
+
+  if @addr = ''
+  	set @xmldata=@xmldata + '<發票收件人地址 />'
+  else
+  	set @xmldata=@xmldata + '<發票收件人地址>' + @addr + '</發票收件人地址>' 
+   
+  if @tel = ''
+  	set @xmldata=@xmldata + '<發票收件人電話 />'  
+  else
+  	set @xmldata=@xmldata + '<發票收件人電話>' + @tel + '</發票收件人電話>'  
+
+  if @fax = ''
+  	set @xmldata=@xmldata + '<發票收件人傳真 />'  
+  else
+  	set @xmldata=@xmldata + '<發票收件人傳真>' + @fax + '</發票收件人傳真>'  
+
+  if @cell = ''
+  	set @xmldata=@xmldata + '<發票收件人手機 />'  
+  else
+  	set @xmldata=@xmldata + '<發票收件人手機>' + @cell + '</發票收件人手機>'  
+
+  if @email = ''
+  	set @xmldata=@xmldata + '<發票收件人Email />'  
+  else
+  	set @xmldata=@xmldata + '<發票收件人Email>' + @email + '</發票收件人Email>'  
+  
+  if @invcd = ''
+  	set @xmldata=@xmldata + '<發票類別代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<發票類別代碼>' + @invcd + '</發票類別代碼>'  
+
+  if @taxtp = ''
+  	set @xmldata=@xmldata + '<發票課稅別代碼 />'  
+  else
+  	set @xmldata=@xmldata + '<發票課稅別代碼>' + @taxtp + '</發票課稅別代碼>'  
+
+  if @fgitri = ''
+  	set @xmldata=@xmldata + '<院所內註記 />'  
+  else
+  	set @xmldata=@xmldata + '<院所內註記>' + @fgitri + '</院所內註記>'  
+
+
+  set @xmldata=@xmldata + '</發票廠商收件人明細>' + '</發票廠商資料>'
+ 
+
+ 	RETURN @xmldata
+	END
+

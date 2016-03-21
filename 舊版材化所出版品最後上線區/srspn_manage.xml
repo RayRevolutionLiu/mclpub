@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<srspan>
+		<page name="首頁" url="default">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>		
+		</page>
+		
+	<!--d2平面廣告次系統-->
+		<!--合約書-->
+		<page name="新增合約書" url="cont_new1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>
+		<page name="維護合約書" url="cont_main1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="合約書檢核表" url="contfm_chklist">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="顯示已結案合約書" url="contfm_closedshow">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="註銷合約書" url="contfm_cancel">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="顯示已註銷合約書" url="contfm_cancelshow">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+	    
+		<!--落版-->
+		<page name="新增/維護/顯示落版-由合約書進入" url="pub_new1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="新增/維護/顯示落版-由年月落版進入" url="pub_new2">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="落板檢閱表" url="pubfm_chklist">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="顯示合約及落版資料" url="contpubfm_search">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="合約書清單" url="cont_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告費用檢查清單" url="adamt_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="平面廣告標籤-當月刊登" url="pubfm_label_search">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="平面廣告標籤-當月未刊登" url="pubfm_label_search2">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="合約書檢查清單" url="contfm_chk1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--催稿處理-->
+		<page name="催稿單" url="getad">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>
+		
+		<!--落版處理-->
+		<page name="廣告排版動作 " url="adpub_act1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="美編樣後修正" url="adpub_act1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告落版單" url="adpub_form">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告落版清單" url="adpub_lis">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告制搞統計表" url="admade_stat">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--發票處理-->
+		<page name="發票開立單產生-一次付款" url="iafm1_add">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>
+		<page name="發票開立單產生-大批月結" url="iafm2_addia">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>
+		<page name="發票開立單檢核表-一次付款" url="iafm1_chklist_query">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="發票開立單檢核表-一次付款(當月刊登清單)" url="iafm1_chklist2">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="發票開立單檢核表-大批月結" url="iafm2_chklist_ia">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="發票開立單回復(Recovery)-一次付款" url="iafm1_Rec">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="發票開立單回復(Recovery)-大批月結" url="iafm2_RecAll">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--繳款處理-->
+		<page name="新增繳款單" url="payfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="修改繳款單" url="payfmfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="刪除繳款單" url="paydelete">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款單檢核表" url="checklist7">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款清單產生" url="paylistfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款清單回覆(Recovery)" url="recoverypaylist">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="列印繳款清單" url="paylistprint">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--缺書處理-->
+		<page name="缺書登錄" url="lostbk_search">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書單修改/刪除" url="lostbk_search">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書清單" url="lostbk_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書標籤" url="lostbk_label_filter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--催款處理-->		
+		<page name="催款單" url="getpay">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="催款清單" url="getpay_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--推廣戶處理-->		
+		<page name="客戶基本資料清單" url="custdata_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告推廣戶清單" url="adprom_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="客戶基本資料清單" url="custdata_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--統計-->
+		<page name="廣告收入統計表" url="adincome_stat">	
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="郵寄本數統計表-當月刊登" url="orcounts_stat_search1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="郵寄本數統計表-當月未刊登" url="orcounts_stat_search2">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="印製份數統計表-當月刊登" url="ormtpcounts_stat_search1">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="印製份數統計表-當月未刊登" url="ormtpcounts_stat_search2">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--相關維護區-->
+		<page name="版面優先次序" url="adlprior">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="內頁起始頁碼" url="pgno">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告色彩" url="adcolor">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告版面" url="adlayout">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告篇幅" url="adpgsize">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="新稿制法" url="njtype">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="雜誌收件人(瀏覽)" url="or">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="發票廠商收件人(瀏覽)" url="invmfr">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書(瀏覽)" url="lostbk">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+	<!--d4網路廣告次系統-->
+		<!--合約處理-->		
+		<page name="新增合約書" url="contquerycust">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="維護合約書" url="contquerymaintain">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="合約書檢核表" url="contchklist">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="單一合約書清單" url="rptsinglecont0">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="大批合約書清單" url="rptcontlist0">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="已註銷合約處理" url="contcanceled">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告費用檢查清單" url="rptadamtquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="合約客戶基本資料清單" url="rptcustquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--催稿處理-->
+		<page name="催稿單" url="rptgetad">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--落版處理-->
+		<page name="廣告絡版處理" url="adrquerycont">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告落版單" url="rptadrbillquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>
+		<page name="廣告落版統計表" url="rptadrquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="美編上稿處理" url="adrquerypublished">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="美編上稿清單" url="rptfileupquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="產生播出檔" url="adrgenxml">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="刪除落版播出檔" url="adrxmlmanage">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廣告製稿統計表" url="rptadmadequery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--發票處理-->
+		<page name="單一廠商發票開立產生" url="ia1query">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="大批月結發票開立產生" url="iaquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="單一廠商之發票開立單檢核表" url="rptia1_chkfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="大批月結之發票開立單檢核表" url="rptia_chkfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="單一廠商之發票開立單回復(Recovery)" url="ia1recoveryquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="大批月結之發票開立單回復(Recovery)" url="iarecoveryquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--繳款處理-->
+		<page name="新增繳款單" url="payfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="修改繳款單" url="oayfmfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="刪除繳款單" url="paydelete">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款單檢核表" url="checklist7">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款清單產生" url="paylistfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="繳款清單回覆(Recovery)" url="recoverypaylist">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="列印繳款清單" url="paylistprint">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--補書處理-->
+		<page name="補書登錄" url="remailadd">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="補書修改" url="remailmaintain">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="補書清單列印" url="rmlistfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--缺書處理-->
+		<page name="缺書登錄" url="lostadd">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書修改" url="lostmaintain">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書清單列印" url="lostlistfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--標籤處理-->
+		<page name="大宗標籤(當月刊登)" url="pub_labelfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="大宗標籤(當月未刊登)" url="unpub_labelfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="補書標籤列印" url="rmlabelfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="缺書標籤列印" url="lostlabelfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--催款處理-->
+		<page name="催款處理" url="unpaidlistfilter">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="false"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+		<!--其他報表-->
+		<page name="廣告收入統計表" url="rptincomequery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="郵寄本數統計表" url="rptmailmntquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="印製份數統計表-本月刊登" url="rptbookmntquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="印製份數統計表-本月未刊登" url="rptbookmntquery">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		
+	<!--d5共用檔案-->
+		<page name="書籍資料維護" url="book">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="書籍期別資料維護" url="bookp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="領域代碼資料維護" url="itp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="營業代碼資料維護" url="btp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="廠商資料維護" url="mfr">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="客戶資料維護" url="cust">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="客戶基本資料清單" url="custdata_list">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="true"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="系統代碼資料維護" url="syscd">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="寄件人資料維護" url="mailer">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="郵寄類別資料維護" url="mtp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="寄件人郵寄類別資料維護" url="mltp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="計劃代號資料維護" url="proj">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="轉 SAP 發票摘要檔資料維護" url="refm">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="轉 SAP 傳票摘要檔資料維護" url="refd">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="訂單來源檔資料維護" url="ores">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="訂購類別檔資料維護" url="otp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="付款方式資料維護" url="pytp">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="true"></admin>
+		</page>		
+		<page name="管理業務人員資料維護" url="srspn">
+			<admin level="A" value="true"></admin>
+			<admin level="B" value="true"></admin>
+			<admin level="C" value="true"></admin>
+			<admin level="D" value="false"></admin>
+			<admin level="E" value="false"></admin>
+		</page>		
+</srspan>

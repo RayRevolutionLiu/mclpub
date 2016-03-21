@@ -1,0 +1,84 @@
+CREATE PROCEDURE dbo.sp_order_to_detail 
+	@XML varchar(7000), @syscd varchar(2),
+	@custno varchar(6), @otp1cd varchar(2),
+	@otp1seq varchar(3)
+AS
+set nocount on
+
+DECLARE @idoc	int
+exec sp_xml_preparedocument @idoc OUTPUT, @XML
+------訂單明細檔  c1_od
+delete c1_od where od_syscd=@syscd and od_custno=@custno and od_otp1cd=@otp1cd
+			and od_otp1seq=@otp1seq
+insert c1_od 
+select  系統代碼, 訂戶編號, 訂購類別一,訂單流水號=substring( 訂單流水號, 11,3),項次,
+	訂閱起時=substring(訂閱起時,1,4)+substring(訂閱起時,6,2)+substring(訂閱起時,9,2),
+	訂閱訖時=substring(訂閱訖時,1,4)+substring(訂閱訖時,6,2)+substring(訂閱訖時,9,2),
+	書籍類別, 計劃代號, 成本中心, 備註, 金額, 
+	新舊訂戶=CASE 新舊訂戶
+			WHEN '新訂戶' THEN '0'
+			WHEN '續訂戶' THEN '1'
+			WHEN '舊訂戶' THEN '1'
+			ELSE ''
+		END
+from openxml(@idoc, '/root/訂單明細/明細表', 2)
+	with (系統代碼 varchar(2) '//訂單/系統代碼',
+	訂戶編號	varchar(6) '//訂戶編號',
+	訂購類別一	varchar(2) '//訂單/訂購類別一',
+	訂單流水號	varchar(13) '//訂單流水號',
+	項次		varchar(2),
+	訂閱起時	varchar(10),
+	訂閱訖時	varchar(10),
+	書籍類別	varchar(2),
+	計劃代號	varchar(10),
+	成本中心	varchar(7),
+	備註		varchar(30),
+	金額		char(6),
+	新舊訂戶	char(6)
+	)
+
+------收件人檔  c1_or
+delete c1_or where or_syscd=@syscd and or_custno=@custno and or_otp1cd=@otp1cd
+			and or_otp1seq=@otp1seq
+insert c1_or 
+select  系統代碼, 訂戶編號, 訂購類別一,訂單流水號=substring( 訂單流水號, 11,3),序號,
+	公司名稱, 姓名,  職稱, 地址, 郵遞區號, 電話, 傳真, 手機, Email, 海外郵寄
+from openxml(@idoc, '/root/收件人資料/收件人明細', 2)
+	with (系統代碼 varchar(2) '//訂單/系統代碼',
+	訂戶編號	varchar(6) '//訂戶編號',
+	訂購類別一	varchar(2) '//訂單/訂購類別一',
+	訂單流水號	varchar(13) '//訂單流水號',
+	序號		varchar(2),
+	公司名稱	varchar(30),
+	姓名		varchar(30),
+	職稱		varchar(12),
+	地址		varchar(80),
+	郵遞區號	char(5),
+	電話		varchar(30),
+	傳真		varchar(30),
+	手機		varchar(30),
+	Email		varchar(80),
+	海外郵寄	char(1)
+	)
+------收件人數量檔  c1_ramt
+delete c1_ramt where ra_syscd=@syscd and ra_custno=@custno and ra_otp1cd=@otp1cd
+			and ra_otp1seq=@otp1seq
+insert c1_ramt 
+select  系統代碼, 訂戶編號, 訂購類別一,訂單流水號=substring( 訂單流水號, 11,3), 
+	項次,序號,郵寄數量, 郵寄類別
+from openxml(@idoc, '/root/訂單明細/明細表/投遞資料/收件人明細', 2)
+	with (系統代碼 varchar(2) '//訂單/系統代碼',
+	訂戶編號	varchar(6) '//訂戶編號',
+	訂購類別一	varchar(2) '//訂單/訂購類別一',
+	訂單流水號	varchar(13) '//訂單流水號',
+	項次		varchar(2) '../../項次',
+	序號		varchar(2),
+	郵寄數量	varchar(4),
+	郵寄類別	varchar(2)
+	)
+-----發票開立單檔
+-----發票開立明細檔
+-----繳款單檔
+-----繳款單明細檔
+exec sp_xml_removedocument @idoc
+GO

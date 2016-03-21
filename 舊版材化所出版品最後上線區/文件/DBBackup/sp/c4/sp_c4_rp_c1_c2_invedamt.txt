@@ -1,0 +1,72 @@
+CREATE PROC dbo.sp_c4_rp_c1_c2_invedamt(@contno1 char(6))
+AS
+
+BEGIN
+SET NOCOUNT ON
+
+
+
+
+/* 以下未完成*/
+DECLARE @c1 int, @c2 int, @invedamt real
+
+/* 1.   對於每一筆資料 */
+/*測試時用
+select @contno1='000024'
+*/
+
+/* 2.   找出，圖檔：新稿+換稿的次數*/
+SELECT @c1=COUNT(*)
+FROM
+(SELECT
+wk_c4_getad.cont_contno,
+c4_adr.adr_drafttp,
+c4_adr.adr_seq
+FROM    wk_c4_getad INNER JOIN
+                 c4_adr ON
+                 wk_c4_getad.cont_contno = c4_adr.adr_contno COLLATE Chinese_Taiwan_Stroke_BIN
+WHERE
+(c4_adr.adr_fggot = '1') AND
+(c4_adr.adr_drafttp = '2' OR c4_adr.adr_drafttp = '3') AND cont_contno=@contno1) DRIVERTBL
+
+/*  3.   找出，網頁：新稿+換稿的次數*/
+SELECT @c2=COUNT(*)
+FROM
+(SELECT
+wk_c4_getad.cont_contno,
+c4_adr.adr_urltp,
+c4_adr.adr_seq
+FROM    wk_c4_getad INNER JOIN
+                 c4_adr ON
+                 wk_c4_getad.cont_contno = c4_adr.adr_contno COLLATE Chinese_Taiwan_Stroke_BIN
+WHERE
+(c4_adr.adr_fggot = '1') AND
+(c4_adr.adr_urltp = '2' OR c4_adr.adr_urltp = '3') AND cont_contno=@contno1) DRIVERTBL
+
+/* 4.   找出，已開立發票金額，目前以進入ia，iad就算*/
+SELECT @invedamt = SUM(iad.iad_amt)
+FROM     ia INNER JOIN
+               iad ON ia.ia_syscd = iad.iad_syscd AND
+                  ia.ia_iano = iad.iad_iano
+WHERE  (iad.iad_syscd = 'C4') AND (SUBSTRING(ia.ia_contno, 3, 6) = @contno1)
+
+SELECT @invedamt=
+CASE
+WHEN @invedamt IS NULL THEN 0
+ELSE @invedamt
+END
+
+/* 5. UPDATE 該筆資料 */
+UPDATE wk_c4_getad
+SET i_resimgtm=cont_totimgtm-@c1,
+        i_resurltm=cont_toturltm-@c2,
+        r_invedamt=@invedamt
+WHERE cont_contno=@contno1
+/* 6.  LOOP...goto1 */
+
+
+
+
+SET NOCOUNT OFF
+END
+GO

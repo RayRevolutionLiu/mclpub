@@ -1,0 +1,74 @@
+sqlDataAdapter1  合約+發票廠商 資料
+
+7/6
+SELECT         dbo.c2_cont.cont_contno, dbo.invmfr.im_imseq, dbo.invmfr.im_nm, 
+                          dbo.c2_cont.cont_mfrno, dbo.mfr.mfr_inm, dbo.c2_cont.cont_custno, 
+                          dbo.cust.cust_nm, RTRIM(dbo.srspn.srspn_cname) AS srspn_cname, 
+                          dbo.c2_cont.cont_totjtm, dbo.c2_cont.cont_tottm, dbo.c2_cont.cont_totamt, 
+                          dbo.c2_cont.cont_paidamt, dbo.c2_cont.cont_restamt, dbo.c2_cont.cont_syscd, 
+                          dbo.cust.cust_custno, dbo.invmfr.im_contno, dbo.invmfr.im_syscd, 
+                          dbo.mfr.mfr_mfrno, COUNT(dbo.c2_pub.pub_pubseq) AS PubCount
+FROM             dbo.c2_cont INNER JOIN
+                          dbo.mfr ON dbo.c2_cont.cont_mfrno = dbo.mfr.mfr_mfrno INNER JOIN
+                          dbo.cust ON dbo.c2_cont.cont_custno = dbo.cust.cust_custno INNER JOIN
+                          dbo.srspn ON dbo.c2_cont.cont_empno = dbo.srspn.srspn_empno INNER JOIN
+                          dbo.invmfr ON dbo.c2_cont.cont_syscd = dbo.invmfr.im_syscd AND 
+                          dbo.c2_cont.cont_contno = dbo.invmfr.im_contno INNER JOIN
+                          dbo.c2_pub ON dbo.c2_cont.cont_syscd = dbo.c2_pub.pub_syscd AND 
+                          dbo.c2_cont.cont_contno = dbo.c2_pub.pub_contno
+WHERE         (dbo.c2_cont.cont_syscd = 'C2') AND (dbo.c2_cont.cont_fgpayonce = '1') AND 
+                          (dbo.c2_cont.cont_fgclosed = '0') AND (dbo.invmfr.im_syscd = 'C2')
+GROUP BY  dbo.c2_cont.cont_contno, dbo.invmfr.im_imseq, dbo.invmfr.im_nm, 
+                          dbo.c2_cont.cont_mfrno, dbo.mfr.mfr_inm, dbo.c2_cont.cont_custno, 
+                          dbo.cust.cust_nm, dbo.srspn.srspn_cname, dbo.c2_cont.cont_totjtm, 
+                          dbo.c2_cont.cont_tottm, dbo.c2_cont.cont_totamt, dbo.c2_cont.cont_paidamt, 
+                          dbo.c2_cont.cont_restamt, dbo.c2_cont.cont_syscd, dbo.cust.cust_custno, 
+                          dbo.invmfr.im_contno, dbo.invmfr.im_syscd, dbo.mfr.mfr_mfrno, 
+                          dbo.c2_pub.pub_fginved
+HAVING          (dbo.c2_pub.pub_fginved = ' ')
+
+=======================================================
+sqlDataAdapter2  落版 資料
+
+7/6
+SELECT         c2_pub.pub_contno, c2_pub.pub_yyyymm, c2_pub.pub_pubseq, 
+                          c2_pub.pub_pgno AS pub_pgno, c2_pub.pub_ltpcd, c2_pub.pub_clrcd, 
+                          c2_pub.pub_pgscd, c2_pub.pub_fgfixpg, c2_pub.pub_remark, 
+                          c2_pub.pub_drafttp, c2_pub.pub_fggot, c2_pub.pub_njtpcd, 
+                          c2_pub.pub_origbkcd, c2_pub.pub_origjno, c2_pub.pub_origjbkno, 
+                          c2_pub.pub_chgbkcd, c2_pub.pub_chgjno, c2_pub.pub_chgjbkno, 
+                          c2_pub.pub_fgrechg, c2_pub.pub_bkcd, RTRIM(c2_ltp.ltp_nm) AS ltp_nm, 
+                          RTRIM(c2_clr.clr_nm) AS clr_nm, RTRIM(c2_pgsize.pgs_nm) AS pgs_nm, 
+                          RTRIM(c2_njtp.njtp_nm) AS njtp_nm, RTRIM(book.bk_nm) AS bk_nm, 
+                          RTRIM(srspn.srspn_cname) AS srspn_cname, c2_pub.pub_modempno, 
+                          c2_pub.pub_imseq, c2_pub.pub_fginved, c2_pub.pub_adamt, 
+                          c2_pub.pub_chgamt, c2_pub.pub_projno, c2_pub.pub_costctr
+FROM             c2_pub INNER JOIN
+                          c2_cont ON c2_pub.pub_contno = c2_cont.cont_contno AND 
+                          c2_pub.pub_syscd = c2_cont.cont_syscd INNER JOIN
+                          mfr ON c2_cont.cont_mfrno = mfr.mfr_mfrno LEFT OUTER JOIN
+                          c2_clr ON c2_pub.pub_clrcd = c2_clr.clr_clrcd LEFT OUTER JOIN
+                          c2_pgsize ON c2_pub.pub_pgscd = c2_pgsize.pgs_pgscd LEFT OUTER JOIN
+                          c2_ltp ON c2_pub.pub_ltpcd = c2_ltp.ltp_ltpcd LEFT OUTER JOIN
+                          c2_njtp ON c2_pub.pub_njtpcd = c2_njtp.njtp_njtpcd LEFT OUTER JOIN
+                          book ON c2_pub.pub_origbkcd = book.bk_bkcd LEFT OUTER JOIN
+                          srspn ON c2_cont.cont_empno = srspn.srspn_empno
+WHERE         (c2_pub.pub_fginved = ' ')
+ORDER BY  c2_pub.pub_contno, c2_pub.pub_yyyymm, c2_pub.pub_pubseq
+
+=======================================================
+sqlCommand1  更新被勾選的落版資料 c2_pub pub_fginved 裡, 由 ' ' 改為 'v'
+
+7/6
+UPDATE        c2_pub
+SET                  pub_fginved = 'v'
+WHERE         (pub_fginved = ' ') AND (pub_syscd = @syscd) AND (pub_contno = @contno) 
+                          AND (pub_yyyymm = @yyyymm) AND (pub_pubseq = @pubseq)
+
+=======================================================
+sqlCommand2  新增 發票開立單 資料 ia & iad (方姐處理此 sp)
+             (呼叫 sp_c2_add_1_ia_1 - 更新被勾選的落版資料 c2_pub pub_fginved 裡, 由 'v' 改為 '1')
+
+7/5
+exec dbo.sp_c2_add_1_ia_1
+

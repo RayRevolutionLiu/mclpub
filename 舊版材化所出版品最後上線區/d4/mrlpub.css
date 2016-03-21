@@ -1,0 +1,216 @@
+/* Original mrlpub.css */
+TD{font-size:9pt}
+
+A:link {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:visited {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:active {color: #3333ff; text-decoration: underline; font-family: 新細明體}
+A:hover {color: #ff3300; text-decoration: none; font-family: 新細明體}
+
+A.header:link { color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:visited {color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:active {color: #ffffff; text-decoration: none; font-family: 新細明體}
+A.header:hover {color: #ffffff; text-decoration: none; font-family: 新細明體}
+img.ico { cursor:hand; }
+
+A.page:link { color: #ffffff; text-decoration: none; font-family: 新細明體; font-size: 10pt}
+A.page:visited {color: #3333ff; text-decoration: none; font-family: 新細明體 font-size: 10pt}
+A.page:active {color: #ffffff; text-decoration: none; font-family: 新細明體 font-size: 10pt}
+A.page:hover {color: #ffffff; text-decoration: none; font-family: 新細明體 font-size: 10pt}
+img.ico { cursor:hand; }
+
+.welcome{text-transform: uppercase; text-decoration: underline; COLOR=BLUE; FONT-WEIGHT:BOLD;}
+.highlight{FONT-SIZE:10pt; background-color: #B0E0E6}
+.copyright{FONT-SIZE:8pt;}
+
+TD.Title{FONT-SIZE:10pt; color: 0033cc;}
+TD.content{FONT-SIZE:10pt; color: 0033cc;}
+
+LI.Outside{list-style-position: outside; list-style-type: upper-roman}
+
+
+/* C4 Define */
+
+/* 有顏色Table的Header*/
+.TableColorHeader
+{
+	font-size: 10pt;
+	color: white;
+	background-color: #214289;
+}
+
+/* 有顏色Table的配色 */
+.TableColor
+{
+	font-size: 10pt;
+	color: black;
+	background-color: #bfcff0;
+}
+
+/* 新增合約說明  */
+.ContAnnounce
+{
+	font-size: 10pt;
+	color: darkred;
+}
+
+/* 新增合約備註 */
+.ContRemark
+{
+	font-size: 10pt;
+	color: gray;	
+}
+
+/* 搜尋後的訊息 */
+.SearchingMessage
+{
+	font-size: 10pt;
+	color: red;	
+}
+
+/* DataGrid的樣式設定 */
+.DataGridStyle
+{
+	font-size: 10pt;
+	color: black;
+	background-color: #ecebff;
+}
+
+.HeaderStyle
+{
+	background-color: #bfcff0;
+}
+
+.FooterStyle
+{
+}
+
+.ItemStyle
+{
+}
+
+.AlternatingItemStyle
+{
+}
+
+.PagerStyle
+{
+	background-color: #99cccc;
+	font-size: 10pt;
+}
+
+.SelectedItemStyle
+{
+	background-color: lightgreen;
+}
+
+.EditItemStyle
+{
+	background-color: mistyrose;
+}
+
+/* 一般資料Label */
+.NormalLabel
+{
+	font-size: 10pt;
+	color: black;
+}
+
+/* 重要資料訊息Label */
+.ImportantLabel
+{
+	font-size: 10pt;
+	color: red;
+}
+
+.HyperLinkStyle
+{
+	font-size: 10pt;
+	color: Blue;
+	text-decoration: none;
+}
+
+/* Validator的格式 */
+.ValidatorStyle
+{
+	font-size: 10pt;
+	color: red;	
+}
+
+/* ReadOnlyTextBox */
+.ReadOnlyTextBox
+{
+	background-color: lightgrey;
+}
+
+/* CheckBoxList的Sytle */
+.CheckBoxListStyle
+{
+	font-size: 10pt;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+}
+
+/* 月曆格式 */
+.CalendarStyle
+{
+	background-color: lightsteelblue;
+	font-size: 10pt;	
+}
+
+.CalendarYear
+{
+	font-size: 12pt;
+	background-color: mediumslateblue;
+}
+
+.CalendarMonth
+{
+	background-color: lightgreen;
+}
+
+.DayHeaderStyle
+{
+	background-color: khaki;
+}
+
+.DayStyle
+{
+	background-color: lightsteelblue;
+}
+
+.WeekendDayStyle
+{
+	background-color: plum;
+}
+
+.CalNextPrevStyle
+{
+	background-color: palegreen;
+}
+
+.OtherMonthDayStyle
+{
+	background-color: lavender;
+}
+
+.CalTitleStyle
+{
+	background-color: lightgreen;
+}
+
+/* 提高警覺的按鈕 */
+.AlertButtonStyle
+{
+	border-left-color: crimson;
+	border-bottom-color: crimson;
+	color: white;
+	border-top-style: outset;
+	border-top-color: crimson;
+	border-right-style: outset;
+	border-left-style: outset;
+	background-color: red;
+	border-right-color: crimson;
+	border-bottom-style: outset;
+}

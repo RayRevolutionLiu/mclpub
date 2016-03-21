@@ -1,0 +1,103 @@
+CREATE FUNCTION dbo.fn_c2_contAll
+(
+	@syscd char(2),
+	@contno char(6)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+
+declare @imseq char(2),@oritem char(2)
+declare @yyyymm char(6),@pubseq char(2)
+declare @xmldata varchar(8000)
+
+select @syscd=rtrim(cont_syscd),@contno=rtrim(cont_contno)
+ from c2_cont
+ where cont_syscd=@syscd and cont_contno=@contno
+
+select @oritem=or_oritem
+ from c2_or
+ where or_syscd=@syscd and or_contno=@contno
+
+ 
+ /* <root> */
+ 
+ set @xmldata = '<root>'
+ 
+ 
+ /* <合約書內容> */
+
+	DECLARE ContBasic_Cursor CURSOR FOR
+	 select cont_syscd, cont_contno
+	 from c2_cont
+	 where cont_syscd=@syscd and cont_contno=@contno
+	OPEN ContBasic_Cursor
+	
+	FETCH NEXT FROM ContBasic_Cursor
+	 into @syscd, @contno
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		set @xmldata=@xmldata + dbo.fn_c2_contBasic(@syscd ,@contno)
+		FETCH NEXT FROM ContBasic_Cursor
+		 into @syscd, @contno
+	END
+	
+	CLOSE ContBasic_Cursor
+	DEALLOCATE ContBasic_Cursor
+
+
+ /* <發票廠商資料> */
+	set @imseq='01'
+	
+	DECLARE ContIM_Cursor CURSOR FOR
+	 select im_syscd, im_contno, im_imseq
+	 from invmfr
+	 where im_syscd=@syscd and im_contno=@contno and im_imseq=@imseq
+	OPEN ContIM_Cursor
+	
+	FETCH NEXT FROM ContIM_Cursor
+	 into @syscd, @contno, @imseq
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		set @xmldata=@xmldata + dbo.fn_c2_im(@syscd ,@contno,@imseq)
+		FETCH NEXT FROM ContIM_Cursor
+		 into @syscd, @contno, @imseq
+	END
+	
+	CLOSE ContIM_Cursor
+	DEALLOCATE ContIM_Cursor
+
+
+ /* <雜誌收件人資料> */
+
+	DECLARE ContOR_Cursor CURSOR FOR
+	 select or_syscd, or_contno, or_oritem
+	 from c2_or
+	 where or_syscd=@syscd and or_contno=@contno and or_oritem=@oritem
+	OPEN ContOR_Cursor
+	
+	FETCH NEXT FROM ContOR_Cursor
+	 into @syscd, @contno, @oritem
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+		set @xmldata=@xmldata + dbo.fn_c2_or(@syscd ,@contno,@oritem)
+		FETCH NEXT FROM ContOR_Cursor
+		 into @syscd, @contno, @oritem
+	END
+	
+	CLOSE ContOR_Cursor
+	DEALLOCATE ContOR_Cursor
+
+
+ /* <合約書落版刊登資料> */
+
+	set @xmldata=@xmldata + dbo.fn_c2_pubEmpty(@syscd ,@contno)
+
+ /* </root> */
+
+  set @xmldata=@xmldata + '</root>'
+
+ 	RETURN @xmldata
+	END
+
+

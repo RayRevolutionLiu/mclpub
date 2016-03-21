@@ -1,0 +1,18 @@
+/* 發票開立單回復 一次付款:  */
+CREATE PROCEDURE dbo.sp_c2_delete_1_ia
+	@iano varchar(8), @syscd varchar(2), @contno varchar(6), @yyyymm char(6), @pubseq char(2)
+
+AS
+set nocount on
+
+------刪除iad
+delete iad where iad_syscd=@syscd and iad_iano= @iano
+
+------刪除ia
+delete ia where ia_syscd=@syscd and ia_iano= @iano
+
+
+----- 發票開立單/預開發票未繳款之註銷發票 Recovery
+----- c2_pub 中 set pub_fginved=' '
+update c2_pub set pub_fginved=' ' where pub_syscd=@syscd and pub_contno=@contno and pub_yyyymm=@yyyymm and pub_pubseq=@pubseq
+GO

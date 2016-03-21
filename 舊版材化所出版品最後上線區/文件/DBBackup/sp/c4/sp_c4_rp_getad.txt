@@ -1,0 +1,249 @@
+/*催稿單*/
+CREATE PROC dbo.sp_c4_rp_getad(@yyyymm CHAR(6), @empno CHAR(7))
+AS
+
+BEGIN
+SET NOCOUNT ON
+
+DELETE FROM wk_c4_getad
+/*測試時用
+declare @yyyymm char(6), @adcate char(1)
+select @yyyymm='200209'
+select @adcate='M'*/
+
+INSERT INTO wk_c4_getad
+select
+cont_contno,
+s_adr_seq=
+CASE
+    WHEN adr_seq IS NULL THEN ''
+    ELSE adr_seq
+END
+, cont_aunm, mfr_inm, cont_autel, cont_aufax, cont_aucell,
+s_adr_sdate=
+CASE
+    WHEN adr_sdate IS NULL THEN ''
+    ELSE adr_sdate
+END
+, s_adr_edate=
+CASE
+    WHEN adr_edate IS NULL THEN ''
+    ELSE adr_edate
+END
+,tot_adr_addays=
+CASE
+    WHEN adr_sdate IS NULL OR adr_edate IS NULL THEN 0
+    ELSE DATEDIFF(DAY, CONVERT(DATETIME, adr_sdate, 112), CONVERT(DATETIME, adr_edate, 112))+1
+END
+, s_adr_adcate =
+CASE
+    WHEN adr_adcate='M' THEN '首頁'
+    WHEN adr_adcate='I' THEN '內頁'
+    WHEN adr_adcate='N' THEN '奈米'
+    ELSE ''
+END
+, s_adr_keyword =
+CASE
+    WHEN adr_keyword='h0' THEN '正中'
+    WHEN adr_keyword='h1' THEN '右一'
+    WHEN adr_keyword='h2' THEN '右二'
+    WHEN adr_keyword='h3' THEN '右三'
+    WHEN adr_keyword='h4' THEN '右四'
+    WHEN adr_keyword='w1' THEN '文一'
+    WHEN adr_keyword='w2' THEN '文二'
+    WHEN adr_keyword='w3' THEN '文三'
+    WHEN adr_keyword='w4' THEN '文四'
+    WHEN adr_keyword='w5' THEN '文五'
+    WHEN adr_keyword='w6' THEN '文六'
+    ELSE ''
+END
+, s_adr_fgfixad =
+CASE
+    WHEN adr_fgfixad='0' THEN '輪播'
+    WHEN adr_fgfixad='1' THEN '定播'
+    WHEN adr_fgfixad IS NULL THEN ''
+END
+, s_adr_impr=
+CASE
+    WHEN adr_impr IS NULL THEN ''
+    ELSE CAST(adr_impr AS char(2))
+END
+, s_adr_drafttp=
+CASE
+    WHEN adr_drafttp='1' THEN '舊稿'
+    WHEN adr_drafttp='2' THEN '新稿'
+    WHEN adr_drafttp='3' THEN '改稿'
+    ELSE ''
+END
+, s_adr_imgurl=
+CASE
+    WHEN adr_imgurl IS NULL THEN ''
+    ELSE adr_imgurl
+END
+, s_adr_fggot=
+CASE
+    WHEN adr_fggot='1' THEN '是'
+    WHEN adr_fggot='0' THEN '否'
+    ELSE ''
+END
+, s_adr_utltp =
+CASE
+    WHEN adr_urltp='1' THEN '舊稿'
+    WHEN adr_urltp='2' THEN '新稿'
+    WHEN adr_urltp='3' THEN '改稿'
+    ELSE ''
+END
+, s_adr_navurl=
+CASE
+    WHEN adr_navurl IS NULL THEN ''
+    ELSE adr_navurl
+END
+, tot_cont_addays=DATEDIFF(DAY, CONVERT(DATETIME, cont_sdate, 112), CONVERT(DATETIME, cont_edate, 112))+1
+, cont_freetm, cont_totimgtm, 0, cont_toturltm, 0, cont_totamt, 0, cont_paidamt
+from c4_cont left outer join c4_adr
+on cont_contno=adr_contno
+left outer join mfr on
+cont_mfrno = mfr_mfrno
+where cont_fgclosed<>'1' and cont_fgtemp<>'1' and cont_fgcancel<>'1'
+AND (cont_empno=@empno  OR cont_empno=@empno+' ')
+AND adr_seq IS NULL
+AND substring(cont_sdate,1,6)<=@yyyymm AND substring(cont_edate,1,6)>=@yyyymm
+union
+select
+cont_contno,
+s_adr_seq=
+CASE
+    WHEN adr_seq IS NULL THEN ''
+    ELSE adr_seq
+END
+, cont_aunm, mfr_inm, cont_autel, cont_aufax, cont_aucell,
+s_adr_sdate=
+CASE
+    WHEN adr_sdate IS NULL THEN ''
+    ELSE adr_sdate
+END
+, s_adr_edate=
+CASE
+    WHEN adr_edate IS NULL THEN ''
+    ELSE adr_edate
+END
+,tot_adr_addays=
+CASE
+    WHEN adr_sdate IS NULL OR adr_edate IS NULL THEN 0
+    ELSE DATEDIFF(DAY, CONVERT(DATETIME, adr_sdate, 112), CONVERT(DATETIME, adr_edate, 112))+1
+END
+, s_adr_adcate =
+CASE
+    WHEN adr_adcate='M' THEN '首頁'
+    WHEN adr_adcate='I' THEN '內頁'
+    WHEN adr_adcate='N' THEN '奈米'
+    ELSE ''
+END
+, s_adr_keyword =
+CASE
+    WHEN adr_keyword='h0' THEN '正中'
+    WHEN adr_keyword='h1' THEN '右一'
+    WHEN adr_keyword='h2' THEN '右二'
+    WHEN adr_keyword='h3' THEN '右三'
+    WHEN adr_keyword='h4' THEN '右四'
+    WHEN adr_keyword='w1' THEN '文一'
+    WHEN adr_keyword='w2' THEN '文二'
+    WHEN adr_keyword='w3' THEN '文三'
+    WHEN adr_keyword='w4' THEN '文四'
+    WHEN adr_keyword='w5' THEN '文五'
+    WHEN adr_keyword='w6' THEN '文六'
+    ELSE ''
+END
+, s_adr_fgfixad =
+CASE
+    WHEN adr_fgfixad='0' THEN '輪播'
+    WHEN adr_fgfixad='1' THEN '定播'
+    WHEN adr_fgfixad IS NULL THEN ''
+END
+, s_adr_impr=
+CASE
+    WHEN adr_impr IS NULL THEN ''
+    ELSE CAST(adr_impr AS char(2))
+END
+, s_adr_drafttp=
+CASE
+    WHEN adr_drafttp='1' THEN '舊稿'
+    WHEN adr_drafttp='2' THEN '新稿'
+    WHEN adr_drafttp='3' THEN '改稿'
+    ELSE ''
+END
+, s_adr_imgurl=
+CASE
+    WHEN adr_imgurl IS NULL THEN ''
+    ELSE adr_imgurl
+END
+, s_adr_fggot=
+CASE
+    WHEN adr_fggot='1' THEN '是'
+    WHEN adr_fggot='0' THEN '否'
+    ELSE ''
+END
+, s_adr_utltp =
+CASE
+    WHEN adr_urltp='1' THEN '舊稿'
+    WHEN adr_urltp='2' THEN '新稿'
+    WHEN adr_urltp='3' THEN '改稿'
+    ELSE ''
+END
+, s_adr_navurl=
+CASE
+    WHEN adr_navurl IS NULL THEN ''
+    ELSE adr_navurl
+END
+, tot_cont_addays=DATEDIFF(DAY, CONVERT(DATETIME, cont_sdate, 112), CONVERT(DATETIME, cont_edate, 112))+1
+, cont_freetm, cont_totimgtm, 0, cont_toturltm, 0, cont_totamt, 0, cont_paidamt
+from c4_cont inner join c4_adr
+on cont_contno=adr_contno
+left outer join mfr on
+cont_mfrno = mfr_mfrno
+where cont_fgclosed<>'1' and cont_fgtemp<>'1' and cont_fgcancel<>'1'
+AND (substring(adr_sdate,1,6)<=@yyyymm  AND substring(adr_edate,1,6)>=@yyyymm)
+AND (cont_empno=@empno  OR cont_empno=@empno+' ')/*原條件為頁面adr_adcate=@adcate*/
+AND adr_fggot<>'1'
+
+
+/*
+呼叫sp_c4_rp_c1_c2_invedamt，用來填入
+剩餘製圖稿次數
+剩餘製網頁稿次數
+已開立發票金額
+*/
+
+DECLARE @contno2 CHAR(6)
+
+/* 1. 宣告cursor，用cont_contno來做cursor*/
+DECLARE c1_c2_invedamt_cursor CURSOR FOR
+SELECT cont_contno
+FROM wk_c4_getad
+
+/* 2. 開cursor，順便拿出一個data */
+OPEN  c1_c2_invedamt_cursor
+FETCH NEXT FROM c1_c2_invedamt_cursor INTO @contno2
+
+/* 3. FETCH成功就繼續做 */
+WHILE (@@FETCH_STATUS=0)
+BEGIN
+
+/* 3.1 執行這隻stored procedure */
+EXEC sp_c4_rp_c1_c2_invedamt @contno2
+
+/* 3.2 拿出下一個data */
+FETCH NEXT FROM c1_c2_invedamt_cursor INTO @contno2
+
+/* 3.3 LOOP....*/
+END
+
+/* 4. 關閉cursor，然後釋放cursor */
+CLOSE c1_c2_invedamt_cursor
+DEALLOCATE c1_c2_invedamt_cursor
+
+
+
+SET NOCOUNT OFF
+END
+GO

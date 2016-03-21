@@ -1,0 +1,8 @@
+Web Server： isccom2.itri.org.tw
+
+c4目前起點：http://isccom2.itri.org.tw/mrlpub/d4/WorkingProcess/Content.htm
+
+DB：server=isccom2.itri.org.tw, database=mrlpubc4
+
+makeme.bat：編譯configurations.dll，pages.dll，datatypes.dll
+這三個dll要copy到mrlpub\bin\下面

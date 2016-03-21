@@ -1,0 +1,87 @@
+/* 11/18/2002 modify, 新增平廣標籤(當月未刊登)資料至 wk_c2_rp3 */
+CREATE PROCEDURE dbo.sp_c2_ORMtpCounts_stat2b  ( @bkcd char(2), @conttp char(2), @fgmosea char(1), @yyyymm char(6) )
+as
+begin
+set nocount on
+
+
+/* 測試資料用
+declare @bkcd char(2), @conttp char(2), @fgmosea char(1), @yyyymm char(6)
+select @bkcd = '02'
+select @conttp = '01'
+select @fgmosea = '0'
+select @yyyymm = '200211'
+*/
+
+------Transaction
+begin  distributed transaction  tran_1
+
+
+/* 刪除 tmp_statMachRate */
+delete wk_c2_rp3
+
+
+DECLARE  MtpUnPubCounts_cursor  CURSOR FOR
+	SELECT         DISTINCT dbo.c2_cont.cont_contno, dbo.c2_or.or_oritem, dbo.c2_or.or_unpubcnt,
+		 dbo.c2_or.or_fgmosea, dbo.c2_or.or_mtpcd, RTRIM(dbo.mtp.mtp_nm) AS mtp_nm,
+		RTRIM(dbo.book.bk_nm) AS bk_nm,
+                          CASE WHEN dbo.c2_cont.cont_conttp = '01' THEN '一般' ELSE '推廣' END AS cont_conttpName
+	FROM             dbo.c2_cont INNER JOIN
+                          dbo.c2_or ON dbo.c2_cont.cont_syscd = dbo.c2_or.or_syscd AND
+                          dbo.c2_cont.cont_contno = dbo.c2_or.or_contno INNER JOIN
+                          dbo.mtp ON dbo.c2_or.or_mtpcd = dbo.mtp.mtp_mtpcd  INNER JOIN
+                          dbo.book ON dbo.c2_cont.cont_bkcd = dbo.book.bk_bkcd
+	WHERE         (dbo.c2_cont.cont_fgclosed = '0')  AND (dbo.c2_cont.cont_fgcancel = '0') AND
+                          (dbo.c2_cont.cont_fgtemp = '0') AND (dbo.c2_or.or_unpubcnt > 0) AND
+                          (dbo.c2_cont.cont_contno NOT IN
+                              (SELECT DISTINCT c2_pub.pub_contno
+                                FROM              c2_pub
+                                WHERE          c2_pub.pub_yyyymm = @yyyymm))
+                          AND (c2_cont.cont_bkcd = @bkcd) AND (c2_cont.cont_conttp = @conttp)
+                          AND (c2_or.or_fgmosea = @fgmosea)
+	ORDER BY  dbo.c2_or.or_unpubcnt, dbo.c2_cont.cont_contno
+
+
+/* open the cursor */
+open MtpUnPubCounts_cursor
+
+
+/* Declare some variables to hold results.*/
+declare @iContno char(6), @iOrItem char(2), @iUnpubCnt int, @ifgmosea char(1)
+declare @iMtpcd char(2), @iMtpName varchar(20)
+declare @iBkName varchar(12), @iContptName varchar(12)
+
+
+
+FETCH  NEXT FROM MtpUnPubCounts_cursor
+ INTO @iContno,@iOrItem, @iUnpubCnt, @ifgmosea, @iMtpcd, @iMtpName, @iBkName, @iContptName
+
+
+/* 若有 sc_cursor 資料, 則做以下之處理 */
+-- Check @@FETCH_STATUS to see if there are any more rows to fetch.
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	select @iContno, @iOrItem, @iUnpubCnt, @ifgmosea, @iMtpcd, @iMtpName, @iBkName, @iContptName
+
+	/* 產生 tmp_statMachRate */
+	INSERT wk_c2_rp3(contno, oritem, Unpubcnt, fgmosea, mtpcd, mtpnm, bknm, conttpnm )
+	VALUES (@iContno, @iOrItem, @iUnpubCnt, @ifgmosea, @iMtpcd, @iMtpName, @iBkName, @iContptName )
+
+
+	/* 讀下一筆 stat_cursor */
+	FETCH  NEXT FROM MtpUnPubCounts_cursor
+	INTO @iContno, @iOrItem, @iUnpubCnt, @ifgmosea, @iMtpcd, @iMtpName, @iBkName, @iContptName
+END
+
+
+CLOSE  MtpUnPubCounts_cursor
+DEALLOCATE  MtpUnPubCounts_cursor
+
+
+------Transaction
+commit transaction  tran_1
+
+
+set nocount off
+end
+GO

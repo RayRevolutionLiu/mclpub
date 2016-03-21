@@ -1,0 +1,25 @@
+1.
+SELECT cont_contid, cont_syscd, cont_contno, cont_conttp, cont_bkcd, cont_signdate, cont_empno, cont_mfrno, cont_aunm, cont_autel, cont_aufax, cont_aucell, cont_auemail, cont_sdate, cont_edate, cont_totjtm, cont_madejtm, cont_restjtm, cont_disc, cont_freetm, cont_fgclosed, cont_tottm, cont_pubtm, cont_resttm, cont_chgjtm, cont_custno, cont_totamt, cont_pubamt, cont_chgamt, cont_paidamt, cont_restamt, cont_clrtm, cont_menotm, cont_getclrtm, cont_oldcontno, cont_moddate, cont_fgpayonce, cont_xmldata, cont_modempno FROM c2_cont
+
+2.
+SELECT cust.cust_custid, cust.cust_custno, cust.cust_nm, cust.cust_mfrno, cust.cust_jbti, cust.cust_tel, cust.cust_fax, mfr.mfr_mfrid, mfr.mfr_mfrno, mfr.mfr_inm, mfr.mfr_respnm, mfr.mfr_respjbti, mfr.mfr_tel, mfr.mfr_fax, mfr.mfr_iaddr, mfr.mfr_izip, mfr.mfr_regdate, cust.cust_cell, cust.cust_email FROM cust INNER JOIN mfr ON cust.cust_mfrno = mfr.mfr_mfrno
+
+3.
+SELECT book.bk_bkid, book.bk_bkcd, book.bk_nm, proj.proj_syscd, proj.proj_fgitri, proj.proj_projno, proj.proj_costctr, book.bk_bkcd + proj.proj_projno + proj.proj_costctr AS nostr, proj.proj_bkcd FROM book INNER JOIN proj ON book.bk_bkcd = proj.proj_bkcd WHERE (proj.proj_syscd = 'C2')
+
+4.
+SELECT srspn_id, RTRIM(srspn_cname) AS srspn_cname, srspn_tel, srspn_atype, srspn_orgcd, srspn_deptcd, srspn_date, RTRIM(srspn_empno) AS srspn_empno, srspn_empno AS Expr1 FROM srspn WHERE (srspn_atype <> 'a')
+
+5.
+SELECT pgs_pgsid, pgs_pgscd, pgs_nm FROM c2_pgsize
+
+6.
+SELECT clr_clrid, clr_clrcd, clr_nm FROM c2_clr
+
+7.
+SELECT ltp_ltpid, ltp_ltpcd, ltp_nm FROM c2_ltp
+
+8.
+SELECT COUNT(*) AS TotalCount, MAX(cont_contno) AS MaxContNo FROM c2_cont
+
+

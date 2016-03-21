@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="mclpub.MasterPage" %>
+<%@ Register Src="~/UserControl/ShowRight.ascx" TagName="inc_ShowRight" TagPrefix="uc1" %>
+<%@ Register Src="~/UserControl/footer.ascx" TagName="inc_footer" TagPrefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>工研院材化所出版品系統</title>
+<%--<script type="text/javascript" src="../Art/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../Art/js/superfish.js"></script>
+<script type="text/javascript" src="../Art/js/jquery.bgiframe.min.js"></script>--%>
+
+<link rel="stylesheet" href="jquery/development-bundle/themes/base/jquery.ui.all.css" /><!--日曆專用 -->
+<%--<script src="../jquery/development-bundle/external/jquery.bgiframe-2.1.2.js"></script>
+<script src="../jquery/development-bundle/ui/jquery.ui.core.js"></script><!--日曆專用 -->
+<script src="../jquery/development-bundle/ui/jquery.ui.widget.js"></script><!--日曆專用 -->
+<script src="../jquery/development-bundle/ui/jquery.ui.datepicker.js"></script><!--日曆專用 --> --%>
+<link rel="stylesheet" href="jquery/development-bundle/demos/demos.css" /><!--日曆專用 -->
+<!--=============此套入其他js程式碼==============-->
+<OBJECT id="DSO0" height="0" width="0" classid="clsid:f5078f39-c551-11d3-89b9-0000f81fe221" VIEWASTEXT></OBJECT>
+<OBJECT id="DSO1" height="0" width="0" classid="clsid:f5078f39-c551-11d3-89b9-0000f81fe221" VIEWASTEXT></OBJECT>
+<OBJECT id="DSOX" height="0" width="0" classid="clsid:f5078f39-c551-11d3-89b9-0000f81fe221" VIEWASTEXT></OBJECT>
+<OBJECT id="DSO2" height="0" width="0" classid="clsid:f5078f39-c551-11d3-89b9-0000f81fe221" VIEWASTEXT></OBJECT>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" summary="全局版面">
+  <tr>
+    <td valign="top" height="175">
+    <uc1:inc_ShowRight ID="showright" runat="server" />
+    </td>
+  </tr>
+
+  <tr>
+  	<td valign="top" class="font_size15 font_darkgray">
+  	        <div id="basecontent">
+                  <asp:ScriptManager ID="ScriptManager1" runat="server">
+                  </asp:ScriptManager>
+  	            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">     
+                </asp:ContentPlaceHolder>
+            </div><!--{* basecontent *}-->
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top" align="center" class="footer">
+    <uc2:inc_footer ID="footer" runat="server" />
+    </td>
+  </tr>
+</table>
+    </div>
+    </form>
+</body>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $("ul.sf-menu").superfish({
+            delay: 0
+        });
+    }); 
+ 
+</script>
+<!--{* 解決ie6 menu下拉選單擋住的問題 *}-->
+<script type="text/javascript" charset="utf-8">
+    $(function() {
+        $('.sf-menu li').bgiframe();
+    });
+        </script>
+
+<!--{* 雙色表單 *}-->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".stripeMe tr").mouseover(function() { $(this).addClass("over"); }).mouseout(function() { $(this).removeClass("over"); });
+        $(".stripeMe tr:even").addClass("alt");
+    });
+</script>
+
+<script>
+    $(function() {
+        $(".UniqueDate").datepicker(
+{
+    showButtonPanel: true,
+    autoSize: true,
+    changeYear: true,
+    changeMonth: true,
+    dateFormat: 'yy/mm/dd',
+    dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+    monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'],
+    nextText: "下一月",
+    prevText: "上一月",
+    closeText: "關閉",
+    currentText: "今天"
+});
+    });
+
+</script>  
+
+</html>

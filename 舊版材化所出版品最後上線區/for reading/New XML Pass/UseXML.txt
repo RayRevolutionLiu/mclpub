@@ -1,0 +1,25 @@
+<!-- DataIsland -->
+<xml id=DSO1></xml>
+<xml id=DSOT></xml>
+
+<form id=form1 name=form1 runat="server">
+<center>
+	
+	<!-- 頁首 Header --><kw:header id=Header runat="server"></kw:header>
+	
+	<!-- Hidden Value Filed -->
+	<input id=hidData type=hidden runat="server">
+	
+
+	
+	<!-- Initial Client Side Script -->
+<SCRIPT language=javascript>
+var xmlDoc1 = DSO1.XMLDocument;
+xmlDoc1.async = false; 
+xmlDoc1.load("adpubdata.xml");
+
+//這段可以work...只不過沒有資料，真糟糕...
+var xmldoct = DSOT.XMLDocument;
+xmldoct.async = false;
+xmldoct.loadXML(document.form1("hidData").value);
+</SCRIPT>

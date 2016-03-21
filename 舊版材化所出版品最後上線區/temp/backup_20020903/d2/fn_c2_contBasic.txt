@@ -1,0 +1,300 @@
+CREATE FUNCTION dbo.fn_c2_contBasic
+(
+	@syscd char(2),
+	@contno char(6)
+)
+RETURNS varchar(8000)
+AS
+	BEGIN
+declare @mfrno char(10),@custno char(6),@conttp char(2)
+declare @signdate varchar(8),@projno char(10),@costctr char(7)
+declare @bkcd char(2),@bkcdprojnocostctr char(19)
+declare @sdate char(6),@edate char(6),@empno varchar(7)
+declare @fgpayonce char(1),@fgclosed char(1)
+declare @moddate char(8),@modempno char(7),@oldcontno char(7)
+declare @pubcnt varchar(4),@unpubcnt varchar(4)
+declare @totjtm varchar(4),@madejtm varchar(4)
+declare @restjtm varchar(4),@tottm varchar(4)
+declare @pubtm varchar(4),@resttm varchar(4)
+declare @totamt varchar(10),@paidamt varchar(10)
+declare @restamt varchar(10),@chgjtm varchar(4)
+declare @freetm varchar(4),@disc varchar(8)
+declare @clrtm varchar(4),@menotm varchar(4),@getclrtm varchar(4)
+declare @aunm varchar(30),@autel varchar(30),@aufax varchar(30)
+declare @aucell varchar(30),@auemail varchar(80)
+declare @xmldata varchar(8000)
+
+select @mfrno=rtrim(cont_mfrno),@custno=rtrim(cont_custno),@conttp=cont_conttp,
+ @signdate=rtrim(cont_signdate),@projno='DF1559C330',@costctr='050C300',
+ @bkcd=cont_bkcd,@bkcdprojnocostctr=@bkcd+@projno+@costctr,
+ @sdate=rtrim(cont_sdate),@edate=rtrim(cont_edate),@empno=rtrim(cont_empno),
+ @fgpayonce=rtrim(cont_fgpayonce),@fgclosed=rtrim(cont_fgclosed),
+ @moddate=rtrim(cont_moddate),@modempno=rtrim(cont_modempno),@oldcontno=cont_oldcontno,
+ @pubcnt=1, @unpubcnt=0,
+ @totjtm=convert(varchar(4),cont_totjtm),@madejtm=convert(varchar(4),cont_madejtm),
+ @restjtm=convert(varchar(4),cont_restjtm),@tottm=convert(varchar(4),cont_tottm),
+ @pubtm=convert(varchar(4),cont_pubtm),@resttm=convert(varchar(4),cont_resttm),
+ @totamt=convert(varchar(10),cont_totamt),@paidamt=convert(varchar(10),cont_paidamt),
+ @restamt=convert(varchar(10),cont_restamt),@chgjtm=convert(varchar(4),cont_chgjtm),
+ @freetm=convert(varchar(4),cont_freetm),@disc=convert(varchar(4),cont_disc),
+ @clrtm=cont_clrtm,@menotm=cont_menotm,@getclrtm=cont_getclrtm,
+ @aunm=rtrim(cont_aunm),@autel=rtrim(cont_autel),@aufax=rtrim(cont_aufax),
+ @aucell=rtrim(cont_aucell),@auemail=rtrim(cont_auemail)
+ from c2_cont
+ where cont_syscd=@syscd and cont_contno=@contno
+
+
+ set @xmldata = '<合約書內容>'
+
+ /* <廠商資料> */
+	DECLARE ContMfr_Cursor CURSOR FOR
+	 select mfr_mfrno
+	 from mfr
+ 	where mfr_mfrno=@mfrno
+	OPEN ContMfr_Cursor
+	
+    FETCH NEXT FROM ContMfr_Cursor
+    into @mfrno
+
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+  		set @xmldata=@xmldata + dbo.fn_c2_mfr(@mfrno)
+	    FETCH NEXT FROM ContMfr_Cursor
+	    into @mfrno
+	END
+	
+	CLOSE ContMfr_Cursor
+	DEALLOCATE ContMfr_Cursor
+
+
+ /* <客戶資料> */
+	DECLARE ContCust_Cursor CURSOR FOR
+	 select cust_custno
+	 from cust
+ 	where cust_custno=@custno
+	OPEN ContCust_Cursor
+	
+    FETCH NEXT FROM ContCust_Cursor
+    into @custno
+
+	WHILE @@FETCH_STATUS = 0
+	BEGIN
+  		set @xmldata=@xmldata + dbo.fn_c2_cust(@custno)
+	    FETCH NEXT FROM ContCust_Cursor
+	    into @custno
+	END
+	
+	CLOSE ContCust_Cursor
+	DEALLOCATE ContCust_Cursor
+
+
+ /* <合約書基本資料> */
+  set @xmldata=@xmldata + '<合約書基本資料>' + 
+  '<系統代碼>' + @syscd + '</系統代碼>' +  
+  '<合約書編號>' + @contno + '</合約書編號>'
+
+  if @conttp = ''	
+  	set @xmldata=@xmldata + '<合約類別代碼 />'
+  else
+  	set @xmldata=@xmldata + '<合約類別代碼>' + @conttp + '</合約類別代碼>'
+
+  if @signdate = ''	
+  	set @xmldata=@xmldata + '<簽約日期 />'
+  else
+  	set @xmldata=@xmldata + '<簽約日期>' + @signdate + '</簽約日期>'
+
+  if @projno = ''	
+  	set @xmldata=@xmldata + '<計劃代號 />'
+  else
+  	set @xmldata=@xmldata + '<計劃代號>' + @projno + '</計劃代號>'
+
+  if @costctr = ''	
+  	set @xmldata=@xmldata + '<成本中心 />'
+  else
+  	set @xmldata=@xmldata + '<成本中心>' + @costctr + '</成本中心>'
+
+  if @bkcdprojnocostctr = ''	
+  	set @xmldata=@xmldata + '<書籍全碼 />'
+  else
+  	set @xmldata=@xmldata + '<書籍全碼>' + @bkcdprojnocostctr + '</書籍全碼>'
+
+  if @bkcd = ''	
+  	set @xmldata=@xmldata + '<書籍類別代碼 />'
+  else
+  	set @xmldata=@xmldata + '<書籍類別代碼>' + @bkcd + '</書籍類別代碼>'
+
+  if @sdate = ''	
+  	set @xmldata=@xmldata + '<合約起日 />'
+  else
+  	set @xmldata=@xmldata + '<合約起日>' + @sdate + '</合約起日>'
+
+  if @edate = ''	
+  	set @xmldata=@xmldata + '<合約迄日 />'
+  else
+  	set @xmldata=@xmldata + '<合約迄日>' + @edate + '</合約迄日>'
+
+  if @empno = ''	
+  	set @xmldata=@xmldata + '<承辦業務員工號 />'
+  else
+  	set @xmldata=@xmldata + '<承辦業務員工號>' + @empno + '</承辦業務員工號>'
+
+  if @fgpayonce = ''	
+  	set @xmldata=@xmldata + '<一次付清註記 />'
+  else
+  	set @xmldata=@xmldata + '<一次付清註記>' + @fgpayonce + '</一次付清註記>'
+
+  if @fgclosed = ''	
+  	set @xmldata=@xmldata + '<結案註記 />'
+  else
+  	set @xmldata=@xmldata + '<結案註記>' + @fgclosed + '</結案註記>'
+
+  if @moddate = ''	
+  	set @xmldata=@xmldata + '<最後修改日期 />'
+  else
+  	set @xmldata=@xmldata + '<最後修改日期>' + @moddate + '</最後修改日期>'
+
+  if @modempno = ''	
+  	set @xmldata=@xmldata + '<修改業務員工號 />'
+  else
+  	set @xmldata=@xmldata + '<修改業務員工號>' + @modempno + '</修改業務員工號>'
+
+  if @oldcontno = ''	
+  	set @xmldata=@xmldata + '<舊合約編號 />'
+  else
+  	set @xmldata=@xmldata + '<舊合約編號>' + @oldcontno + '</舊合約編號>'
+ 
+  if @pubcnt = ''	
+  	set @xmldata=@xmldata + '<總有登本數 />'
+  else
+  	set @xmldata=@xmldata + '<總有登本數>' + @pubcnt + '</總有登本數>'
+ 
+  if @unpubcnt = ''	
+  	set @xmldata=@xmldata + '<總未登本數 />'
+  else
+  	set @xmldata=@xmldata + '<總未登本數>' + @unpubcnt + '</總未登本數>'
+   
+  set @xmldata=@xmldata + '</合約書基本資料>'  
+
+
+ /* <合約書細節> */
+  set @xmldata=@xmldata + '<合約書細節>'  
+
+  if @totjtm = ''
+  	set @xmldata=@xmldata + '<總製稿次數 />'  
+  else
+  	set @xmldata=@xmldata + '<總製稿次數>' + @totjtm + '</總製稿次數>'
+
+  if @madejtm = ''
+  	set @xmldata=@xmldata + '<已製稿次數 />'  
+  else
+  	set @xmldata=@xmldata + '<已製稿次數>' + @madejtm + '</已製稿次數>'
+
+  if @restjtm = ''
+  	set @xmldata=@xmldata + '<剩餘製稿次數 />'  
+  else
+  	set @xmldata=@xmldata + '<剩餘製稿次數>' + @restjtm + '</剩餘製稿次數>'
+
+  if @tottm = ''
+  	set @xmldata=@xmldata + '<總刊登次數 />'  
+  else
+  	set @xmldata=@xmldata + '<總刊登次數>' + @tottm + '</總刊登次數>'
+
+  if @pubtm = ''
+  	set @xmldata=@xmldata + '<已刊登次數 />'  
+  else
+  	set @xmldata=@xmldata + '<已刊登次數>' + @pubtm + '</已刊登次數>'
+
+  if @resttm = ''
+  	set @xmldata=@xmldata + '<剩餘刊登次數 />'  
+  else
+  	set @xmldata=@xmldata + '<剩餘刊登次數>' + @resttm + '</剩餘刊登次數>'
+
+  if @totamt = ''
+  	set @xmldata=@xmldata + '<合約總金額 />'  
+  else
+  	set @xmldata=@xmldata + '<合約總金額>' + @totamt + '</合約總金額>'
+
+  if @paidamt = ''
+  	set @xmldata=@xmldata + '<已繳金額 />'  
+  else
+  	set @xmldata=@xmldata + '<已繳金額>' + @paidamt + '</已繳金額>'
+
+  if @restamt = ''
+  	set @xmldata=@xmldata + '<剩餘金額 />'  
+  else
+  	set @xmldata=@xmldata + '<剩餘金額>' + @restamt + '</剩餘金額>'
+
+  if @chgjtm = ''
+  	set @xmldata=@xmldata + '<換稿次數 />'  
+  else
+  	set @xmldata=@xmldata + '<換稿次數>' + @chgjtm + '</換稿次數>'
+
+  if @freetm = ''
+  	set @xmldata=@xmldata + '<贈送次數 />'  
+  else
+  	set @xmldata=@xmldata + '<贈送次數>' + @freetm + '</贈送次數>'
+
+  if @disc = ''
+  	set @xmldata=@xmldata + '<優惠折數 />'  
+  else
+  	set @xmldata=@xmldata + '<優惠折數>' + @disc + '</優惠折數>'
+
+  if @clrtm = ''
+  	set @xmldata=@xmldata + '<彩色次數 />'  
+  else
+  	set @xmldata=@xmldata + '<彩色次數>' + @clrtm + '</彩色次數>'
+
+  if @menotm = ''
+  	set @xmldata=@xmldata + '<黑白次數 />'  
+  else
+  	set @xmldata=@xmldata + '<黑白次數>' + @menotm + '</黑白次數>'
+
+  if @getclrtm = ''
+  	set @xmldata=@xmldata + '<套色次數 />'  
+  else
+  	set @xmldata=@xmldata + '<套色次數>' + @getclrtm + '</套色次數>'
+
+
+  set @xmldata=@xmldata + '</合約書細節>'  
+
+
+ /* <廣告聯絡人資料> */
+  set @xmldata=@xmldata + '<廣告聯絡人資料>'  
+
+  if @aunm = ''	
+  	set @xmldata=@xmldata + '<廣告聯絡人姓名 />'
+  else
+  	set @xmldata=@xmldata + '<廣告聯絡人姓名>' + @aunm + '</廣告聯絡人姓名>'
+
+  if @autel = ''
+  	set @xmldata=@xmldata + '<廣告聯絡人電話 />' 
+  else
+  	set @xmldata=@xmldata + '<廣告聯絡人電話>' + @autel + '</廣告聯絡人電話>'
+
+  if @aufax = ''
+  	set @xmldata=@xmldata + '<廣告聯絡人傳真 />' 
+  else
+  	set @xmldata=@xmldata + '<廣告聯絡人傳真>' + @aufax + '</廣告聯絡人傳真>'
+
+  if @aucell = ''
+  	set @xmldata=@xmldata + '<廣告聯絡人手機 />' 
+  else
+  	set @xmldata=@xmldata + '<廣告聯絡人手機>' + @aucell + '</廣告聯絡人手機>' 
+   
+  if @auemail = ''
+  	set @xmldata=@xmldata + '<廣告聯絡人Email />'  
+  else
+  	set @xmldata=@xmldata + '<廣告聯絡人Email>' + @auemail + '</廣告聯絡人Email>'  
+
+
+  set @xmldata=@xmldata + '</廣告聯絡人資料>'  
+
+
+  set @xmldata=@xmldata + '</合約書內容>'
+
+
+ 	RETURN @xmldata
+	END
+
+
+

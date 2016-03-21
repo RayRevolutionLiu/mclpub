@@ -1,0 +1,28 @@
+CREATE VIEW dbo.v_c4_invbatch
+AS
+SELECT dbo.c4_cont.cont_syscd, dbo.c4_cont.cont_contno, dbo.c4_cont.cont_custno,
+                  dbo.c4_cont.cont_mfrno, dbo.c4_adr.adr_sdate, dbo.c4_adr.adr_edate,
+                  dbo.c4_adr.adr_adcate, dbo.c4_adr.adr_keyword, dbo.c4_adr.adr_impr,
+                  DRIVERTBL.suminvamt, dbo.mfr.mfr_inm, dbo.invmfr.im_nm, dbo.invmfr.im_jbti,
+                  dbo.invmfr.im_invcd, dbo.invmfr.im_taxtp, dbo.invmfr.im_fgitri,
+                  dbo.c4_cont.cont_empno, dbo.c4_adr.adr_seq, dbo.c4_adr.adr_imseq,
+                  dbo.c4_adr.adr_alttext
+FROM     dbo.c4_adr INNER JOIN
+                      (SELECT DISTINCT
+                                         adrd_syscd, adrd_contno, adrd_adrseq, suminvamt = SUM(adrd_adramt)
+                                         + SUM(adrd_chgamt) + SUM(adrd_desamt)
+                       FROM      c4_adrd
+                       WHERE   adrd_fginved = '0'
+                       GROUP BY adrd_syscd, adrd_contno, adrd_adrseq) DRIVERTBL ON
+                  DRIVERTBL.adrd_syscd = dbo.c4_adr.adr_syscd AND
+                  DRIVERTBL.adrd_contno = dbo.c4_adr.adr_contno AND
+                  DRIVERTBL.adrd_adrseq = dbo.c4_adr.adr_seq INNER JOIN
+                  dbo.c4_cont ON dbo.c4_adr.adr_syscd = dbo.c4_cont.cont_syscd AND
+                  dbo.c4_adr.adr_contno = dbo.c4_cont.cont_contno INNER JOIN
+                  dbo.invmfr ON dbo.c4_adr.adr_syscd = dbo.invmfr.im_syscd AND
+                  dbo.c4_adr.adr_contno = dbo.invmfr.im_contno AND
+                  dbo.c4_adr.adr_imseq = dbo.invmfr.im_imseq INNER JOIN
+                  dbo.mfr ON dbo.invmfr.im_mfrno = dbo.mfr.mfr_mfrno
+WHERE  (dbo.c4_cont.cont_conttp = '01') AND (dbo.c4_cont.cont_fgclosed <> '1') AND
+                  (dbo.c4_cont.cont_fgtemp <> '1') AND (dbo.c4_cont.cont_fgcancel <> '1')
+

@@ -1,0 +1,11 @@
+SELECT         dbo.c2_pub.pub_contno, SUM(dbo.c2_pub.pub_adamt) AS Total_pub_adamt, 
+                          SUM(dbo.c2_pub.pub_chgamt) AS Total_pub_chgamt, 
+                          SUM(dbo.c2_pub.pub_adamt + dbo.c2_pub.pub_chgamt) AS TotalAmt, 
+                          COUNT(dbo.c2_pub.pub_contno) AS ContNoCounts
+FROM             dbo.c2_cont INNER JOIN
+                          dbo.c2_pub ON dbo.c2_cont.cont_syscd = dbo.c2_pub.pub_syscd AND 
+                          dbo.c2_cont.cont_contno = dbo.c2_pub.pub_contno
+GROUP BY  dbo.c2_pub.pub_contno, dbo.c2_cont.cont_bkcd, dbo.c2_cont.cont_edate, 
+                          dbo.c2_cont.cont_empno
+HAVING          (dbo.c2_cont.cont_bkcd = '01') AND (dbo.c2_cont.cont_edate >= '200204') AND 
+                          (dbo.c2_cont.cont_empno = '800443')

@@ -1,0 +1,195 @@
+CREATE PROCEDURE dbo.sp_c1_tmp_statistics
+	(@type varchar(1), @btpcd varchar(2), @yyyymm varchar(6))
+
+AS
+declare	@otp1cd char(2),@otp2cd char(2), @mnt	int, @cust_count int, @book_count int, @mtpcd 
+char(2)
+set nocount on
+
+if @type='0'	-----籹计参璸(﹙秎盚)
+begin
+  delete tmp_statistics
+  set @mtpcd='11'
+  DECLARE otp_Cursor CURSOR FOR
+  SELECT         c1_otp.otp_otp1cd, c1_otp.otp_otp2cd
+  FROM             c1_otp
+  where otp_otp1cd='01' or otp_otp1cd='02' or otp_otp1cd='03'
+    ORDER BY  otp_otp1cd, otp_otp2cd
+
+  OPEN otp_Cursor
+
+  FETCH NEXT FROM otp_Cursor
+    into @otp1cd,@otp2cd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @mnt=1
+    WHILE (@mnt<6)
+    BEGIN
+      set @book_count=0
+      SELECT         @book_count=COUNT(*)
+      FROM             dbo.c1_od INNER JOIN
+                          dbo.c1_order ON dbo.c1_od.od_syscd = dbo.c1_order.o_syscd AND 
+                          dbo.c1_od.od_custno = dbo.c1_order.o_custno AND 
+                          dbo.c1_od.od_otp1cd = dbo.c1_order.o_otp1cd AND 
+                          dbo.c1_od.od_otp1seq = dbo.c1_order.o_otp1seq INNER JOIN
+                          dbo.c1_ramt ON dbo.c1_od.od_syscd = dbo.c1_ramt.ra_syscd AND 
+                          dbo.c1_od.od_custno = dbo.c1_ramt.ra_custno AND 
+                          dbo.c1_od.od_otp1cd = dbo.c1_ramt.ra_otp1cd AND 
+                          dbo.c1_od.od_otp1seq = dbo.c1_ramt.ra_otp1seq AND 
+                          dbo.c1_od.od_oditem = dbo.c1_ramt.ra_oditem
+      WHERE         (dbo.c1_od.od_otp1cd = @otp1cd) AND (dbo.c1_order.o_otp2cd = @otp2cd) AND 
+                          (SUBSTRING(c1_od.od_sdate, 1, 6) <= @yyyymm) AND 				
+		(SUBSTRING(c1_od.od_edate,1,6) >= @yyyymm) AND 
+		(c1_od.od_btpcd = @btpcd)  AND 
+                          (dbo.c1_ramt.ra_mtpcd = @mtpcd) AND (dbo.c1_ramt.ra_mnt = @mnt)
+  
+      INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    			VALUES         (@otp1cd, @otp2cd, @mtpcd, @book_count,  @mnt)
+      set @mnt=@mnt+1
+    END
+    FETCH NEXT FROM otp_Cursor
+      into @otp1cd,@otp2cd
+  END
+
+  CLOSE otp_Cursor
+  DEALLOCATE otp_Cursor
+end
+
+if @type='1'	-----籹计参璸(Μ祇竒快)
+begin
+
+  delete tmp_statistics
+----皘ず肚患(mtpcd='19') & 本腹(mtpcd='12')
+  DECLARE otp_Cursor CURSOR FOR
+  SELECT         c1_otp.otp_otp1cd, c1_otp.otp_otp2cd, dbo.mtp.mtp_mtpcd
+  FROM             c1_otp CROSS JOIN dbo.mtp
+  where (otp_otp1cd='01' or otp_otp1cd='02' or otp_otp1cd='03') and (mtp_mtpcd='12' or mtp_mtpcd='19')
+	ORDER BY  mtp_mtpcd DESC,otp_otp1cd, otp_otp2cd
+
+  OPEN otp_Cursor
+
+  FETCH NEXT FROM otp_Cursor
+    into @otp1cd,@otp2cd,@mtpcd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @mnt=1
+    WHILE (@mnt<6)
+    BEGIN
+      set @book_count=0
+      SELECT         @book_count=COUNT(*)
+      FROM             v_c1_tmp_001
+      WHERE         (od_otp1cd = @otp1cd) AND (o_otp2cd = @otp2cd) AND 
+                          (SUBSTRING(od_sdate, 1, 6) <= @yyyymm) AND 				
+		(SUBSTRING(od_edate,1,6) >= @yyyymm) AND 
+		(od_btpcd = @btpcd)  AND 
+                          (ra_mtpcd = @mtpcd) AND (ra_mnt = @mnt)
+  
+      INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    			VALUES         (@otp1cd, @otp2cd, @mtpcd, @book_count,  @mnt)
+      set @mnt=@mnt+1
+    END
+    FETCH NEXT FROM otp_Cursor
+      into @otp1cd,@otp2cd,@mtpcd
+  END
+
+  CLOSE otp_Cursor
+  DEALLOCATE otp_Cursor
+
+----瓣秎盚
+  DECLARE mtp_Cursor CURSOR FOR
+  SELECT         dbo.mtp.mtp_mtpcd
+  FROM           dbo.mtp
+  where (SUBSTRING(mtp_mtpcd, 1, 1)='2')
+
+  OPEN mtp_Cursor
+
+  FETCH NEXT FROM mtp_Cursor
+    into @mtpcd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @mnt=1
+    WHILE (@mnt<6)
+    BEGIN
+      set @book_count=0
+      SELECT         @book_count=COUNT(*)
+      FROM             v_c1_tmp_001
+      WHERE       (SUBSTRING(od_sdate, 1, 6) <= @yyyymm) AND 				
+		(SUBSTRING(od_edate,1,6) >= @yyyymm) AND 
+		(od_btpcd = @btpcd)  AND 
+                          (ra_mtpcd = @mtpcd) AND (ra_mnt = @mnt)
+  
+      INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    			VALUES         ('', '', @mtpcd, @book_count,  @mnt)
+      set @mnt=@mnt+1
+    END
+    FETCH NEXT FROM mtp_Cursor
+      into @mtpcd
+  END
+
+  CLOSE mtp_Cursor
+  DEALLOCATE mtp_Cursor
+
+end
+
+if @type='2'	-----め计
+begin
+  delete tmp_statistics
+
+  DECLARE otp_Cursor CURSOR FOR
+  select otp_otp1cd,otp_otp2cd from c1_otp
+  where otp_otp1cd='01' or otp_otp1cd='02'
+  ORDER BY  otp_otp1cd, otp_otp2cd
+
+  OPEN otp_Cursor
+
+  FETCH NEXT FROM otp_Cursor
+    into @otp1cd,@otp2cd
+
+  WHILE @@FETCH_STATUS = 0
+  BEGIN
+    set @cust_count=0
+    set @mnt=0
+    SELECT         @cust_count=COUNT(*)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq
+    WHERE         (c1_order.o_otp1cd =@otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (SUBSTRING(c1_od.od_sdate, 1, 6) <= @yyyymm) AND 		(SUBSTRING(c1_od.od_edate,1,6) >= @yyyymm) AND 
+                          (c1_od.od_btpcd = @btpcd)
+
+    SELECT         @mnt=SUM(c1_ramt.ra_mnt)
+    FROM             c1_order INNER JOIN
+                          c1_od ON c1_order.o_syscd = c1_od.od_syscd AND 
+                          c1_order.o_custno = c1_od.od_custno AND 
+                          c1_order.o_otp1cd = c1_od.od_otp1cd AND 
+                          c1_order.o_otp1seq = c1_od.od_otp1seq INNER JOIN
+                          c1_ramt ON c1_od.od_syscd = c1_ramt.ra_syscd AND 
+                          c1_od.od_custno = c1_ramt.ra_custno AND 
+                          c1_od.od_otp1cd = c1_ramt.ra_otp1cd AND 
+                          c1_od.od_otp1seq = c1_ramt.ra_otp1seq AND 
+                          c1_od.od_oditem = c1_ramt.ra_oditem
+    WHERE         (c1_order.o_otp1cd = @otp1cd) AND (c1_order.o_otp2cd = @otp2cd) AND 
+                          (c1_od.od_btpcd = @btpcd) AND (SUBSTRING(c1_od.od_sdate, 1, 6)<=@yyyymm) AND 
+                          (SUBSTRING(c1_od.od_edate,1,6) >= @yyyymm)
+    if @mnt=NULL
+     set @mnt=0
+    INSERT INTO tmp_statistics
+                          (tmp_otp1cd, tmp_otp2cd, tmp_btpcd, tmp_param1, tmp_param2)
+    VALUES         (@otp1cd, @otp2cd, @btpcd, @cust_count,  @mnt)
+
+    FETCH NEXT FROM otp_Cursor
+      into @otp1cd,@otp2cd
+  END
+
+  CLOSE otp_Cursor
+  DEALLOCATE otp_Cursor
+end
+GO

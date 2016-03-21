@@ -1,0 +1,33 @@
+CREATE PROCEDURE dbo.sp_c1_delete_py	@pyno varchar(8)
+	
+AS
+declare @syscd varchar(2), @iano varchar(8)
+set nocount on
+
+------ia ¤¤ ia_pyno='' and  ia_pyseq=''
+DECLARE Ia_Cursor CURSOR FOR
+ select pyd_syscd, pyd_iano
+ from pyd
+ where pyd_pyno=@pyno
+
+OPEN Ia_Cursor
+
+FETCH NEXT FROM Ia_Cursor
+    into @syscd, @iano
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+  update ia set ia_pyno='' , ia_pyseq='' 
+	where ia_syscd=@syscd and ia_iano=@iano
+FETCH NEXT FROM Ia_Cursor
+    into @syscd, @iano
+END
+
+CLOSE Ia_Cursor
+DEALLOCATE Ia_Cursor
+
+------§R°£pyd
+delete pyd where  pyd_pyno= @pyno
+------§R°£py
+delete py where py_pyno= @pyno
+GO

@@ -1,0 +1,37 @@
+CREATE PROCEDURE dbo.sp_c2_cont_newSave_or
+	@XML varchar(8000), @syscd varchar(2),
+	@contno varchar(6)
+AS
+set nocount on
+
+DECLARE @idoc	int
+--Create an internal representation of the XML document.
+exec sp_xml_preparedocument @idoc OUTPUT, @XML
+
+------雜誌收件人檔  c2_or
+delete c2_or where or_syscd=@syscd and or_contno=@contno
+insert c2_or 
+---- SELECT statement using OPENXML rowset provider
+select  *
+from openxml(@idoc, '/雜誌收件人資料/雜誌收件人明細', 2)
+	with (系統代碼		char(2),
+	合約書編號		char(6),
+	雜誌收件人序號		varchar(2),
+	雜誌收件人公司名稱	varchar(30),
+	雜誌收件人姓名		varchar(30),
+	雜誌收件人職稱		varchar(12),
+	雜誌收件人地址		varchar(80),
+	雜誌收件人郵遞區號	char(5),
+	雜誌收件人電話		varchar(30),
+	雜誌收件人傳真		varchar(30),
+	雜誌收件人手機		varchar(30),
+	雜誌收件人Email		varchar(80),
+	郵寄類別代碼		char(2),
+	有登本數		int,
+	未登本數		int,
+	海外郵寄註記		char(1)
+	)
+
+-- Remove the internal representation.
+exec sp_xml_removedocument @idoc
+GO

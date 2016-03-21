@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <appSettings>
+     <!-- 非上線區用(串到 ISCCOM2 140.96.18.18,1433 SQLServer): for ASP.Net & ExcelspeedGen -->
+        <add key="isccom1_mrlpub" value= "Data Source=isccom2;User ID=webuser;Password=db600;Initial Catalog=mrlpub" />
+	<!-- 下一行是給 ExcelSpeedGen 元件 呼叫用 -->
+        <add key="isccom1_mrlpub_esg" value= "Provider=SQLOLEDB.1;Data Source=isccom2;User ID=webuser;Password=db600;Initial Catalog=mrlpub" />
+
+     <!-- 串到 ISCCOM2/sqlnts2 之 common Database 用 -->
+        <add key="isccom1_common" value="Provider=SQLOLEDB.1;Server=isccom2;User ID=webuser;Password=db600;Database=common" />
+
+     <!-- 正式上線區用(串到 ITRIDPA 140.96.254.61,6161 SQLServer): for ASP.Net & ExcelspeedGen -->
+        <add key="itridpa_mrlpub" value= "Data Source=140.96.254.61,6161;User ID=pubmrlpub;Password=p%#ass;Initial Catalog=mrlpub" />
+	<!-- 下一行是給 ExcelSpeedGen 元件 呼叫用 -->
+        <add key="itridpa_mrlpub_esg" value= "Provider=SQLOLEDB.1;Data Source=140.96.254.61,6161;User ID=pubmrlpub;Password=p%#ass;Initial Catalog=mrlpub" />
+
+
+     <!-- 單一聯絡窗口資訊 -->
+        <add key="ContactorName" value="方萃莉" />
+	<add key="ContactorEmailAddress" value="740320@itri.org.tw" />
+	<add key="DefaultSubject" value="對mrlpub的建議" />
+	<add key="DefaultBody" value="我個人對[材料所 出版品客戶管理系統]有以下的建議：" />
+    </appSettings>
+
+	<system.web>
+
+
+
+	<globalization
+                requestEncoding="big5"
+                responseEncoding="big5"
+        />
+
+        <customErrors mode="Off" />
+        <compilation debug="true"/>
+
+
+	</system.web>
+</configuration>

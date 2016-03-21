@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=uft-8" />
+    <title>日曆</title>
+    <style type="text/css">
+        body
+        {
+            font-size: 11px;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #000000;
+            background-color: #EFEBDE;
+        }
+        button
+        {
+            width:40px;
+            font-size: 11px;
+            font-family: 新細明體, 細明體;
+            margin: 5px 1px 5px 1px;
+            padding: 2px 5px 2px 5px;
+            border: 1px #EEDC82 solid;
+            background-color: #C6D3FF;
+            cursor: pointer;
+            cursor: hand;
+        }
+        table
+        {
+            width:250px;
+            font-size: 11px;            
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 0px;
+            border: 1px solid #eeeeee;
+            border-spacing: 0px;
+            padding: 0px;
+            background-color: #F7F7F7;
+        }
+        table td
+        {
+            white-space: nowrap;
+            border-top: 2px solid #ffffff;
+            border-right: 1px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            border-left: 1px solid #ffffff;
+        }
+        table thead tr.title
+        {
+            background-color: #7B96DE;
+            font-weight: 900;
+            color: #ffffff;
+        }
+        table tbody td.hover
+        {
+            border: 1px red solid;
+            background-color: yellow;
+            cursor: pointer;
+            cursor: hand;
+        }
+        table tbody td.today
+        {
+            border: 1px #eeeeee solid;
+            background-color: #FF9A31;
+            color: #ffffff;
+        }
+        #year
+        {
+            width: 45px;
+        }
+        #td8, #td15, #td22, #td29, #td36, #td43, #td14, #td21, #td28, #td35, #td42, #td49
+        {
+            color: Blue;
+            background-color: #EFF7FF;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false" >
+    <form id="form1" name="form1">
+    <table border="0" cellspacing="0" cellpadding="0" class="calendar" id="calendar" onclick="doSelectDate(event)" onmouseover="doMouseOver(event)"
+        onmouseout="doMouseOut(event)">
+        <thead>
+            <tr>
+                <td colspan="7">
+                    <input id="year" name="year" type="text" maxlength="4" onchange="GoYear(this.value);"
+                        tabindex="2" />年
+                    <select id="month" name="month" onchange="GoMonth(this.value);">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>月
+                </td>
+            </tr>
+            <tr class="showDate">
+                <td colspan='7'>
+                    <%--<span id="yearmonth"></span>--%>
+                </td>
+            </tr>
+            <tr class="title">
+                <td>
+                    日
+                </td>
+                <td>
+                    一
+                </td>
+                <td>
+                    二
+                </td>
+                <td>
+                    三
+                </td>
+                <td>
+                    四
+                </td>
+                <td>
+                    五
+                </td>
+                <td>
+                    六
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="td8" />
+                <td id="td9" />
+                <td id="td10" />
+                <td id="td11" />
+                <td id="td12" />
+                <td id="td13" />
+                <td id="td14" />
+            </tr>
+            <tr>
+                <td id="td15" />
+                <td id="td16" />
+                <td id="td17" />
+                <td id="td18" />
+                <td id="td19" />
+                <td id="td20" />
+                <td id="td21" />
+            </tr>
+            <tr>
+                <td id="td22" />
+                <td id="td23" />
+                <td id="td24" />
+                <td id="td25" />
+                <td id="td26" />
+                <td id="td27" />
+                <td id="td28" />
+            </tr>
+            <tr>
+                <td id="td29" />
+                <td id="td30" />
+                <td id="td31" />
+                <td id="td32" />
+                <td id="td33" />
+                <td id="td34" />
+                <td id="td35" />
+            </tr>
+            <tr>
+                <td id="td36" />
+                <td id="td37" />
+                <td id="td38" />
+                <td id="td39" />
+                <td id="td40" />
+                <td id="td41" />
+                <td id="td42" />
+            </tr>
+            <tr>
+                <td id="td43" />
+                <td id="td44" />
+                <td id="td45" />
+                <td id="td46" />
+                <td id="td47" />
+                <td id="td48" />
+                <td id="td49" />
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">
+                    <%--                    <button type='button' name='b1' onclick='prevYear(10);' title="前十年" id="Button1">
+                        &lt;&lt;&lt;</button>
+--%>
+                    <button type='button' name='b1' onclick='prevYear(1);' title="前1年" id="Button7">前1年</button>
+                    <button type='button' name='b1' onclick='prevMonth();' title="前1月" id="Button2">前1月</button>
+                    <button type='button' name='b1' onclick='GoToday();' title="今天" id="Button3">今天</button>
+                    <button type='button' name='b1' onclick='nextMonth();' title="後1月" id="Button4">後1月</button>
+                    <button type='button' name='b1' onclick='nextYear(1);' title="後1年" id="Button5">後1年</button>
+                    <%--                    <button type='button' name='b1' onclick='nextYear(10);' title="下十年" id="Button6">
+                        &gt;&gt;&gt;</button>
+--%>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    </form>
+
+    <script language="javascript">
+
+
+        function init() {
+            FirstDate = (new Date(vYear, vMonth - 1, 1)).getDay();
+            LastDate = (new Date(vYear, vMonth, 1 - 1)).getDate();
+            //getObj("yearmonth").innerHTML = vYear + "/" + vMonth;
+
+            //  for (var i=8, j=1; i < 50; i++)
+            for (var i = cellStart, j = 1; i < endPos; i++) {
+                if ((i >= FirstDate + cellStart) && (i < LastDate + cellStart + FirstDate)) {
+                    getObj("td" + i).innerHTML = j;
+                    getObj("td" + i).title = vYear + "/" + vMonth + "/" + j;
+                    j = j + 1;
+                }
+                else {
+                    getObj("td" + i).innerHTML = "&nbsp;";
+                    getObj("td" + i).title = "";
+                }
+
+                if (getObj("td" + i).title == vToday) {
+                    getObj("td" + i).className = "today";
+                }
+                else {
+                    getObj("td" + i).className = "";
+                }
+            }
+            setCurrent();
+        }
+
+        function GoToday() {
+            vYear = Now.getFullYear();
+            vMonth = Now.getMonth() + 1;
+            init();
+        }
+        function GoMonth(prm) {
+            vMonth = prm;
+            init();
+        }
+        function GoYear(prm) {
+            vYear = prm;
+            init();
+        }
+
+        function fillDate() {
+            if (ooo == 1) { theURL += "2002/6/21" }
+            else if (ooo == 2) { theURL += "2003/3/21" }
+            else if (ooo == 3) { theURL += "2003/9/21" }
+            else if (ooo == 4) { theURL += "2004/6/21" }
+            window.location.href = theURL;
+        }
+        function prevYear(nn) {
+            vYear = vYear - nn;
+            init();
+        }
+        function nextYear(nn) {
+            vYear = vYear + nn;
+            init();
+        }
+
+        function nextMonth() {
+            if (vMonth < 12) {
+                vMonth = vMonth + 1;
+            }
+            else {
+                vMonth = 1;
+                vYear = vYear + 1;
+            }
+            init();
+        }
+
+        function prevMonth() {
+            if (vMonth > 1) {
+                vMonth = vMonth - 1;
+            }
+            else {
+                vMonth = 12;
+                vYear = vYear - 1;
+            }
+            init();
+        }
+
+        function convertDate(thisDate) {
+            thisDate = new Date(thisDate)
+            if (!isNaN(thisDate)) {
+                var theYear = thisDate.getFullYear();
+                var theMonth = thisDate.getMonth() + 1;
+                var theDate = thisDate.getDate();
+                theYear = String((theYear / 10000 + 1 / 100000)).substring(2, 6)
+                theMonth = String((theMonth / 100 + 1 / 1000)).substring(2, 4)
+                theDate = String((theDate / 100 + 1 / 1000)).substring(2, 4)
+                return (theYear + "/" + theMonth + "/" + theDate);
+                //return (theYear + theMonth + theDate);
+            }
+        }
+
+        function doMouseOver(e) {
+            var obj = (e.srcElement) ? e.srcElement : e.target;
+            if (obj.tagName == "TD") {
+                vTdClass = obj.className;
+                obj.className = "hover";
+            }
+        }
+
+        function doMouseOut(e) {
+            var obj = (e.srcElement) ? e.srcElement : e.target;
+            if (obj.tagName == "TD") {
+                obj.className = vTdClass;
+            }
+        }
+
+        function setCurrent() {
+            document.forms[0].year.value = vYear;
+            document.forms[0].month.value = vMonth;
+        }
+
+        document.Request = function(Item) {
+            var tmp = this.location.search.substr(1).split("&");
+            var ret = new Array();
+            for (var i = 0; i < tmp.length; i++) {
+                ret[tmp[i].substr(0, tmp[i].search("="))] = unescape(tmp[i].substr(tmp[i].search("=") + 1));
+            }
+            if (typeof (Item) == "string")
+            { return ret[Item]; }
+            else
+            { return ret; }
+        }
+
+        function doSelectDate(e) {
+            var obj = (e.srcElement) ? e.srcElement : e.target;
+            var UFeatures = $G("id");
+            if (obj.tagName == "TD") {
+                var theRow = obj.parentNode.rowIndex - rowStart;
+                var theCell = obj.cellIndex;
+                var pos = theRow * 7 + theCell;
+                if ((pos >= FirstDate) && (pos < LastDate + FirstDate)) {
+                    var returnVal = convertDate(new Date(vYear, vMonth - 1, pos - FirstDate + 1));
+                    if (window.opener) {
+                        window.opener.document.getElementById(UFeatures).value = returnVal;
+                        //window.opener.getObj(UFeatures).value = returnVal;
+                    }
+                    if (window.dialogArguments) {
+                        window.returnValue = returnVal;
+                    }
+
+                    window.close();
+                }
+            }
+        }
+
+        function getObj(id) {
+            return document.getElementById(id);
+        }
+
+        function $G() {
+            var Url = top.window.location.href;
+            var u, g, StrBack = '';
+            if (arguments[arguments.length - 1] == "#")
+                u = Url.split("#");
+            else
+                u = Url.split("?");
+            if (u.length == 1) g = '';
+            else g = u[1];
+
+            if (g != '') {
+                gg = g.split("&");
+                var MaxI = gg.length;
+                str = arguments[0] + "=";
+                for (i = 0; i < MaxI; i++) {
+                    if (gg[i].indexOf(str) == 0) {
+                        StrBack = gg[i].replace(str, "");
+                        break;
+                    }
+                }
+            }
+            return StrBack;
+        }
+
+    </script>
+
+    <script language="javascript">
+        var cellStart = 8
+        var endPos = 50;
+        var rowStart = 3;
+        window.returnValue = null;
+        var vYear, vMonth, vDate, FirstDate, LastDate, vToday, Now, vTdClass;
+
+        vYear = (new Date()).getFullYear();
+        vMonth = (new Date()).getMonth() + 1;
+        vDate = (new Date()).getDate();
+        vToday = vYear + "/" + vMonth + "/" + vDate;
+        Now = new Date(vYear, vMonth - 1, vDate);
+        init();
+
+        document.title = (typeof (document.Request("title")) == "undefined" || document.Request("title") == "") ? "日曆" : document.Request("title");
+    </script>
+
+</body>
+</html>

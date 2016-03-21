@@ -1,0 +1,130 @@
+/*找出某一轉檔日期+批次之所有發票開立單(table:ia,iad)之record
+  對於每 一張發票開立單產生一筆sapiv,sapivd並呼叫 sp_sap_insert_vou 以按照計畫代號產生多筆sap_vou*/
+CREATE proc dbo.sp_to_sap_001 (@yyyymm char(06), @batch_seq char(6), @empno char(15), @rtn_code real output )  
+as
+begin 
+set nocount on
+DECLARE   @edate varchar(8), @ls_vouseq varchar(3)
+DECLARE   @saleamt real, @tax real, @invoamt real, @iuniprice real
+DECLARE   @s_saleamt char(13), @s_tax char(13), @s_invoamt char(13) 
+DECLARE   @s_iuniprice char(13), @rtn_codev char(2)
+
+
+select @edate = convert(char(8),getdate(),112) 
+/*產生syslog*/
+
+begin  distributed transaction  tran_1
+/* -------------------------------------
+insert isccom1.mrlpub.dbo.saplog
+select sap_type   = 'AR'
+             ,sap_yyyymm = '200201' 
+             ,sap_seq    = 10001
+             ,sap_smark  = 'P'
+             ,sap_uid    = '740320'
+             ,sap_moddate = getdate()
+             ,sap_orgcd  = '05'
+-------------------------------------------  */
+insert isccom1.mrlpub.dbo.saplog
+select sap_type   = 'AR'
+             ,sap_yyyymm = @yyyymm 
+             ,sap_seq    = convert(int,@batch_seq)
+             ,sap_smark  = 'P'
+             ,sap_uid    = @empno
+             ,sap_moddate = getdate()
+             ,sap_orgcd  = '05'
+DECLARE  ia_cursor  CURSOR FOR  
+ SELECT
+         a.ia_syscd,
+         a.ia_iano,   
+         a.ia_invcd,   
+         a.ia_taxtp,   
+         c.rm_remark,   
+         b.mfr_mfrno,   
+         b.mfr_inm,   
+         b.mfr_iaddr,   
+         a.ia_pyat,   
+         c.rm_accddr,
+         c.rm_iremark,
+         c.rm_idescr,
+         c.rm_iunit  
+    FROM ia  a,   
+         Mfr  b,
+         refm  c
+   WHERE (a.ia_mfrno = b.mfr_mfrno ) and  
+                  (a.ia_syscd = c.rm_syscd ) and  
+                  ( ( a.ia_iasdate = @yyyymm ) and  
+                  ( a.ia_iasseq = @batch_seq ) )    
+/* open the cursor */
+open ia_cursor
+/* Declare some variables to hold results.*/
+DECLARE   @infno char(10), @syscd char(2), @iano char(8), @invcd char(1)
+DECLARE   @taxtp char(1), @remark varchar(25), @mfrno char(10)
+DECLARE   @inm varchar(30), @iaddr varchar(40), @pyat real, @accddr char(7)
+DECLARE   @iremark varchar(40), @idescr varchar(20), @iunit char(3)
+DECLARE   @orgcd char(2), @invtp char(1), @curr char(5), @rate char(1), @prtctl char(1)
+DECLARE   @iseq char(3), @iqty char(10)
+select @orgcd = '05'
+select @invtp = '4'
+
+select @curr = 'TWD'
+select @rate = '1'
+select @prtctl = 'Y'   
+select @iqty = '1'
+
+/* get the first row from the cursor */
+FETCH  NEXT FROM  ia_cursor INTO
+         @syscd, @iano, @invcd, @taxtp, @remark, @mfrno, @inm, @iaddr, @pyat, @accddr, @iremark, @idescr, @iunit
+
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+/*求發票主檔之銷售額、稅額、發票金額*/
+Select @invoamt  = @pyat 
+If  @taxtp = '1' 
+    BEGIN 
+    select @saleamt = round(@invoamt / 1.05, 0)
+    end
+else 
+begin
+     select @saleamt = @invoamt
+end
+     select @tax  = @invoamt - @saleamt
+/*求發票明細金額*/
+if @invcd = '3'  and  @taxtp = '1' 
+begin
+     select @iuniprice = @saleamt
+end 
+else 
+  begin 
+     select @iuniprice = @invoamt 
+  end                      
+ 
+ 
+ select @s_saleamt = convert(char(13), @saleamt)
+ select @s_tax = convert(char(13), @tax)
+ select @s_invoamt = convert(char(13), @invoamt)
+ select @s_iuniprice = convert(char(13), @iuniprice)
+ select @infno = @syscd + @iano
+ select @iseq = '001'    
+
+ 
+insert sapiv
+values (@orgcd, 'AR', @yyyymm, @batch_seq, @infno, '', @edate, @invtp, 
+@invcd, @taxtp, @remark, @mfrno, @inm, @iaddr, @s_saleamt, @s_tax,
+ @s_invoamt, @curr, @rate, @prtctl, @edate, @accddr, '','','')
+/*因為一張發票對應超過5個名系所以彙整成一個明細 sapivd*/
+insert sapivd
+values (@infno, @iseq, @idescr, @iunit, @iqty, @s_iuniprice, @iremark)
+
+exec sp_to_sap_001_a  @syscd, @iano, @taxtp, @saleamt, @rtn_codev
+
+FETCH  NEXT FROM  ia_cursor INTO
+         @syscd, @iano, @invcd, @taxtp, @remark, @mfrno, @inm, @iaddr, @pyat, @accddr, @iremark, @idescr, @iunit
+
+END
+commit transaction  tran_1 
+CLOSE  ia_cursor                                                                                                                                     
+DEALLOCATE  ia_cursor
+                       
+set nocount off            
+end
+GO

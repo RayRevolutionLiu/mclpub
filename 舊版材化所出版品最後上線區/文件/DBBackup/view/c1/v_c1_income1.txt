@@ -1,0 +1,17 @@
+CREATE VIEW dbo.v_c1_income1
+AS
+SELECT         dbo.c1_od.od_syscd, dbo.c1_od.od_custno, dbo.c1_od.od_otp1cd,
+                          dbo.c1_od.od_otp1seq, dbo.c1_od.od_oditem, dbo.c1_od.od_sdate,
+                          dbo.c1_od.od_edate, dbo.c1_od.od_projno, dbo.c1_od.od_amt,
+                          dbo.c1_order.o_date, dbo.c1_ramt.ra_mnt, dbo.c1_order.o_otp2cd
+FROM             dbo.c1_od INNER JOIN
+                          dbo.c1_order ON dbo.c1_od.od_syscd = dbo.c1_order.o_syscd AND
+                          dbo.c1_od.od_custno = dbo.c1_order.o_custno AND
+                          dbo.c1_od.od_otp1cd = dbo.c1_order.o_otp1cd AND
+                          dbo.c1_od.od_otp1seq = dbo.c1_order.o_otp1seq INNER JOIN
+                          dbo.c1_ramt ON dbo.c1_od.od_syscd = dbo.c1_ramt.ra_syscd AND
+                          dbo.c1_od.od_custno = dbo.c1_ramt.ra_custno AND
+                          dbo.c1_od.od_otp1cd = dbo.c1_ramt.ra_otp1cd AND
+                          dbo.c1_od.od_otp1seq = dbo.c1_ramt.ra_otp1seq AND
+                          dbo.c1_od.od_oditem = dbo.c1_ramt.ra_oditem
+

@@ -1,0 +1,39 @@
+
+/****** Object:  Stored Procedure dbo.sp_c2_xml_call_fns    Script Date: 2002/5/2 AM 08:48:24 ******/
+CREATE procedure sp_c2_xml_call_fns
+as
+
+declare @syscd char(2),@contno char(6)
+declare @ptrval varbinary(16),@xml varchar(8000)
+
+/* 若要執行測試單筆資料, where 條件請輸入 where cont_syscd='C2' and cont_contno='000004' 
+   若要執行全部資料, where 條件請輸入 where cont_syscd='C2'
+*/
+DECLARE ContAll_Cursor CURSOR FOR
+ select cont_syscd,cont_contno
+ from c2_cont
+ where cont_syscd='C2' and cont_contno='000004'  
+
+
+OPEN ContAll_Cursor
+
+FETCH NEXT FROM ContAll_Cursor
+    into @syscd,@contno
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+    
+	set @xml = '<?xml version="1.0" encoding="big5" ?>'
+	set @xml = @xml + dbo.fn_c2_contAll(@syscd,@contno) 
+
+	update c2_cont set cont_xmldata=@xml
+ 	where cont_syscd=@syscd and cont_contno=@contno
+
+
+    FETCH NEXT FROM ContAll_Cursor
+    into @syscd,@contno
+END
+
+CLOSE ContAll_Cursor
+DEALLOCATE ContAll_Cursor
+GO

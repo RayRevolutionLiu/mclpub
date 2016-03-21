@@ -1,0 +1,27 @@
+新增合約  QueryCont.aspx - QueryHisCont.aspx --------- NewCont.aspx
+                          	|			     |
+                                |                            |- C5/Mfr.aspx
+                                |                            |- C5/Cust.aspx
+                                |- ShowOldCont.aspx          |- AddInvMfr.aspx
+							     |- AddFreeBk.aspx
+							     |- AdPrePublish.aspx
+
+維護合約  QueryCust.aspx - QueryUnclosedCont.aspx - ContModify.aspx
+                          	|			     |
+                                |                            |- C5/Mfr.aspx
+                                |                            |- C5/Cust.aspx
+                                |- ShowOldCont.aspx          |- AddInvMfr.aspx
+							     |- AddFreeBk.aspx
+							     |- AdPrePublish.aspx
+
+
+美編落版  AdPostPublish
+
+delete  from c4_adcnt
+delete  from c4_adr
+delete  from c4_adrd
+delete  from c4_cont
+delete  from c4_freebk
+delete  from c4_or
+delete  from c4_ramt
+delete  from invmfr where im_syscd='C4'

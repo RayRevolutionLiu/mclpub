@@ -1,0 +1,11 @@
+CREATE VIEW dbo.v_c2_count_pubseq_of_cont
+AS
+SELECT TOP 100 PERCENT COUNT(dbo.c2_pub.pub_pubseq) AS pubseq_cnt,
+                  dbo.c2_cont.cont_syscd, dbo.c2_cont.cont_contno
+FROM     dbo.c2_cont INNER JOIN
+                  dbo.c2_pub ON dbo.c2_cont.cont_syscd = dbo.c2_pub.pub_syscd AND
+                  dbo.c2_cont.cont_contno = dbo.c2_pub.pub_contno
+WHERE  (dbo.c2_cont.cont_fgclosed = '0')
+GROUP BY dbo.c2_cont.cont_syscd, dbo.c2_cont.cont_contno
+ORDER BY dbo.c2_cont.cont_syscd, dbo.c2_cont.cont_contno
+

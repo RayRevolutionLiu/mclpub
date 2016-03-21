@@ -1,0 +1,223 @@
+<TITLE>mrlpub 配色範例</TITLE>
+		<!-- CSS -->
+		<LINK REL="stylesheet" HREF="usercontrol/mrlpub.css" Type="text/css" Title="Style">
+		
+<center>
+			<table dataFld="items" id="tbItems">
+				<tr>
+					<td style="WIDTH: 706px" align="left">
+						<font color="#333333" size="2"><IMG height="10" src="images/header/right02.gif" width="10" border="0">
+							雜誌叢書訂閱次系統 <IMG height="10" src="images/header/right02.gif" width="10" border="0">
+							訂單處理 <IMG height="10" src="images/header/right02.gif" width="10" border="0"> 一般訂書</font>
+					</td>
+				</tr>
+			</table>
+			<TABLE style="WIDTH: 706px; HEIGHT: 174px" cellSpacing="0" cellPadding="4" bgColor="#bfcff0">
+				<tr bgColor="#214389">
+					<td style="HEIGHT: 11px" colSpan="4">
+						<font color="white">訂戶資料</font>
+					</td>
+				</tr>
+				<TR>
+					<TD class="cssTitle" style="WIDTH: 109px; HEIGHT: 19px" align="right">
+						訂戶編號：
+					</TD>
+					<TD class="cssData" style="WIDTH: 235px; HEIGHT: 19px">
+						<INPUT dataFld="訂戶編號" id="invoiceid" style="WIDTH: 100px; HEIGHT: 22px" type="text" size="11" name="invoiceid">
+						<IMG class="ico" title="查詢" onclick="doSelectCust('訂戶類別', custname.value)" height="20" src="images/search.gif" width="18" border="0">
+					</TD>
+					<TD class="cssTitle" style="WIDTH: 118px; HEIGHT: 19px" align="right" bgColor="#bfcff0">
+						公司名稱：
+					</TD>
+					<TD class="cssData" style="WIDTH: 192px; HEIGHT: 19px">
+						<INPUT dataFld="公司名稱" id="companyname" type="text" name="companyname"> <IMG class="ico" title="查詢" onclick="doSelectCust('公司名稱', companyname.value)" height="20" src="images/search.gif" width="18" border="0">
+					</TD>
+				</TR>
+				<TR>
+					<TD class="cssTitle" style="WIDTH: 109px; HEIGHT: 13px" align="right" bgColor="#bfcff0">
+						姓名：
+					</TD>
+					<TD class="cssData" style="WIDTH: 235px; HEIGHT: 13px">
+						<INPUT dataFld="姓名" id="custname" style="WIDTH: 99px; HEIGHT: 22px" type="text" size="11" name="custname">
+						<IMG class="ico" title="查詢" onclick="doSelectCust('姓名', custname.value)" height="20" src="images/search.gif" width="18" border="0">
+					</TD>
+					<TD class="cssTitle" style="WIDTH: 118px; HEIGHT: 13px" align="right" bgColor="#bfcff0">
+						訂戶詳細資料：
+					</TD>
+					<TD class="cssData" style="WIDTH: 192px; HEIGHT: 13px">
+						&nbsp;<IMG class="ico" title="訂戶詳細資料" height="14" src="images/edit.gif" width="16" border="0">
+					</TD>
+				</TR>
+
+				<tr bgColor="#214389">
+					<td style="HEIGHT: 20px" colSpan="4">
+						<font color="white">收件人資料</font>
+					</td>
+				</tr>
+				<tr>
+					<td class="cssTitle" style="WIDTH: 105px; HEIGHT: 33px" align="right" bgColor="#bfcff0">
+						收件人：
+					</td>
+					<td class="cssData" style="WIDTH: 417px" colSpan="3">
+						<span id="Label1" style="color:#804000;border-color:Gray;">陳俐靜,葉玉莉,陳俐靜,葉玉莉,陳俐靜,葉玉莉</span>
+						<IMG class="ico" title="新增收件人" onclick="doSelectCust('姓名', custname.value)" height="20" src="images/search.gif" width="18" border="0">&nbsp;<IMG class="ico" title="修改收件人資料" height="14" src="images/edit.gif" width="16" border="0">
+					</td>
+				</tr>
+			</TABLE>
+			<!--  -->
+			<TABLE dataFld="item" id="Table1" style="WIDTH: 706px; HEIGHT: 91px" dataSrc="#DSO0" cellSpacing="0" cellPadding="4" bgColor="#bfcff0" border="1">
+				<thead>
+					<tr bgColor="#214389">
+						<td style="WIDTH: 639px; HEIGHT: 17px" colSpan="10">
+							<font color="white">訂單明細資料</font>
+						</td>
+					</tr>
+					<tr borderColor="#bfcff0" bgColor="#bfcff0">
+						<td style="WIDTH: 58px; HEIGHT: 37px">
+							<span dataFld="item"></span>功能
+						</td>
+						<td style="WIDTH: 35px; HEIGHT: 37px">
+							項次
+						</td>
+						<td style="WIDTH: 86px; HEIGHT: 37px" align="middle">
+							書籍類別
+						</td>
+						<td style="WIDTH: 123px; HEIGHT: 37px" align="middle">
+							新舊訂戶
+						</td>
+						<td style="WIDTH: 82px; HEIGHT: 37px" align="middle">
+							計劃代號
+						</td>
+						<td style="WIDTH: 69px; HEIGHT: 37px" align="middle">
+							訂閱起時
+						</td>
+						<td style="WIDTH: 70px; HEIGHT: 37px" align="middle">
+							訂閱訖時
+						</td>
+						<td style="WIDTH: 52px; HEIGHT: 37px" align="middle">
+							金額
+						</td>
+						<td style="WIDTH: 73px; HEIGHT: 37px" align="middle">
+							收件人
+						</td>
+						<td style="HEIGHT: 37px" align="middle">
+							數量
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr borderColor="#bfcff0" bgColor="#e2eafc">
+						<td style="WIDTH: 58px; HEIGHT: 23px">
+							<IMG class="ico" title="新增資料" style="WIDTH: 16px; HEIGHT: 15px" onclick="doAddNew(this)" height="15" src="images/new.gif" width="16" border="0"><FONT face="新細明體">&nbsp;</FONT><IMG class="ico" title="刪除資料" height="14" src="images/cut.gif" width="9" border="0">&nbsp;
+						</td>
+						<td style="WIDTH: 35px; HEIGHT: 23px">
+							<input dataFld="項次" id="Text1" onblur="doCacl(this)" style="WIDTH: 33px; HEIGHT: 22px" type="text" size="1" value="1" name="Text1">
+						</td>
+						<td style="WIDTH: 86px; HEIGHT: 23px">
+							&nbsp;
+							<select name="DropDownList3" id="DropDownList3">
+	<option value="1">工材訂購</option>
+	<option value="2">電材訂購</option>
+	<option value="3">工材零售</option>
+	<option value="4">電材零售</option>
+	<option value="5">工材叢書</option>
+	<option value="6">電材叢書</option>
+
+</select>
+						</td>
+						<td style="WIDTH: 123px; HEIGHT: 23px">
+							&nbsp;
+							<span id="Label2">新訂戶</span>
+						</td>
+						<td style="WIDTH: 82px; HEIGHT: 23px">
+							<input dataFld="計劃代號" id="Text2" onblur="doCacl(this)" style="WIDTH: 78px; HEIGHT: 22px" type="text" size="7" value="90XXXXXXXX" name="Text2">
+						</td>
+						<td style="WIDTH: 69px; HEIGHT: 23px">
+							<input dataFld="單位" id="ttx" onblur="doCacl(this)" style="WIDTH: 70px; HEIGHT: 22px" type="text" size="6" value="2001/10/01" name="ttx">
+						</td>
+						<td style="WIDTH: 70px; HEIGHT: 23px">
+							<input dataFld="單價" id="tt2" onblur="doCacl(this)" style="WIDTH: 72px; HEIGHT: 22px" type="text" size="6" value="2002/09/30" name="tt2">
+						</td>
+						<td style="WIDTH: 52px; HEIGHT: 23px">
+							<input dataFld="金額" id="tt4" style="WIDTH: 50px; HEIGHT: 22px" readOnly type="text" size="3" value="8000" name="tt4" xmlns="http://schemas.microsoft.com/intellisense/ie5">
+						</td>
+						<td style="WIDTH: 73px; HEIGHT: 23px">
+							&nbsp; <IMG class="ico" title="修改收件人資料" height="14" src="images/edit.gif" width="16" border="0">
+						</td>
+						<td style="HEIGHT: 23px">
+							<input dataFld="數量" id="tt3" onblur="doCacl(this)" style="WIDTH: 41px; HEIGHT: 22px" type="text" size="1" value="5" name="tt3">
+						</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr borderColor="#bfcff0" bgColor="#e2eafc">
+						<td style="WIDTH: 58px">
+							<IMG class="ico" title="新增資料" style="WIDTH: 16px; HEIGHT: 15px" onclick="doAddNew(this)" height="15" src="images/new.gif" width="16" border="0">&nbsp;<IMG class="ico" title="刪除資料" height="14" src="images/cut.gif" width="9" border="0">&nbsp;
+						</td>
+						<td style="WIDTH: 35px">
+							<input dataFld="項次" id="Text1" onblur="doCacl(this)" style="WIDTH: 33px; HEIGHT: 22px" type="text" size="1" value="2" name="Text1">
+						</td>
+						<td style="WIDTH: 86px">
+							&nbsp;
+							<select name="Dropdownlist4" id="Dropdownlist4">
+	<option value="1">工材訂購</option>
+	<option selected="selected" value="2">電材訂購</option>
+	<option value="3">工材零售</option>
+	<option value="4">電材零售</option>
+	<option value="5">工材叢書</option>
+	<option value="6">電材叢書</option>
+
+</select>
+						</td>
+						<td style="WIDTH: 123px">
+							&nbsp;
+							<span id="Label3">續訂戶</span>
+						</td>
+						<td style="WIDTH: 82px">
+							<input dataFld="計劃代號" id="Text2" onblur="doCacl(this)" style="WIDTH: 78px; HEIGHT: 22px" type="text" size="7" value="90XXXXXXXX" name="Text2">
+						</td>
+						<td style="WIDTH: 69px">
+							<input dataFld="單位" id="ttx" onblur="doCacl(this)" style="WIDTH: 70px; HEIGHT: 22px" type="text" size="6" value="2001/11/15" name="ttx">
+						</td>
+						<td style="WIDTH: 70px">
+							<input dataFld="單價" id="tt2" onblur="doCacl(this)" style="WIDTH: 72px; HEIGHT: 22px" type="text" size="6" value="2002/11/14" name="tt2">
+						</td>
+						<td style="WIDTH: 52px">
+							<input dataFld="金額" id="tt4" style="WIDTH: 49px; HEIGHT: 22px" readOnly type="text" size="2" value="9000" name="tt4" xmlns="http://schemas.microsoft.com/intellisense/ie5">
+						</td>
+						<td style="WIDTH: 73px">
+							&nbsp; <IMG class="ico" title="修改收件人資料" height="14" src="images/edit.gif" width="16" border="0">
+						</td>
+						<td>
+							<input dataFld="數量" id="tt3" onblur="doCacl(this)" style="WIDTH: 41px; HEIGHT: 22px" type="text" size="1" value="10" name="tt3">
+						</td>
+					</tr>
+				</tbody>
+			</TABLE>
+</center><BR><BR>
+
+<!-- Source Code -->
+<FONT Color=RED><B>請自行 複製以下顏色碼及字型大小之原始碼: </B></FONT><BR>
+< font size=2 color="#333333"> <BR>
+< img border="0" src="/mrlpub/images/header/right02.gif" width="10" height="10"> <BR>
+雜誌叢書訂閱次系統 < /font> <BR><BR>
+
+
+< table bgcolor="#BFCFF0" style="WIDTH: 627px" cellpadding="2" cellSpacing="0"> <BR>
+< td bgColor="#214389"> <BR>
+< font size=2 color="#FFFFFF" >訂戶資料< /font> <BR>
+< font size=2 color="#000000" >訂戶編號< /font> <BR><BR>
+
+< IMG class="ico" onclick="doSelectCust('訂戶類別', custname.value)" height="20" src="images/search.gif" width="18" border="0"> <BR><BR>
+<HR><BR><BR>
+
+
+< tbody><BR>
+					< tr borderColor="#bfcff0" bgColor="#e2eafc"><BR>
+						< td style="WIDTH: 58px; HEIGHT: 23px"><BR>
+							< IMG class="ico" title="新增資料" style="WIDTH: 16px; HEIGHT: 15px" onclick="doAddNew(this)" height="15" src="images/new.gif" width="16" border="0">< FONT face="新細明體">&nbsp;< /FONT>< IMG class="ico" title="刪除資料" height="14" src="images/cut.gif" width="9" border="0">&nbsp;<BR>
+						< /td><BR>
+
+
+
+<BR><BR>

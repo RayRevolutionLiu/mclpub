@@ -1,0 +1,9 @@
+使用 SQL Query Analyzer (開啟 mrlpub DB)
+exec sp_c2_getad_1 "200205","01"
+exec sp_c2_getad_1 '200205','01'
+
+
+使用 SQL Server Enterprise Manager 檢查
+SELECT         *
+FROM             c2_getad
+

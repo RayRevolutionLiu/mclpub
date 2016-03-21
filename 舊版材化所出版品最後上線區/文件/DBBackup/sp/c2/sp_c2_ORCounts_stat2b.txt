@@ -1,0 +1,34 @@
+CREATE PROCEDURE dbo.sp_c2_ORCounts_stat2b  ( @bkcd char(2), @yyyymm char(6) )
+as
+begin
+set nocount on
+
+SELECT         TOP 100 PERCENT c2_cont.cont_contno, c2_cont.cont_mfrno,
+                          RTRIM(mfr.mfr_inm) AS mfr_inm, c2_or.or_mtpcd,
+                          RTRIM(mtp.mtp_nm) AS mtp_nm, COUNT(c2_or.or_unpubcnt)
+                          AS UnPubCounts, c2_cont.cont_sdate, c2_cont.cont_edate,
+                          SUBSTRING(c2_cont.cont_sdate, 1, 4)
+                          + '/' + SUBSTRING(c2_cont.cont_sdate, 5, 6)
+                          + ' ~ ' + SUBSTRING(c2_cont.cont_edate, 1, 4)
+                          + '/' + SUBSTRING(c2_cont.cont_edate, 5, 6) AS cont_sedate,
+		c2_cont.cont_conttp, c2_or.or_fgmosea
+FROM             c2_cont INNER JOIN
+                          c2_or ON c2_cont.cont_syscd = c2_or.or_syscd AND
+                          c2_cont.cont_contno = c2_or.or_contno INNER JOIN
+                          mtp ON c2_or.or_mtpcd = mtp.mtp_mtpcd INNER JOIN
+                          mfr ON c2_cont.cont_mfrno = mfr.mfr_mfrno
+WHERE         (c2_cont.cont_fgclosed = '0') AND (c2_cont.cont_contno NOT IN
+                              (SELECT DISTINCT c2_pub.pub_contno
+                                FROM              c2_pub
+                                WHERE          c2_pub.pub_yyyymm = @yyyymm)) AND
+                          (c2_or.or_unpubcnt > 0) AND (c2_cont.cont_fgcancel = '0') AND
+                          (c2_cont.cont_fgtemp = '0')
+                           AND (c2_cont.cont_bkcd = @bkcd)
+GROUP BY  c2_cont.cont_contno, c2_cont.cont_mfrno, mfr.mfr_inm,
+                          c2_or.or_mtpcd, mtp.mtp_nm, c2_cont.cont_sdate,
+                          c2_cont.cont_edate, c2_cont.cont_conttp, c2_or.or_fgmosea
+ORDER BY  c2_or.or_mtpcd, c2_cont.cont_contno
+
+set nocount off
+end
+GO

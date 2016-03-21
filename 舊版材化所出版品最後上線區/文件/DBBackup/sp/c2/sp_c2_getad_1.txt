@@ -1,0 +1,36 @@
+CREATE proc dbo.sp_c2_getad_1 ( @fgclosed  char(1), @bkcd char(2))
+as
+begin
+set nocount on
+declare @contno char(6)
+
+
+delete from c2_getad
+DECLARE  getad_cursor  CURSOR FOR
+SELECT c2_cont.cont_contno
+FROM c2_cont
+   WHERE
+          ( c2_cont.cont_fgclosed = @fgclosed ) and
+            (c2_cont.cont_bkcd = @bkcd)
+
+open getad_cursor
+
+FETCH  NEXT FROM  getad_cursor INTO
+         @contno
+
+WHILE (@@FETCH_STATUS = 0)
+BEGIN
+select @contno
+exec sp_c2_getad_2  @contno
+
+FETCH  NEXT FROM  getad_cursor INTO
+         @contno
+
+
+END
+CLOSE  getad_cursor
+DEALLOCATE  getad_cursor
+
+set nocount off
+end
+GO

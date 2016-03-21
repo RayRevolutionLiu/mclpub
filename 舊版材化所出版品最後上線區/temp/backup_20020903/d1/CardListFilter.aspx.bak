@@ -1,0 +1,96 @@
+<%@ Page language="c#" Codebehind="CardListFilter.aspx.cs" src="CardListFilter.aspx.cs" AutoEventWireup="false" Inherits="MRLPub.d1.CardListFilter" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<meta content="Microsoft Visual Studio 7.0" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript (ECMAScript)" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="../UserControl/mrlpub.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body>
+		<form id="CardListFilter" method="post" runat="server">
+			<FONT color="#333333" size="2"><IMG height="10" src="images/header/right02.gif" width="10" border="0">
+				雜誌叢書訂閱次系統 <IMG height="10" src="images/header/right02.gif" width="10" border="0">
+				繳款處理 <IMG height="10" src="images/header/right02.gif" width="10" border="0">列印信用卡中心請款彙總表
+			</FONT>
+			<br>
+			<br>
+			<asp:label id="Label1" runat="server">繳款清單產生日期：</asp:label>
+			<asp:textbox id="tbxOrderDate1" runat="server" Width="82px"></asp:textbox>
+			<IMG class="ico" title="日曆" onclick="pick_date(tbxOrderDate1.name)" src="../images/calendar01.gif">
+			～<asp:textbox id="tbxOrderDate2" runat="server" Width="84px"></asp:textbox><IMG class="ico" title="日曆" onclick="pick_date(tbxOrderDate2.name)" src="../images/calendar01.gif">
+			<br>
+			<asp:label id="Label2" runat="server">彙總表列印狀況：</asp:label>
+			<asp:dropdownlist id="ddlPrintFlag" runat="server">
+				<asp:ListItem Value="0" Selected="True">尚未列印</asp:ListItem>
+				<asp:ListItem Value="1">已列印過</asp:ListItem>
+			</asp:dropdownlist>
+			<br>
+			<asp:button id="btnSearch" runat="server" Text="查詢"></asp:button>
+			<asp:button id="btnPrint" runat="server" Text="列印彙總表" Enabled="False"></asp:button>
+			<br>
+			<asp:datalist id="DataList1" runat="server" BackColor="White" BorderColor="#E7E7FF" BorderStyle="None" CellPadding="1" GridLines="Horizontal" BorderWidth="0px" Visible="False">
+				<HeaderTemplate>
+					<TABLE>
+						<TR>
+							<TD width="30">
+								<FONT color="white">選取</FONT>
+							</TD>
+							<TD width="60">
+								<FONT color="white">繳款清單產生年月</FONT>
+							</TD>
+							<TD width="60">
+								<FONT color="white">繳款清單批次</FONT>
+							</TD>
+							<TD width="60">
+								<FONT color="white">繳款清單產生日期</FONT>
+							</TD>
+							<TD width="60">
+								<FONT color="white">繳款清單產生人員</FONT>
+							</TD>
+						</TR>
+					</TABLE>
+				</HeaderTemplate>
+				<AlternatingItemStyle BackColor="#F7F7F7"></AlternatingItemStyle>
+				<ItemStyle BorderWidth="1px" ForeColor="#4A3C8C" BackColor="#E7E7FF"></ItemStyle>
+				<ItemTemplate>
+					<TABLE>
+						<TR>
+							<TD>
+								<asp:CheckBox id="cbx1" Width="30" Runat="server"></asp:CheckBox>
+							</TD>
+							<TD>
+								<asp:Label id="lblpysdate" Width="60" text='<%# DataBinder.Eval(Container.DataItem, "pys_pysdate")%>' Runat="server"></asp:Label>
+							</TD>
+							<TD>
+								<asp:Label id="lblpysseq" Width="60" text='<%# DataBinder.Eval(Container.DataItem, "pys_pysseq")%>' Runat="server"></asp:Label>
+							</TD>
+							<TD>
+								<asp:Label id="lblcreatedate" Width="60" text='<%# DataBinder.Eval(Container.DataItem, "pys_createdate")%>' Runat="server"></asp:Label>
+							</TD>
+							<TD>
+								<asp:Label id="lblcreatemen" Width="60" text='<%# DataBinder.Eval(Container.DataItem, "pys_createmen")%>' Runat="server"></asp:Label>
+							</TD>
+						</TR>
+					</TABLE>
+				</ItemTemplate>
+				<HeaderStyle Font-Bold="True" BorderWidth="1px" ForeColor="#F7F7F7" BackColor="#4A3C8C"></HeaderStyle>
+			</asp:datalist>
+			<br>
+			<asp:label id="lblMessage" runat="server" ForeColor="#C04000"></asp:label>
+			<asp:Literal id="Literal1" runat="server"></asp:Literal>
+		</form>
+		<script language="javascript">
+function pick_date(theField){
+	var oParam = new Object();
+	strFeature = "";
+	strFeature += "dialogHeight:250px;dialogWidth:200px;center:yes;scroll:yes;status:no;help:no;";
+	var vreturn = window.showModalDialog("calendar.asp", oParam, strFeature); 
+	if(vreturn)
+		window.document.all(theField).value=vreturn;
+	return true;
+}
+	</script>
+	</body>
+</HTML>

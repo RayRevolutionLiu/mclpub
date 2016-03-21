@@ -1,0 +1,41 @@
+/****** Object:  Stored Procedure dbo.sp_c1_order    Script Date: 2002/5/2 AM 08:48:24 ******/
+CREATE procedure sp_c1_order
+as
+declare	@syscd char(2),	@custno char(6),@otp1cd char(2),@otp1seq char(3)
+declare @ptrval varbinary(16),@xml varchar(8000)
+
+DECLARE Order_Cursor CURSOR FOR
+ select o_syscd,o_custno,o_otp1cd,o_otp1seq
+ from c1_order
+ where o_syscd='C1'  and o_custno='000002'  and o_otp1cd='01'
+
+OPEN Order_Cursor
+
+FETCH NEXT FROM Order_Cursor
+    into @syscd,@custno,@otp1cd,@otp1seq
+
+WHILE @@FETCH_STATUS = 0
+BEGIN
+
+	set @xml = '<?xml version="1.0" encoding="big5" ?><root>'
+	set @xml = @xml + dbo.fn_c1_order(@syscd,@custno,@otp1cd,@otp1seq)
+	set @xml = @xml + dbo.fn_c1_or(@syscd,@custno,@otp1cd,@otp1seq,'01','0')
+	set @xml = @xml + dbo.fn_c1_od(@syscd,@custno,@otp1cd,@otp1seq)
+	set @xml = @xml + '</root>'
+
+	update c1_order set o_xmldata=@xml
+ 	where o_syscd=@syscd and o_custno=@custno and o_otp1cd=@otp1cd and o_otp1seq=@otp1seq
+
+ 	-- select @ptrval = TEXTPTR(o_xmldata)
+ 	-- from c1_order
+ 	-- where o_syscd=@syscd and o_custno=@custno and o_otp1cd=@otp1cd and o_otp1seq=@otp1seq
+
+ 	-- WRITETEXT c1_order.o_xmldata @ptrval  @xml
+
+    FETCH NEXT FROM Order_Cursor
+    into @syscd,@custno,@otp1cd,@otp1seq
+END
+
+CLOSE Order_Cursor
+DEALLOCATE Order_Cursor
+GO

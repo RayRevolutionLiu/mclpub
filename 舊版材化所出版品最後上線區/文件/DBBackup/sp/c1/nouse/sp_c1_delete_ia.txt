@@ -1,0 +1,17 @@
+CREATE PROCEDURE dbo.sp_c1_delete_ia
+	@syscd varchar(2), @iano varchar(8), @type varchar(1), @empno varchar(7)
+	
+AS
+set nocount on
+
+------刪除iad
+delete iad where iad_syscd=@syscd and iad_iano= @iano
+------刪除ia
+delete ia where ia_syscd=@syscd and ia_iano= @iano
+if @type='0' -----發票開立單Recovery
+------c1_order 中 set o_iano='' , o_status='1'
+	update c1_order set o_iano='', o_status='1', o_moduid=@empno where o_syscd=@syscd and o_iano=@iano
+if @type='1'	-----預開發票未繳款之註銷發票
+------c1_order 中 set o_iano='' , o_status='1', o_modstatus='1'
+	update c1_order set o_iano='', o_status='1', o_modstatus='1', o_moduid=@empno where o_syscd=@syscd and o_iano=@iano
+GO
